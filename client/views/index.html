@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="../../asset/css/footer.css">
     <script src="../../node_modules/angular/angular.min.js"></script>
 </head>
-<body ng-controller="myController">
-    <div class="container-fluid">
-            <header class="row">
+<body ng-controller="myController" class="p-0">
+    <div class="container-fluid p-0">
+
+            <header ng-include="'../layout/header.html'" class="row header_box-container">
 
             </header>
             <main class="row">
