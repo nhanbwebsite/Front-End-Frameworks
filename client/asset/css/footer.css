@@ -4,10 +4,12 @@
     margin: 0;
     font-family: Arial;
 }
-footer{
+.wrap_in4{
+    width: 100% !important;
     background-color: #F2F2F2;
 }
 .in4{
+    background-color: #F2F2F2;
     width: 75%;
     margin: 0 auto;
     font-size: 13px;
