@@ -8,6 +8,8 @@ footer{
     background-color: #F2F2F2;
 }
 .in4{
+    width: 75%;
+    margin: 0 auto;
     font-size: 13px;
     color: #4f4f4f;
 }
@@ -18,6 +20,8 @@ footer{
     color: #4f4f4f;
 }
 .link_tests{
+    width: 75%;
+    margin: 0 auto;
     color: #666;
     font-size: 13px;
 }
