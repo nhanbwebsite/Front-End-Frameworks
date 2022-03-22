@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="adminApp" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,27 @@
     <title>index admin</title>
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../node_modules/angular/angular.min.js"></script>
 </head>
-<body>
+<body ng-controller="adminController">
     
     <div class="container-fluid">
-       
+        <div class="row">
+            <div ng-include="'../layout/navbar.html'" class="col-3">
+                
+            </div>
+            <div ng-include="'../layout/content.html'" class="col-9">
+
+            </div>
+        </div>
         
 
     </div>
+    <script>
+        var app = angular.module('adminApp',[]);
+        app.controller('adminController',function($scope,){
 
+        });
+    </script>
 </body>
 </html>
