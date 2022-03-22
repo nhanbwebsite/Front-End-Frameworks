@@ -5,8 +5,184 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/respone.css">
 </head>
 <body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <a class="navbar-brand" href="#">Asssignment Frontend Frameworks</a>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <i class="fa-solid fa-user-shield"></i>Admin</h5> -->
+                  <div class="dropdown">
+                    <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                     <strong> Admin</strong>
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Quản lý tài khoản</a></li>
+                      <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                  </div>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                              Môn thi
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body p-0">
+                             <!--list group-->
+                             <div class="list-group border-0">
+                                <!-- <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                  The current link item
+                                </a> -->
+                                <a href="#" class="border-0 list-group-item list-group-item-action">Dah sách môn thi </a>
+                                <a href="#" class="border-0 list-group-item list-group-item-action">Thêm môn thi</a>
+                                <a href="#" class="border-0 list-group-item list-group-item-action">Thêm câu hỏi </a>
+                               
+                              </div>
+                             <!-- end list group-->
+
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                              Thành viên
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body p-0">
+                             
+                                <!--user-->
+                                <div class="list-group border-0">
+                                    <!-- <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                      The current link item
+                                    </a> -->
+                                    <a href="#" class="border-0 list-group-item list-group-item-action">Dah sách thành viên </a>
+                                    <a href="#" class="border-0 list-group-item list-group-item-action">Thêm thành viên</a>
+                                    <!-- <a href="#" class="border-0 list-group-item list-group-item-action">Thêm câu hỏi </a> -->
+                                   
+                                  </div>
+                                <!--end user-->
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    </li>
+                    
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li> -->
+                   
+                  </ul>
+                  <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form> -->
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!--end navbar-->
+          <br>
+         
+        <div class="row">
+          
+            <div class="col-md-2 col-lg-2 mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        sdsd
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10 col-lg-10">
+                <article class="mt-5">
+                    <h2>Danh sách thành viên</h2>
+                  <table class="table ">
+                      <thead class="table-info mt-5">
+                          <tr>
+                              <th scope="row">ID</th>
+                              <th>Họ tên</th>
+                              <th>Tên đăng nhập</th>
+                              <!-- <td>Mật khẩu</td> -->
+                              <th>Email</th>
+                              <th>Địa chỉ</th>
+                            </tr>
+                      </thead>
+                      <tbody class="mt-5">
+                          <tr class="">
+                            <td scope="row">1</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>vananguyen</td>
+                            <td>vananguyen@gmail.com</td>
+                            <td>Cần Thơ</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">2</td>
+                            <td>Nguyễn Văn B</td>
+                            <td>vanbnguyen</td>
+                            <!-- <td>Mật khẩu</td> -->
+                            <td>vanbnguyen@gmail.com</td>
+                            <td>Vĩnh Long</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">3</td>
+                            <td>Nguyễn Thị T</td>
+                            <td>thitnguyen</td>
+                            <!-- <td>Mật khẩu</td> -->
+                            <td>thitnguyen@gmail.com</td>
+                            <td>Bến Tre</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">4</td>
+                            <td>Trần Văn H</td>
+                            <td>vanhtran</td>
+                            <!-- <td>Mật khẩu</td> -->
+                            <td>vanhtran@gmail.com</td>
+                            <td>Trà Vinh</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                 
+                </article>
+            </div>
+        </div>
+
+
+    </div>
     
 </body>
 </html>
