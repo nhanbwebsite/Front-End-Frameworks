@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link rel="stylesheet" href="../../asset/css/respone.css">
+    
 </head>
 <body>
     <div class="container-fluid">
@@ -41,12 +43,12 @@
                       <div class="accordion" id="accordionPanelsStayOpenExample">
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <button class="accordion-button rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
                               Môn thi
                             </button>
                           </h2>
                           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                            <div class="accordion-body p-0">
+                            <div class="accordion-body pt-0 pb-0">
                              <!--list group-->
                              <div class="list-group border-0">
                                 <!-- <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
@@ -70,7 +72,7 @@
                             </button>
                           </h2>
                           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                            <div class="accordion-body p-0">
+                            <div class="accordion-body pt-0 pb-0">
                              
                                 <!--user-->
                                 <div class="list-group border-0">
@@ -94,7 +96,7 @@
                             </button>
                           </h2>
                           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                            <div class="accordion-body">
+                            <div class="accordion-body pt-0 pb-0">
                               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                             </div>
                           </div>
@@ -117,22 +119,79 @@
             </div>
           </nav>
           <!--end navbar-->
-          <br>
+        
          
         <div class="row">
           
-            <div class="col-md-2 col-lg-2 mt-5">
-                <div class="card">
-                    <div class="card-header">
-                        sdsd
-                    </div>
-                </div>
+            <div class=" aside_pc bg-dark col-md-2 col-lg-2 mt-5">
+               
+                    
+                    <ul class="list-group list-group-flush bg-dark">
+                      <li class="list-group-item bg-dark text-light"> <i class="fa-solid fa-user-shield"></i> Admin Dashboard </li>
+                      <li class="list-group-item bg-dark text-light"><i class="fa-solid fa-file-signature me-2"></i> Admin name</li>
+                    </ul>
+                    <!-- <div class="card-body border-0"> -->
+                      <!---->
+                      <div class="accordion p-0 " id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button  bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                              <i class="fa-solid fa-book me-2"></i>   Môn thi
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body pt-0 pb-0 bg-dark">
+                             <!--list group-->
+                             <div class="list-group border-0 rounded-0">
+                                <!-- <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                  The current link item
+                                </a> -->
+                                <a href="#" class="border-0 bg-dark text-light list-group-item border-bottom-1 list-group-item-action"> <i class="fa-solid fa-list-check me-2"></i> Dah sách môn thi </a>
+                                <a href="#" class="border-0 bg-dark list-group-item text-light border-bottom-1 list-group-item-action"> <i class="fa-solid fa-circle-plus me-2"></i> Thêm môn thi</a>
+                                <a href="#" class="border-0 bg-dark list-group-item text-light border-bottom-1 list-group-item-action"> <i class="fa-solid fa-folder-plus me-2"></i> Thêm câu hỏi </a>
+                               
+                              </div>
+                             <!-- end list group-->
+
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item ">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="bg-dark text-light rounded-0 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                              <i class="fa-solid fa-user-plus me-2"></i> Thành viên
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body bg-dark pt-0 pb-0">
+                             
+                                <!--user-->
+                                <div class="list-group rounded-0 border-0">
+                                    <!-- <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                                      The current link item
+                                    </a> -->
+                                    <a href="#" class="border-0 bg-dark text-light list-group-item border-bottom-1 list-group-item-action"><i class="fa-solid fa-list-check me-2"></i> </i>Dah sách thành viên </a>
+                                    <a href="#" class="border-0 bg-dark text-light list-group-item border-bottom-1 list-group-item-action"><i class="fa-solid fa-circle-plus me-2"></i> Thêm thành viên</a>
+                                    <!-- <a href="#" class="border-0 list-group-item list-group-item-action">Thêm câu hỏi </a> -->
+                                   
+                                  </div>
+                                <!--end user-->
+
+                            </div>
+                          </div>
+                        </div>
+                    
+                      </div>
+                      <!---->
+                    <!-- </div> -->
+             
             </div>
-            <div class="col-12 col-md-10 col-lg-10">
-                <article class="mt-5">
+            <div class="col-12 col-md-10 col-lg-10 article_box">
+                <article class="article">
                     <h2>Danh sách thành viên</h2>
                   <table class="table ">
-                      <thead class="table-info mt-5">
+                      <thead class="table-secondary mt-5">
                           <tr>
                               <th scope="row">ID</th>
                               <th>Họ tên</th>

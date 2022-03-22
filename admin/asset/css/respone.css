@@ -1,0 +1,48 @@
+
+/* mobile */
+@media only screen and (max-width:46.1875em){
+    
+    .aside_pc{
+        display: none;
+        
+    }
+
+}
+    
+    /* tablet */
+    
+@media only screen and (min-width:46.25em) and (max-width: 63.9375em){
+   
+}
+    
+    /* PC */
+    @media only screen and (min-width:64em) {
+        .navbar-mobi{
+            display: none;
+        }
+       .aside_pc,
+       article{
+           margin:0 !important;
+           padding:0 8px;
+       }
+       .aside_pc{
+         
+           min-height: 100vh;
+       }
+       .article_box{
+           padding:0;
+           margin: 0;
+       }
+       .accordion-button{
+           outline:none !important;
+           border:none !important;
+           box-shadow: none !important;
+           margin:0 !important;
+       }
+     .accordion-item{
+      
+        border:none !important;
+    
+       
+     }
+    }
