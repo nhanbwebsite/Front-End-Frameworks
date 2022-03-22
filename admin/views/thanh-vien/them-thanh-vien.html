@@ -1,12 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app ="myApp" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Danh sách thành viên</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/respone.css">
+    <script src="../../../node_modules/angular/angular.js"></script>
+ 
+   
 </head>
-<body>
+<body ng-controller="myController">
+    <div class="container-fluid">
+        <nav class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5" ng-include="'../../layout/navbar.html'">
+           
+          </nav>
+          <!--end navbar-->
+        
+         
+        <div class="row">
+            <div class=" aside_pc bg-dark col-md-2 col-lg-2 mt-5" ng-include="'../../layout/aside.html'">
+                <!--include aside-->
+            </div>
+            <div class="col-12 col-md-10 col-lg-10 article_box">
+              <!--article-->
+                <article class="article">
+                    <h2>Thêm thành viên</h2>
+                
+                    <form>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput" class="form-label">Họ tên</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập họ tên">
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tên đăng nhập (viết liền không dấu)">
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Nhập địa chỉ email">
+                          </div>
+                          <div class="mb-3">
+                            <label for="formGroupExampleInput2" class="form-label">Địa chỉ</label>
+                            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Nhập địa chỉ">
+                          </div>
+                          <div class="mb-3">
+                            <button class="btn btn-primary">Thêm câu hỏi</button>
+                            <button type="reset" class="btn btn-primary">Làm mới</button>
+                          </div>
+                    </form>
+                
+                 
+                </article>
+                <!--end article-->
+            </div>
+        </div>
+    </div>
     
+    <script>
+          var app  = angular.module('myApp',[]);
+          app.controller('myController',function($scope){
+          
+          })
+    </script>
 </body>
 </html>
