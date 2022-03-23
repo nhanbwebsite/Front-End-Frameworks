@@ -44,4 +44,22 @@
     background-color:#129a85 !important;
 }
 
+.line_clamp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* line-height: 20px; */
+    -webkit-line-clamp: 6;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+}
+
+.line_clamp_title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* line-height: 20px; */
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
 
