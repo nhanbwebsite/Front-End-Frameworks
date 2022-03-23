@@ -1,84 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" ng-app="assignment">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../asset/css/footer.css">
     <script src="../../node_modules/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
+<body ng-controller="myController" class="p-0">
+    <div class="container-fluid p-0">
+            
+            <header ng-include="'../layout/header.html'" class="row header_box-container">
 
-<body>
-    <div class="container">
-        <div class="row">
-            <article class="artichle col-md-8 border-primary">
-                <div class="row">
-                    <div class="aside_images col-md-3">
-                        <img src="../../asset/images/contact.jpg" class="w-100" alt="">
-                    </div>
-                    <div class="col-md-9 mb-3">
-                        <div class="form-group">
-                            <div class="contact-text">
-                                <p class="fs-6 p-0 m-0 " style="width:1.rem;">Quý vị có thể gửi thư tới chúng tôi bằng cách hoàn tất biểu mẫu dưới đây. Để chúng
-                                    tôi có thể trả lời thư của Quý vị, xin vui lòng khai báo đầy đủ.</p>
-                                <p class="fs-6 p-0 m-0 " style="width:1.rem;">Thông tin liên hệ</p>
-                                <span>Email: info@fpt.edu.vn</span> | <span><a
-                                        href="tel:0924586125">0924586125</a></span>
-                            </div>
-                            <div class="mb-3">
-                                <label for="my-input">Tên đăng nhập *</label>
-                                <input id="my-input" class="form-control" type="text" name="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="my-input">Họ tên *</label>
-                                <input id="my-input" class="form-control" type="text" name="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label ">Email address *</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                            </div>
-                            <div class="mb-3"><label for="my-input">Số điện thoại *</label>
-                                <input id="my-input" class="form-control" type="number" name="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Nội dung</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                              </div>
-                            
-                            <div class="mb-3 d-flex justify-content-end">
-                                <button class="btn btn-sm btn-success px-3">Gữi thông tin</button>
-                            </div>
-                        </div>
+            </header>
+            <main style="min-height:80vh;" class="row mt-4 w-75 m-auto"ng-include="'../layout/lienhe.html'" >
 
-                    </div>
-
-                </div>
-            </article>
-            <aside class="aside col-md-4 ">
-                <h2 class="fs-6 ">Đề thi trắc nghiệm mới</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0"
-                            style="font-size: 0.9rem !important;">Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt
-                            nghiệp THPT môn Toán năm 2021</a></li>
-                    <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0"
-                            style="font-size: 0.9rem !important;">Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt
-                            nghiệp THPT môn Toán năm 2021</a></li>
-                    <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0"
-                            style="font-size: 0.9rem !important;">Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt
-                            nghiệp THPT môn Toán năm 2021</a></li>
-                    <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0"
-                            style="font-size: 0.9rem !important;">Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt
-                            nghiệp THPT môn Toán năm 2021</a></li>
-                    <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0"
-                            style="font-size: 0.9rem !important;">Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt
-                            nghiệp THPT môn Toán năm 2021</a></li>
-                </ul>
-            </aside>
-        </div>
+            </main>
+            <footer ng-include="'../layout/footer.html'" class="row py-2">
+        
+            </footer>
+        
     </div>
-</body>
 
+    <script>
+        var app = angular.module('assignment',[]);
+        app.controller('myController',function($scope){
+          
+        })
+    </script>
+</body>
 </html>
