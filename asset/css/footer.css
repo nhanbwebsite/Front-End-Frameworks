@@ -23,3 +23,25 @@
 .wrap_in4{
     background-color: #F2F2F2;
 }
+
+.bg-header{
+    background-color: #14b39b !important;
+}
+
+.list-group-item-action-hover:hover{
+    background-color:#129a85 !important;
+}
+
+.list-group-item-action-hover:active {
+    background-color:#129a85 !important;
+}
+
+.list-group-item-action-hover:visited {
+    background-color:#37bba7 !important;
+}
+
+.list-group-item-action-hover:focus {
+    background-color:#129a85 !important;
+}
+
+

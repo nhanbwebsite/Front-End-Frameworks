@@ -1,144 +1,187 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-</head>
+  <div class="header-menu-top bg-gradient">
+      <ul class="nav d-flex justify-content-center list-group-item-secondary  fs-6 p-0">
+          <li class="nav-item text-light">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Học trực tuyến</a>
+          </li>
+          <li class="nav-item text-light">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Hỏi đáp</a>
+          </li>
+          <li class="nav-item text-light">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Tài liệu học tập</a>
+          </li>
+          <li class="nav-item text-light">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Tuyển sinh</a>
+          </li>
+          <li class="nav-item text-light">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Trường học</a>
+          </li>
+          <li class="nav-item text-light">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Top 5 ngôn ngữ lập trình hot 2022</a>
+          </li>
+          <li class="nav-item text-light">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Liên hệ</a>
+          </li>
+          <li class="nav-item text-light">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Hướng dẫn sử dụng</a>
+          </li>
+          <li class="nav-item text-light dropdown">
+              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Kiến thức
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Đang nhập</a></li>
+                  <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                  <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+                  <li>
+                      <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                  <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                  <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
+                  <li>
+                      <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
+                  <li><a class="dropdown-item" href="#">Hàng đã mua</a></li>
+              </ul>
+          </li>
+      </ul>
+  </div>
+  <div class="header-menu-center_content">
+      <div class="row d-flex justify-content-center m-2">
+          <div class="col-sm-12 col-md-3 logo">
+              <img style="width:150px" src="../../asset/images/logo/logo2.png" alt="">
+          </div>
+          <div class="col-8 find-login-box d-flex justify-content-end align-items-center">
+              <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-search"></i> Tìm kiếm
+                  thông tin</a>
+              <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-person-fill"></i> Đăng
+                  nhập</a>
+              <a href="" class="text-success p-3 text-decoration-none">Quên mật khẩu</a>
+              <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-person-plus-fill"></i>
+                  Đăng ký</a>
+          </div>
 
-<body>
-    <div class="container-fluid p-0">
-        <header class="header_box-container">
-            <div class="header-menu-top bg-gradient ">
-                <ul class="nav d-flex justify-content-center list-group-item-secondary  fs-6 p-0">
-                    <li class="nav-item text-light">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Học trực tuyến</a>
-                    </li>
-                    <li class="nav-item text-light">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Hỏi đáp</a>
-                    </li>
-                    <li class="nav-item text-light">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Tài liệu học tập</a>
-                    </li>
-                    <li class="nav-item text-light">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Tuyển sinh</a>
-                    </li>
-                    <li class="nav-item text-light">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Trường học</a>
-                    </li>
-                    <li class="nav-item text-light">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Mặt ngữ 12 chòm sao</a>
-                    </li>
-                    <li class="nav-item text-light">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Nhìn hình đoán chữ</a>
-                    </li>
-                    <li class="nav-item text-light">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Hướng dẫn sử dụng</a>
-                    </li>
-                    <li class="nav-item text-light dropdown">
-                        <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6  dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Kiến thức
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Đang nhập</a></li>
-                            <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
-                            <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
-                            <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
-                            <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
-                            <li><a class="dropdown-item" href="#">Hàng đã mua</a></li>
-                        </ul>
-                    </li>
-                </ul>
+      </div>
+  </div>
+  <div class="header-menu-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-info bg-header pt-0 pb-0">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse mx-md-5" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-4">
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">HTML5 & CSS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light list-group-item-action list-group-item-action-hover" aria-current="page" href="#">Javascript</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Jquery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Typescript</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Bootstrap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Reactjs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Nodejs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">SQL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">PHP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Laravel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Vuejs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Ruby</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Python</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Dart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Java</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">C#</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">swift</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Github</a>
+                </li>
+               
+              </ul>
             </div>
-            <div class="header-menu-center_content">
-                <div class="row d-flex justify-content-center m-2">
-                    <div class="col-sm-12 col-md-3 logo">
-                        <img style="width:150px" src="../../asset/images/logo/logo2.png" alt="">
-                    </div>
-                    <div class="col-8 find-login-box d-flex justify-content-end align-items-center">
-                        <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-search"></i> Tìm kiếm
-                            thông tin</a>
-                        <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-person-fill"></i> Đăng
-                            nhập</a>
-                        <a href="" class="text-success p-3 text-decoration-none">Quên mật khẩu</a>
-                        <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-person-plus-fill"></i>
-                            Đăng ký</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="header-menu-bottom">
-                <nav class="navbar navbar-expand-lg navbar-light bg-info">
-                    <div class="container-fluid">
-                      <div class="collapse navbar-collapse mx-md-5" id="navbarNavDropdown">
-                        <ul class="navbar-nav mx-4">
-                          <li class="nav-item">
-                            <a class="nav-link text-light" aria-current="page" href="#">Toán học</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Vật lý</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Hóa học</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Sinh học</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Địa lý</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Lịch sử</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Giáo dục công dân</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Tiếng anh</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Ngữ văn</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Tin học</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Funny text</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Giao thông</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Tất cả đề thi</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link  text-light" href="#">Toán tiếng anh</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-            </div>
-            
-        </header>
-    </div>
-</body>
-
-</html>
+          </div>
+        </nav>
+  </div>
+  
+ <!--
+      <ul class="navbar-nav mx-4">
+                <li class="nav-item">
+                  <a class="nav-link text-light list-group-item-action list-group-item-action-hover" aria-current="page" href="#">Javascript</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Jquery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Typescript</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Bootstrap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Reactjs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Nodejs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">SQL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">PHP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Laravel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Vuejs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Ruby</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Python</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Dart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Java</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">C#</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Toán tiếng anh</a>
+                </li>
+              </ul>
+  -->
