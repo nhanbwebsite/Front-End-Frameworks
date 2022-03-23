@@ -1,6 +1,6 @@
-footer{
+/* footer{
     background-color: #F2F2F2;
-}
+} */
 .in4{
     font-size: 13px;
     color: #4f4f4f;
@@ -19,4 +19,7 @@ footer{
 .list_link_tests li a{
     text-decoration: none;
     color: #666;
+}
+.wrap_in4{
+    background-color: #F2F2F2;
 }
