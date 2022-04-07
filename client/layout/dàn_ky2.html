@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Đăng nhập</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập tên tài khoản">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+              </div>
+            
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Đăng nhập</button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Đăng ký tài khoản</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel2">Đăng ký</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập tên tài khoản">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Xác nhận mật khẩu</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Địa chỉ email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Số điện thoại</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Đăng ký</button>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Về form đăng nhập</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+
+    </div>
+    
+
+</body>
+</html>
