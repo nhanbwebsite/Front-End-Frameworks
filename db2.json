@@ -136,7 +136,7 @@
     "quiz": [
         {
             "Id": 25106,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Có mấy loại Service?",
             "Marks": 1,
             "AnswerId": 104121,
@@ -161,7 +161,7 @@
           },
           {
             "Id": 25107,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Trong IntentService, phương thức onHandlerIntent sẽ được tự động gọi trong phương thức nào?",
             "Marks": 1,
             "AnswerId": 104124,
@@ -186,7 +186,7 @@
           },
           {
             "Id": 25108,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Khi nào phương thức ServiceConnection.onServiceConnected được gọi?",
             "Marks": 1,
             "AnswerId": 104126,
@@ -211,7 +211,7 @@
           },
           {
             "Id": 25109,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức Service.stopSelf(int startId) có tham số kiểu int. Tham số này dùng để làm gì?",
             "Marks": 1,
             "AnswerId": 104132,
@@ -236,7 +236,7 @@
           },
           {
             "Id": 25110,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Câu nào là đúng khi đề cập đến Service?",
             "Marks": 1,
             "AnswerId": 104137,
@@ -261,7 +261,7 @@
           },
           {
             "Id": 25111,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Trong IntentService, onBind mặc định trả lại giá trị nào?",
             "Marks": 1,
             "AnswerId": 104139,
@@ -286,7 +286,7 @@
           },
           {
             "Id": 25112,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức stopSelf dùng để làm gì?",
             "Marks": 1,
             "AnswerId": 104145,
@@ -311,7 +311,7 @@
           },
           {
             "Id": 25113,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức onStartCommand được gọi khi nào?",
             "Marks": 1,
             "AnswerId": 104149,
@@ -336,7 +336,7 @@
           },
           {
             "Id": 25114,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Bạn nên giải phóng tài nguyên mà Service sử dụng trong phương thức nào?",
             "Marks": 1,
             "AnswerId": 104152,
@@ -361,7 +361,7 @@
           },
           {
             "Id": 25115,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để hủy Service dùng phương thức nào?",
             "Marks": 1,
             "AnswerId": 104155,
@@ -386,7 +386,7 @@
           },
           {
             "Id": 25116,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Làm thế nào để disable một Broadcast Receiver khi nó đã được đăng ký trong AndroidManifest.xml?",
             "Marks": 1,
             "AnswerId": 104161,
@@ -411,7 +411,7 @@
           },
           {
             "Id": 25117,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Có mấy cách phát, nhận broadcast receiver?",
             "Marks": 1,
             "AnswerId": 104163,
@@ -436,7 +436,7 @@
           },
           {
             "Id": 25118,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Khi sử dụng Intent.ACTION_BOOT_COMPLETED, hệ thống sẽ broadcast mấy lần?",
             "Marks": 1,
             "AnswerId": 104167,
@@ -461,7 +461,7 @@
           },
           {
             "Id": 25119,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Vòng đời của Broadcast Receiver bao gồm mấy phương thức?",
             "Marks": 1,
             "AnswerId": 104170,
@@ -486,7 +486,7 @@
           },
           {
             "Id": 25120,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Lệnh sau dùng để làm gì?                                                                                   \u003creceiver             android:name=\".MyCallReceiver\"             android:exported=\"false\" \u003e  \u003c/receiver\u003e",
             "Marks": 1,
             "AnswerId": 104177,
@@ -511,7 +511,7 @@
           },
           {
             "Id": 25121,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Nếu ứng dụng của bạn ở trạng thái foreground, bạn chỉ muốn ứng dụng chỉ nhận broadcast nhất định khi nó active, bạn phải làm gì?",
             "Marks": 1,
             "AnswerId": 104181,
@@ -536,7 +536,7 @@
           },
           {
             "Id": 25122,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Broadcast Intent thông thường sẽ biến mất khi hệ thống xử lý xong?",
             "Marks": 1,
             "AnswerId": 104183,
@@ -553,7 +553,7 @@
           },
           {
             "Id": 25123,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức onReceive có mấy tham số đầu vào?",
             "Marks": 1,
             "AnswerId": 104184,
@@ -578,7 +578,7 @@
           },
           {
             "Id": 25124,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức nào được sử dụng để gửi broadcast intent mà intent này sẽ không mất đi sau khi hệ thống xử lý?",
             "Marks": 1,
             "AnswerId": 104191,
@@ -603,7 +603,7 @@
           },
           {
             "Id": 25125,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để nhận thông tin người dùng qua wifi, phải sử dụng gì?",
             "Marks": 1,
             "AnswerId": 104192,
@@ -628,7 +628,7 @@
           },
           {
             "Id": 25126,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức callback nào gọi khi vị trí người dùng thay đổi?",
             "Marks": 1,
             "AnswerId": 104196,
@@ -653,7 +653,7 @@
           },
           {
             "Id": 25127,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Khi tạo ứng dụng trên trang developer của Facebook, ngoài thông tin username và password, người dùng phải nhập thêm thông tin gì?",
             "Marks": 1,
             "AnswerId": 104203,
@@ -678,7 +678,7 @@
           },
           {
             "Id": 25128,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để đăng nhập ứng dụng Facebook từ ứng dụng Android, Facebook SDK yêu cầu gì?",
             "Marks": 1,
             "AnswerId": 104207,
@@ -703,7 +703,7 @@
           },
           {
             "Id": 25129,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Có thể cài đặt ứng dụng native Facebook trên Emulator không?",
             "Marks": 1,
             "AnswerId": 104208,
@@ -720,7 +720,7 @@
           },
           {
             "Id": 25130,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để lấy thông tin vị trí người dùng sử dụng GPS_PROVIDER, phải thêm permission nào vào Android manifest file?",
             "Marks": 1,
             "AnswerId": 104213,
@@ -745,7 +745,7 @@
           },
           {
             "Id": 25131,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để đăng nhập ứng dụng Facebook từ ứng dụng Android, phải thêm Activity nào vào Android manifest?",
             "Marks": 1,
             "AnswerId": 104215,
@@ -770,7 +770,7 @@
           },
           {
             "Id": 25132,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Có thể gửi dữ liệu người dùng giả tới Emulator thông qua DDMS không?",
             "Marks": 1,
             "AnswerId": 104218,
@@ -787,7 +787,7 @@
           },
           {
             "Id": 25133,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Địa chỉ trang web nào cung cấp facebook sdk cho ứng dụng Android?",
             "Marks": 1,
             "AnswerId": 104222,
@@ -812,7 +812,7 @@
           },
           {
             "Id": 25134,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức getLastKnownLocation của LocationManager dùng để làm gì?",
             "Marks": 1,
             "AnswerId": 104226,
@@ -837,7 +837,7 @@
           },
           {
             "Id": 25135,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Media Player có hỗ trợ một số listener để tương tác với Player?",
             "Marks": 1,
             "AnswerId": 104229,
@@ -854,7 +854,7 @@
           },
           {
             "Id": 25136,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Dùng phương thức gì để cho phép media process thao tác với camera?",
             "Marks": 1,
             "AnswerId": 104230,
@@ -879,7 +879,7 @@
           },
           {
             "Id": 25137,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Google cloud messaging cho phép gửi thông điệp đến tối đa bao nhiêu người?",
             "Marks": 1,
             "AnswerId": 104237,
@@ -904,7 +904,7 @@
           },
           {
             "Id": 25138,
-             "idQuiz":1,
+             "IdSubject":1,
             "Text": "Quyền nào là cần thiết để ứng dụng có thể lưu ảnh chụp của Camera trên SD card?",
             "Marks": 1,
             "AnswerId": 104238,
@@ -929,7 +929,7 @@
           },
           {
             "Id": 25139,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức nào của Camera được sử dụng để lấy các thông số thiết lập cho Camera?",
             "Marks": 1,
             "AnswerId": 104245,
@@ -954,7 +954,7 @@
           },
           {
             "Id": 25140,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Lớp nào hỗ trợ xây dựng backup agent?",
             "Marks": 1,
             "AnswerId": 104249,
@@ -979,7 +979,7 @@
           },
           {
             "Id": 25141,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Khi kết thúc quay phim, sử dụng phương thức nào để khóa camera?",
             "Marks": 1,
             "AnswerId": 104250,
@@ -1004,7 +1004,7 @@
           },
           {
             "Id": 25142,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Media Player có thể play mọi loại file audio?",
             "Marks": 1,
             "AnswerId": 104254,
@@ -1021,7 +1021,7 @@
           },
           {
             "Id": 25143,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Sử dụng phương thức gì của Camera để nhận thông tin của Camera?",
             "Marks": 1,
             "AnswerId": 104259,
@@ -1046,7 +1046,7 @@
           },
           {
             "Id": 25144,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức nào được gọi để ngừng cập nhật preview surface?",
             "Marks": 1,
             "AnswerId": 104263,
@@ -1071,7 +1071,7 @@
           },
           {
             "Id": 25145,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Loại Animation nào chỉ sử dụng được cho View?",
             "Marks": 1,
             "AnswerId": 104265,
@@ -1096,7 +1096,7 @@
           },
           {
             "Id": 25146,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phải thiết lập thuộc tính nào bằng true để hỗ trợ tạo hoạt hình cho ViewGroup?",
             "Marks": 1,
             "AnswerId": 104268,
@@ -1121,7 +1121,7 @@
           },
           {
             "Id": 25147,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Đối với drawable animation, phải thiết lập giá trị của thuộc tính android:oneshot bằng true đối với animation-list để làm gì?",
             "Marks": 1,
             "AnswerId": 104272,
@@ -1146,7 +1146,7 @@
           },
           {
             "Id": 25148,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Android có hỗ trợ khai báo animation trong XML hay không?",
             "Marks": 1,
             "AnswerId": 104276,
@@ -1163,7 +1163,7 @@
           },
           {
             "Id": 25149,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Trong animation, có thể định nghĩa tối đa bao nhiêu frame?",
             "Marks": 1,
             "AnswerId": 104280,
@@ -1188,7 +1188,7 @@
           },
           {
             "Id": 25150,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Khái niệm nào đề cập đến cặp gồm thời gian và giá trị để định nghĩa trạng thái xác định tại thời gian xác định của animation?",
             "Marks": 1,
             "AnswerId": 104285,
@@ -1213,7 +1213,7 @@
           },
           {
             "Id": 25151,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "File XML liệt kê danh sách frame tạo nên animation nằm trong thư mục nào?",
             "Marks": 1,
             "AnswerId": 104289,
@@ -1238,7 +1238,7 @@
           },
           {
             "Id": 25152,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "ObjectAnimator là lớp con của lớp nào?",
             "Marks": 1,
             "AnswerId": 104290,
@@ -1263,7 +1263,7 @@
           },
           {
             "Id": 25153,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Khi khai báo Broadcast Receiver để nhận biết sự thay đổi kết nối mạng của thiết bị, bạn có thể disable broadcast receiver không?",
             "Marks": 1,
             "AnswerId": 104294,
@@ -1280,7 +1280,7 @@
           },
           {
             "Id": 25154,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Lệnh nào để kiểm tra kết nối 3G của thiết bị?",
             "Marks": 1,
             "AnswerId": 104298,
@@ -1305,7 +1305,7 @@
           },
           {
             "Id": 25155,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để trích xuất dữ liệu link trong XML, phải sử dụng phương thức nào của XmlPullParser?",
             "Marks": 1,
             "AnswerId": 104303,
@@ -1330,7 +1330,7 @@
           },
           {
             "Id": 25156,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Bạn hãy cho biết kết quả khi thực hiện gọi phương thức sau? private String readLink(XmlPullParser parser) throws IOException, XmlPullParserException {         String link = \"\";         parser.require(XmlPullParser.START_TAG, ns, \"link\");         String ta",
             "Marks": 1,
             "AnswerId": 104305,
@@ -1355,7 +1355,7 @@
           },
           {
             "Id": 25157,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Tại sao phải sử dụng AsyncTask để phân tích dữ liệu XML?",
             "Marks": 1,
             "AnswerId": 104310,
@@ -1380,7 +1380,7 @@
           },
           {
             "Id": 25158,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Broadcast Receiver xử lý dữ liệu XML trên mạng cần được đăng ký trong phương thức nào?",
             "Marks": 1,
             "AnswerId": 104315,
@@ -1405,7 +1405,7 @@
           },
           {
             "Id": 25159,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phím tắt nào dùng để tắt bật kết nối mạng trên Emulator?",
             "Marks": 1,
             "AnswerId": 104318,
@@ -1430,7 +1430,7 @@
           },
           {
             "Id": 25160,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Kiểu nào không nằm trong lớp ConnectivityManager?",
             "Marks": 1,
             "AnswerId": 104323,
@@ -1455,7 +1455,7 @@
           },
           {
             "Id": 25161,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để phân tích XML, bạn sẽ sử dụng lớp nào?",
             "Marks": 1,
             "AnswerId": 104325,
@@ -1480,7 +1480,7 @@
           },
           {
             "Id": 25162,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để thực hiện đọc file XML trên SD Card, bạn phải bổ sung thêm quyền gì trong AndroidManifest.xml?",
             "Marks": 1,
             "AnswerId": 104328,
@@ -1505,7 +1505,7 @@
           },
           {
             "Id": 25163,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Contacts Provider cung cấp mấy loại dữ liệu về person?",
             "Marks": 1,
             "AnswerId": 104334,
@@ -1530,7 +1530,7 @@
           },
           {
             "Id": 25164,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Trong ứng dụng bạn sử dụng lớp nào để truy xuất thông tin Contact?",
             "Marks": 1,
             "AnswerId": 104338,
@@ -1555,7 +1555,7 @@
           },
           {
             "Id": 25165,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Hằng số nào dùng để thấy thông tin Contact có số phone hay không?",
             "Marks": 1,
             "AnswerId": 104340,
@@ -1580,7 +1580,7 @@
           },
           {
             "Id": 25166,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Content URI nào được sử dụng để lấy thông tin email của Contact?",
             "Marks": 1,
             "AnswerId": 104347,
@@ -1605,7 +1605,7 @@
           },
           {
             "Id": 25167,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Có thể thêm Contact vào Emulator hay không?",
             "Marks": 1,
             "AnswerId": 104348,
@@ -1622,7 +1622,7 @@
           },
           {
             "Id": 25168,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Content URI nào được sử dụng để lấy thông tin phone của Contact?",
             "Marks": 1,
             "AnswerId": 104352,
@@ -1647,7 +1647,7 @@
           },
           {
             "Id": 25169,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Bảng nào cung cấp thông tin về person như thông tin dữ liệu về person, như user account và type?",
             "Marks": 1,
             "AnswerId": 104356,
@@ -1672,7 +1672,7 @@
           },
           {
             "Id": 25170,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Hãy cho biết kết quả khi thực hiện lệnh sau: Cursor phoneCursor = contentResolver.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI,        null,        Phone_CONTACT_ID + \" = ?\",        new String[] { contact_id }, null);",
             "Marks": 1,
             "AnswerId": 104360,
@@ -1697,7 +1697,7 @@
           },
           {
             "Id": 25171,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Contacts Provider có hỗ trợ xóa thông tin một contact trong thiết bị hay không?",
             "Marks": 1,
             "AnswerId": 104363,
@@ -1714,7 +1714,7 @@
           },
           {
             "Id": 25172,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phương thức nào của ContentResolver để cập nhật thông tin cho nhiều Contact cùng lúc?",
             "Marks": 1,
             "AnswerId": 104364,
@@ -1739,7 +1739,7 @@
           },
           {
             "Id": 25173,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để lấy thông tin SHA1 fingerprint, phải sử dụng công cụ nào?",
             "Marks": 1,
             "AnswerId": 104368,
@@ -1764,7 +1764,7 @@
           },
           {
             "Id": 25174,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Thư mục nào chứa code project Google Play Service?",
             "Marks": 1,
             "AnswerId": 104372,
@@ -1789,7 +1789,7 @@
           },
           {
             "Id": 25175,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Làm thế nào để cài đặt Google Play Service?",
             "Marks": 1,
             "AnswerId": 104378,
@@ -1814,7 +1814,7 @@
           },
           {
             "Id": 25176,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Địa chỉ trang web nào cung cấp Google Play API cho ứng dụng sử dụng Google Map?",
             "Marks": 1,
             "AnswerId": 104380,
@@ -1839,7 +1839,7 @@
           },
           {
             "Id": 25177,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Khi tạo ứng dụng trên google console, bạn phải kích hoạt chức năng nào cho project để ứng dụng có thể hiển thị google map?",
             "Marks": 1,
             "AnswerId": 104386,
@@ -1864,7 +1864,7 @@
           },
           {
             "Id": 25178,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Phải tải và cấu hình SDK nào để có thể sử dụng Google Map Android API?",
             "Marks": 1,
             "AnswerId": 104390,
@@ -1889,7 +1889,7 @@
           },
           {
             "Id": 25179,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Trong các quyền dưới đây, quyền nào không cần thiết để hiển thị Google Map?",
             "Marks": 1,
             "AnswerId": 104392,
@@ -1914,7 +1914,7 @@
           },
           {
             "Id": 25180,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Để nhận API key cho phép hiển thị map trong ứng dụng, trang nào được sử dụng để nhận API key?",
             "Marks": 1,
             "AnswerId": 104396,
@@ -1939,7 +1939,7 @@
           },
           {
             "Id": 25181,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Trong Eclipse, làm thế nào để biết được đường dẫn của debug keystore?",
             "Marks": 1,
             "AnswerId": 104401,
@@ -1964,7 +1964,7 @@
           },
           {
             "Id": 25182,
-            "idQuiz":1,
+            "IdSubject":1,
             "Text": "Google Map Android API đòi hỏi thư viện nào để hiển thị Map?",
             "Marks": 1,
             "AnswerId": 104405,
