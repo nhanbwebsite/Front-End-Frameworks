@@ -1,185 +1,560 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="assignment">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../asset/css/footer.css">
+    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="../../asset/css/footer.css" />
     <script src="../../node_modules/angular/angular.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</head>
-<body ng-controller="myController" class="p-0">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body ng-controller="myController" class="p-0">
     <div class="container-fluid p-0">
-            
-            <header ng-include="'../layout/header.html'" class="row header_box-container">
-            </header>
-            <main  class="mt-4 w-75 m-auto">
-               <h4 class="text-danger">Đề thi online</h4>
-               <hr>
-                <div class="row">
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                          <a href="./baithi.html"><img src="../../asset/images/monthi/ADAV.jpg" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Lập trình Android nâng cao</a></h5>
-                              <p class="card-text line_clamp">Bổ sung kiến thức về các thành phần của một ứng dụng Android. Bao gồm Fragment, Menu, Binding, Animation, đa tuyến, Google Map, Sensor, Google Play + service. Tất cả đều rất quan trọng, nếu thiếu sự hiểu biết về chúng sẽ khó khăn trong việc phát triển một ứng dụng Android. </p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                            
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/ADBS.jpg" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Lập trình Android cơ bản</a></h5>
-                              <p class="card-text line_clamp">Lập trình Android đang dần trở thành xu thế mới trong lĩnh vực IT. Khi sự tăng trưởng vượt bậc về số lượng của các thiết bị smartphone. </p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/ADTE.jpg" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Kiểm thử và triển khai ứng dụng Android & CSS3</a></h5>
-                              <p class="card-text line_clamp">Phần mềm không chỉ phải thực hiện chính xác các tác vụ, hiệu quả mà còn phải dễ dàng sử dụng, có thiết kế đẹp mắt và tương thích với hệ sinh thái trên các hệ điều hành của thiết bị thông minh</p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/ADBS.jpg" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Thiết kế giao diện trên Android</a></h5>
-                              <p class="card-text line_clamp">Giao diện người dùng (user interfaces – UI) của các ứng dụng Android phải được thiết kế sao cho tương thích với với các thiết bị di động như điện thoại thông minh hay máy tính bảng có kích thước khác nhau. </p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/ASNE.png" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Lập trình ASP.NET</a></h5>
-                              <p class="card-text line_clamp">ASP.NET là một khung ứng dụng web được thiết kế và phát triển bởi Microsoft. Nó là ngôn ngữ mã nguồn mở và là một tập hợp con của .NET Framework và là sự kế thừa của ASP cổ điển (Active Server Pages).   </p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/CLCO.jpg" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Điện toán đám mây</a></h5>
-                              <p class="card-text line_clamp">Điện toán đám mây là việc phân phối các tài nguyên CNTT theo nhu cầu qua Internet với chính sách thanh toán theo mức sử dụng. Thay vì mua, sở hữu và bảo trì các trung tâm dữ liệu và máy chủ vật lý, bạn có thể tiếp cận các dịch vụ công nghệ, như năng lượng điện toán, lưu trữ và cơ sở dữ liệu, khi cần thiết, từ nhà cung cấp dịch vụ đám mây như Amazon Web Services (AWS)./p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/DBAV.png" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >SQL Server</a></h5>
-                              <p class="card-text line_clamp">SQL Server là phần mềm chuyên gia về quản lí dữ liệu do Microsoft phát hành. Nó cung cấp cho người dùng, doanh nghiệp một cơ sở dữ liệu được bảo mật , hiệu suất cao và thông minh..</p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/DBBS.png" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Cơ sở dữ liệu</a></h5>
-                              <p class="card-text line_clamp">Cơ sở dữ liệu (Database) là một tập hợp các dữ liệu có tổ chức, thường được lưu trữ và truy cập điện tử từ hệ thống máy tính. Khi cơ sở dữ liệu phức tạp hơn, chúng thường được phát triển bằng cách sử dụng các kỹ thuật thiết kế và mô hình hóa chính thức..</p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/GAME.png" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Lập trình game 2D</a></h5>
-                              <p class="card-text line_clamp">làm quen với một vài kỹ thuật đơn giản trong lập trình Game 2D Android.</p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/HTCS.jpg" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >HTML5 và CSS3</a></h5>
-                              <p class="card-text line_clamp"> HTML5 và CSS3 không chỉ hỗ trợ mỗi tính năng video không cần Plugin phụ trợ nhưng đây là cải tiến có ý nghĩa nhất.</p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/INMA.jpg" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Internet Marketing</a></h5>
-                              <p class="card-text line_clamp">Internet Marketing – còn được biết đến bằng các thuật ngữ web marketing, online marketing, hay e-marketing – là một hình thức marketing cho sản phẩm hay dịch vụ trên môi trường Internet.</p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                    <div class="col-12 col-sm-4 col-lg-3">
-                        <div class="card mb-3">
-                            <a href="./baithi.html"><img src="../../asset/images/monthi/JAAV.png" class="card-img-top" alt="..."></a>
-                            <div style="min-height: 160px !important;" class="card-body">
-                              <h5 class="card-title"><a class="text-decoration-none line_clamp_title fs-6" href="#" >Lập trình Java nâng cao</a></h5>
-                              <p class="card-text line_clamp">Java là ngôn ngữ lập trình hàng đầu, gần 90% các công ty lớn trên thế như các ông lớn Google, Amazon đều sử dụng Java để làm ứng dụng Desktop và Backend cho hệ thống Website của họ..</p>
-                            </div>
-                            <ul class="list-group list-group-flush text-center">
-                              <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
-                            </ul>
-                          </div>
-                    </div>
-                </div>
+      <header  class="row header_box-container">
+        
+  <div class="header-menu-top bg-gradient">
+    <ul class="nav d-flex justify-content-center list-group-item-secondary  fs-6 p-0">
+        <li class="nav-item text-light">
+            <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Học trực tuyến</a>
+        </li>
+        <li class="nav-item text-light">
+            <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Hỏi đáp</a>
+        </li>
+        <li class="nav-item text-light">
+            <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Tài liệu học tập</a>
+        </li>
+        <li class="nav-item text-light">
+            <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Tuyển sinh</a>
+        </li>
+        <li class="nav-item text-light">
+            <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Trường học</a>
+        </li>
+       
+        <li class="nav-item text-light">
+            <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Liên hệ</a>
+        </li>
+        <li class="nav-item text-light">
+            <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Hướng dẫn sử dụng</a>
+        </li>
+        <li class="nav-item text-light dropdown">
+            <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6  dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Kiến thức
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+              
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
                
-            </main>
-            <footer ng-include="'../layout/footer.html'" class="row py-2">
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="header-menu-center_content">
+    <div class="row d-flex justify-content-center m-2">
+        <div class="col-sm-12 col-md-3 logo">
+            <img style="width:150px" src="../../asset/images/logo/logo2.png" alt="">
+        </div>
+        <div class="col-8 find-login-box d-flex justify-content-end align-items-center">
+           <span class="box__dk-dn-item">
+            <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-search"></i> Tìm kiếm
+              thông tin</a>
+          <a href="#exampleModalToggle" data-bs-toggle="modal" class="text-success p-3 text-decoration-none"><i class="bi bi-person-fill"></i> Đăng
+            nhập</a>
+            <a href="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" class="text-success p-3 text-decoration-none"><i class="bi bi-person-plus-fill"></i>
+                Đăng ký</a>
+                <a href="" class="text-success p-3 text-decoration-none">Quên mật khẩu</a>
+              </span>
+           
+                 
+           
+        </div>
+
+    </div>
+</div>
+
+<!--form đăng ký đăng nhập-->
+
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel">Đăng nhập</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="formDn">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
+            <input type="text" ng-model="username" class="form-control" id="formGroupExampleInput" placeholder="Nhập tên tài khoản">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
+            <input type="text" ng-model="password" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+          </div>
         
-            </footer>
-        
+          <div class="col-12">
+            <button type="" ng-click="btnDN()" class="btn btn-secondary">Đăng nhập</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Đăng ký tài khoản</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalToggleLabel2">Đăng ký</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form name ="formDK" id="formDK">
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Họ và tên</label>
+            <input type="text" class="form-control" name ="fullname" ng-model = "fullname" id="formGroupExampleInput2" placeholder="Nhập họ và tên">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
+            <input type="text" class="form-control" name = "username" ng-model = "username" id="formGroupExampleInput" placeholder="Nhập tên tài khoản">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
+            <input type="password" class="form-control" name = "password" ng-model = "password" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2"  class="form-label">Xác nhận mật khẩu</label>
+            <input type="text" class="form-control" name = "confirmpassword" ng-model = "confirmpassword" id="formGroupExampleInput2" placeholder="Nhập lại mật khẩu">
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Địa chỉ email</label>
+            <input type="text" class="form-control"  name = "email" ng-model="email" id="formGroupExampleInput2" placeholder="Nhập địa chỉ email">
+          </div>
+          <div class="col-12">
+            <button  ng-click="dangKyTK()" class="btn btn-primary">Đăng ký</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Về form đăng nhập</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Kết thúc đăng ký đăng nhập-->
+
+
+<div class="header-menu-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info bg-header pt-0 pb-0">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse mx-md-5 justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-4">
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">HTML5 & CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light list-group-item-action list-group-item-action-hover" aria-current="page" href="#">Javascript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Jquery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Reactjs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Nodejs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">SQL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">PHP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Laravel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Vuejs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Ruby</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Python</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Dart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Java</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">C#</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">swift</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Github</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+</div>
+
+      </header>
+      <main class="mt-4 w-75 m-auto">
+        <h4 class="text-danger">Đề thi online</h4>
+
+        <hr />
+        <div class="row">
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/ADAV.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Lập trình Android nâng cao</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  Bổ sung kiến thức về các thành phần của một ứng dụng Android.
+                  Bao gồm Fragment, Menu, Binding, Animation, đa tuyến, Google
+                  Map, Sensor, Google Play + service. Tất cả đều rất quan trọng,
+                  nếu thiếu sự hiểu biết về chúng sẽ khó khăn trong việc phát
+                  triển một ứng dụng Android.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/ADBS.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Lập trình Android cơ bản</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  Lập trình Android đang dần trở thành xu thế mới trong lĩnh vực
+                  IT. Khi sự tăng trưởng vượt bậc về số lượng của các thiết bị
+                  smartphone.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/ADTE.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Kiểm thử và triển khai ứng dụng Android & CSS3</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  Phần mềm không chỉ phải thực hiện chính xác các tác vụ, hiệu
+                  quả mà còn phải dễ dàng sử dụng, có thiết kế đẹp mắt và tương
+                  thích với hệ sinh thái trên các hệ điều hành của thiết bị
+                  thông minh
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/ADBS.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Thiết kế giao diện trên Android</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  Giao diện người dùng (user interfaces – UI) của các ứng dụng
+                  Android phải được thiết kế sao cho tương thích với với các
+                  thiết bị di động như điện thoại thông minh hay máy tính bảng
+                  có kích thước khác nhau.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/ASNE.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Lập trình ASP.NET</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  ASP.NET là một khung ứng dụng web được thiết kế và phát triển
+                  bởi Microsoft. Nó là ngôn ngữ mã nguồn mở và là một tập hợp
+                  con của .NET Framework và là sự kế thừa của ASP cổ điển
+                  (Active Server Pages).
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/CLCO.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Điện toán đám mây</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  Điện toán đám mây là việc phân phối các tài nguyên CNTT theo
+                  nhu cầu qua Internet với chính sách thanh toán theo mức sử
+                  dụng. Thay vì mua, sở hữu và bảo trì các trung tâm dữ liệu và
+                  máy chủ vật lý, bạn có thể tiếp cận các dịch vụ công nghệ, như
+                  năng lượng điện toán, lưu trữ và cơ sở dữ liệu, khi cần thiết,
+                  từ nhà cung cấp dịch vụ đám mây như Amazon Web Services
+                  (AWS)./p>
+                </p>
+              </div>
+
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/DBAV.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >SQL Server</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  SQL Server là phần mềm chuyên gia về quản lí dữ liệu do
+                  Microsoft phát hành. Nó cung cấp cho người dùng, doanh nghiệp
+                  một cơ sở dữ liệu được bảo mật , hiệu suất cao và thông minh..
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/DBBS.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Cơ sở dữ liệu</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  Cơ sở dữ liệu (Database) là một tập hợp các dữ liệu có tổ
+                  chức, thường được lưu trữ và truy cập điện tử từ hệ thống máy
+                  tính. Khi cơ sở dữ liệu phức tạp hơn, chúng thường được phát
+                  triển bằng cách sử dụng các kỹ thuật thiết kế và mô hình hóa
+                  chính thức..
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/GAME.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Lập trình game 2D</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  làm quen với một vài kỹ thuật đơn giản trong lập trình Game 2D
+                  Android.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/HTCS.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >HTML5 và CSS3</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  HTML5 và CSS3 không chỉ hỗ trợ mỗi tính năng video không cần
+                  Plugin phụ trợ nhưng đây là cải tiến có ý nghĩa nhất.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/INMA.jpg"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Internet Marketing</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  Internet Marketing – còn được biết đến bằng các thuật ngữ web
+                  marketing, online marketing, hay e-marketing – là một hình
+                  thức marketing cho sản phẩm hay dịch vụ trên môi trường
+                  Internet.
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 col-lg-3">
+            <div class="card mb-3">
+              <a href="./baithi.html"
+                ><img
+                  src="../../asset/images/monthi/JAAV.png"
+                  class="card-img-top"
+                  alt="..."
+              /></a>
+              <div style="min-height: 160px !important" class="card-body">
+                <h5 class="card-title">
+                  <a class="text-decoration-none line_clamp_title fs-6" href="#"
+                    >Lập trình Java nâng cao</a
+                  >
+                </h5>
+                <p class="card-text line_clamp">
+                  Java là ngôn ngữ lập trình hàng đầu, gần 90% các công ty lớn
+                  trên thế như các ông lớn Google, Amazon đều sử dụng Java để
+                  làm ứng dụng Desktop và Backend cho hệ thống Website của họ..
+                </p>
+              </div>
+              <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item fs-6">10 câu hỏi, 15 phút</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer ng-include="'../layout/footer.html'" class="row py-2"></footer>
     </div>
 
-    <script>
-        var app = angular.module('assignment',[]);
-        app.controller('myController',function($scope){
-          
-        })
-    </script>
-</body>
+  
+    <script src ="../../asset/js/app.js"></script>
+  </body>
 </html>
