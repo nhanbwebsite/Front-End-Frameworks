@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html ng-app="myapp" lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <script src ="./node_modules/angular/angular.min.js"></script> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./node_modules/angular/angular.min.js"></script>
     <title>Document</title>
-</head>
-<body ng-controller="mycontroller">
- 
-    <div class="box">
+  </head>
+  <body ng-controller="mycontroller">
+    câu hỏi 1 : <input name="r1" value="1" data-w="1" type="radio" />
+    <br />
 
-    </div>
+    câu hỏi 2: <input name="r1" value="2" data-w="1" type="radio" />
+    <br />
+    câu hỏi 3: <input name="r1" value="3" data-w="1" type="radio" />
+    câu hỏi 4 : <input name="r2" value="4" data-w="2" type="radio" />
+    <br />
 
-</body>
+    câu hỏi 5: <input name="r2" value="5" data-w="2" type="radio" />
+    <br />
+    câu hỏi 6: <input name="r2" value="6" data-w="2" type="radio" />
+    <br />
+  </body>
 
-
-<script>
-    // var app = angular.module('myapp',[]);
-    // app.controller('mycontroller',function($scope){
-
-    //     $scope.test = function(){
-    //         var a = $scope.name;
-            
-    //         alert(a);
-    //     }
-
-    // })
-
-</script>
+  <script>
+    var app = angular.module("myapp", []);
+    app.controller("mycontroller", function ($scope) {
+      var listRadio = document.querySelectorAll('input[type="radio"]');
+      var arr = [];
+      listRadio.forEach(function (item) {
+        item.onchange = function () {
+            arr.push([{answer: item.value,dataset: item.dataset.w}])
+            if(arr.length >=2){
+                for(var i = 0; i < arr.length-1; i++) {
+            for(var j = 1; j < arr.length; j++){
+                if(arr[i].dataset == arr[j].dataset){
+                    arr.splice(arr[j],1);
+                }
+            }
+           
+            }
+        } else {
+            arr.push([{answer: item.value,dataset: item.dataset.w}])
+        }
+        
+        };
+        console.log(arr);
+      });
+    });
+  </script>
 </html>
