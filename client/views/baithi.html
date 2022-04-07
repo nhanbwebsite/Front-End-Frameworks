@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="../../asset/css/footer.css">
     <script src="../../node_modules/angular/angular.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="../../node_modules/angular-route/angular-route.js"></script>
 </head>
 
 <body ng-app="assignment" class="p-0">
     <div class="container-fluid p-0">
-
         <header ng-include="'../layout/header.html'" class="row header_box-container">
-
+            
         </header>
         <!-- <main style="min-height:80vh;" class="row mt-4 w-75 m-auto" ng-include="'../layout/thi.html'">
         </main> -->
@@ -30,7 +30,16 @@
     </div>
 
     <script>
-        var app = angular.module('assignment', []);
+        var app = angular.module('assignment', ['ngRoute']);
+        app.config(function($routeProvider){
+            $routeProvider
+            .when('/',{
+                templateUrl:'home.html'
+            })
+            .when('/main',{
+                templateUrl:'../layout/main.html'
+            })
+        })
         app.directive('quizPoly', function (quizFactory) {
             return {
                 restrict: 'AE',
@@ -96,7 +105,7 @@
             }
         });
         app.factory('quizFactory',function($http){
-            $http.get('http://localhost:3000/ADVA').then(function(res){
+            $http.get('http://localhost:3000/quiz').then(function(res){
                 questions = res.data;
             console.log(questions.length);
             });
