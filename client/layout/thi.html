@@ -1,77 +1,73 @@
 <div class="row">
-    <div class="col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="test_code py-1">Mã đề: <span class="fw-bold">438004</span></div>
-                        <div class="subject py-1">Môn: <span class="fw-bold">PHP</span></div>
-                        <div class="question py-1">Số câu hỏi: <span class="fw-bold">10</span></div>
-                        <div class="time py-1">Thời gian: <span class="fw-bold">15</span> phút</div>
+    <div ng-show="!inProgess" class="text-center">
+        <button ng-click="start()">Start</button>
+    </div>
+    <div ng-show="inProgess">    
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="test_code py-1">Mã đề: <span class="fw-bold">438004</span></div>
+                                <div class="subject py-1">Môn: <span class="fw-bold">PHP</span></div>
+                                <div class="question py-1">Số câu hỏi: <span class="fw-bold">10</span></div>
+                                <div class="time py-1">Thời gian: <span class="fw-bold">15</span> phút</div>
+                            </div>
+                            <div class="col-sm-6 text-end align-content-end mt-auto">
+                                <div class="clock_and_btn_end">
+                                    <span class="clock mx-2">Thời gian còn lại: <span
+                                            class="clock_run fw-bold">15:00</span></span>
+                                    <button class="btn btn-outline-danger mx-2" ng-click="end()">Kết thúc bài thi</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-6 text-end align-content-end mt-auto">
-                        <div class="clock_and_btn_end">
-                            <span class="clock mx-2">Thời gian còn lại: <span
-                                    class="clock_run fw-bold">15:00</span></span>
-                            <button class="btn btn-outline-danger mx-2">Kết thúc bài thi</button>
+                    <div class="card-body" ng-show="!quizOver">
+                        <div class="quest_num pb-3">
+                            <span class="fw-bold">Câu số <span class="num">{{id}}</span>:</span>
+                        </div>
+                        <div class="content_quest">
+                            <label for="">{{question}}</label>
+                        </div>
+                        <div class="answer pt-2">
+                            <div class="form-check" ng-repeat="option in options">
+                                <input class="form-check-input" name="answer" value="{{option.Id}}" type="radio">
+                                {{option.Text}}
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="card-footer" ng-show="!quizOver">
+                        <div class="btn_dir py-2 text-center">
+                            <button class="btn btn-info me-1"><i class="fa-solid fa-angles-left"></i></button>
+                            <!-- <button ng-click="prevQuestion()" class="btn btn-info me-1"><i class="fa-solid fa-angle-left">Lùi</i></button> -->
+                            <div ng-show="answerMode">
+                                <button ng-click="checkAnswer()" id class="btn btn-info me-1"><i
+                                        class="fa-solid fa-angles-right">Sumit</i></button>
+                            </div>
+                            <div ng-show="!answerMode"> <button ng-click="nextQuestion()" class="btn btn-info me-1"><i
+                                        class="fa-solid fa-angle-right" id="chuyen">Next</i></button>
+                                    <span ng-show="correctAns">Correct</span>
+                                    <span ng-show="!correctAns">sorry in correct</span>
+                            </div>
+                            <div>
+                                điểm: {{score}}
+                            </div>
+                        </div>
+                        <div class="list_quest text-center py-2">
+                            <input type="button" class="btn btn-outline-info active" value="1">
+                            <input type="button" class="btn btn-outline-info" value="2">
+                            <input type="button" class="btn btn-outline-info" value="3">
+                            <input type="button" class="btn btn-outline-info" value="4">
+                            <input type="button" class="btn btn-outline-info" value="5">
+                            <input type="button" class="btn btn-outline-info" value="6">
+                            <input type="button" class="btn btn-outline-info" value="7">
+                            <input type="button" class="btn btn-outline-info" value="8">
+                            <input type="button" class="btn btn-outline-info" value="9">
+                            <input type="button" class="btn btn-outline-info" value="10">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card-body">
-                <div class="quest_num pb-3">
-                    <span class="fw-bold">Câu số <span class="num">1</span>:</span>
-                </div>
-                <div class="content_quest">
-                    Cấu trúc try catch dùng để ?
-                </div>
-                <div class="answer pt-2">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="answerA">
-                        <label class="form-check-label" for="answerA">
-                            Tăng tốc độ thực thi cho đoạn mã PHP.
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="answerB">
-                        <label class="form-check-label" for="answerB">
-                            Bỏ qua lỗi của đoạn mã PHP.
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="answerC">
-                        <label class="form-check-label" for="answerC">
-                            Bắt ngoại lệ của đoạn mã PHP.
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="answerD">
-                        <label class="form-check-label" for="answerD">
-                            Tất cả đáp án đều sai.
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="card-footer">
-                <div class="btn_dir py-2 text-center">
-                    <button class="btn btn-info me-1"><i class="fa-solid fa-angles-left"></i></button>
-                    <button class="btn btn-info me-1"><i class="fa-solid fa-angle-left"></i></button>
-                    <button class="btn btn-info me-1"><i class="fa-solid fa-angle-right"></i></button>
-                    <button class="btn btn-info me-1"><i class="fa-solid fa-angles-right"></i></button>
-                </div>
-                <div class="list_quest text-center py-2">
-                    <input type="button" class="btn btn-outline-info active" value="1">
-                    <input type="button" class="btn btn-outline-info" value="2">
-                    <input type="button" class="btn btn-outline-info" value="3">
-                    <input type="button" class="btn btn-outline-info" value="4">
-                    <input type="button" class="btn btn-outline-info" value="5">
-                    <input type="button" class="btn btn-outline-info" value="6">
-                    <input type="button" class="btn btn-outline-info" value="7">
-                    <input type="button" class="btn btn-outline-info" value="8">
-                    <input type="button" class="btn btn-outline-info" value="9">
-                    <input type="button" class="btn btn-outline-info" value="10">
-                </div>
-            </div>
-        </div>
     </div>
 </div>

@@ -1,36 +1,123 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="assignment">
+<html lang="en" >
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../../asset/css/footer.css">
     <script src="../../node_modules/angular/angular.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
-<body ng-controller="myController" class="p-0">
+
+<body ng-app="assignment" class="p-0">
     <div class="container-fluid p-0">
-            
-            <header ng-include="'../layout/header.html'" class="row header_box-container">
 
-            </header>
-            <main style="min-height:80vh;" class="row mt-4 w-75 m-auto"ng-include="'../layout/thi.html'" >
+        <header ng-include="'../layout/header.html'" class="row header_box-container">
 
-            </main>
+        </header>
+        <!-- <main style="min-height:80vh;" class="row mt-4 w-75 m-auto" ng-include="'../layout/thi.html'">
+        </main> -->
+            <quiz-poly></quiz-poly>
             <footer ng-include="'../layout/footer.html'" class="row py-2">
-        
-            </footer>
-        
+
+        </footer>
     </div>
 
     <script>
-        var app = angular.module('assignment',[]);
-        app.controller('myController',function($scope){
-          
-        })
+        var app = angular.module('assignment', []);
+        app.directive('quizPoly', function (quizFactory) {
+            return {
+                restrict: 'AE',
+                scope:{},
+                templateUrl: '../layout/thi.html',
+                link: function (scope, element, attr) {
+                    scope.start = function(){
+                        scope.id=1;
+                        scope.quizOver = false;//Chưa hoàn thành quiz
+                        scope.inProgess=true;
+                        scope.getQuestion();
+                    };
+                    scope.end = function(){
+                        scope.id=1;
+                        scope.inProgess=true;
+                        scope.getQuestion();
+                    }
+                    scope.reset = function(){
+                        scope.inProgess=false;
+                        scope.score = 0;
+                    };
+                    scope.getQuestion = function(){
+                        var quiz = quizFactory.getQuestion(scope.id);
+                        if(quiz){
+                            scope.question = quiz.Text;
+                            scope.options = quiz.Answers;
+                            scope.answer = quiz.AnswerId;
+                            scope.answerMode = true;
+                        }else{
+                                scope.quizOver = true; //khi hết câu hỏi thì true
+                        }
+                        // localStorage.setItem("quiz",JSON.stringify(quiz));
+                        // console.log(quiz);
+                    }
+                    scope.checkAnswer = function(){
+                        if(!$('input[name = answer]:checked').length) return;
+                        var ans = $('input[name="answer"]:checked').val();
+                        console.log(ans);
+                        if(ans == scope.answer){
+                            // alert('answer');
+                            scope.score++;
+                            scope.correctAns = true;
+                        }else{
+                            // alert('sai');
+                            scope.correctAns = false;
+                        }
+                        scope.answerMode = false;
+                        // console.log(scope.answer);
+                    };
+                    scope.nextQuestion = function(){
+                        scope.id++;
+                        if(scope.id <=10){
+                            document.querySelector('#chuyen').disabled = true;
+                        }
+                        scope.getQuestion();
+                    }
+                    scope.prevQuestion = function(){
+                        scope.id--;
+                        scope.getQuestion();
+                    }
+                    scope.reset();
+                }
+            }
+        });
+        app.factory('quizFactory',function($http){
+            $http.get('http://localhost:3000/ADVA').then(function(res){
+                questions = res.data;
+            console.log(questions.length);
+            });
+            return {
+                getQuestion:function(id){
+                    var ramdomItem = questions[Math.floor(Math.random()*questions.length)];
+                    var count = questions.length;
+                    if (count>10){
+                        count = 10;
+                    }
+                    if(id<10){
+                        return ramdomItem;
+                        
+                    }else{
+                        return alert('Bấm Vào Nút Kết Thúc Bài Thi');
+                    }
+            }
+            }
+        });
+        
     </script>
 </body>
+
 </html>
