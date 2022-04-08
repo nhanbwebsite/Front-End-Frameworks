@@ -1,114 +1,271 @@
 <!DOCTYPE html>
-<html lang="en" ng-app ="myApp" >
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" ng-app = "myapp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh sách thành viên</title>
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="../../asset/css/respone.css">
-    <script src="../../../node_modules/angular/angular.js"></script>
- <style>
-   .text-danger, .text-primary{
-       cursor: pointer;
-     }
- </style>
-   
-</head>
-<body ng-controller="myController">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../asset/css/respone.css" />
+    <script src ="../../../node_modules/angular/angular.min.js"></script>
+    <style>
+      .text-danger,
+      .text-primary {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body ng-controller="myController">
     <div class="container-fluid">
-        <nav class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5" ng-include="'../../layout/navbar.html'">
-           
-          </nav>
-          <!--end navbar-->
-        
-         
-        <div class="row">
-            <div class=" aside_pc bg-dark col-md-2 col-lg-2 mt-5" ng-include="'../../layout/aside.html'">
-                <!--include aside-->
-            </div>
-            <div class="col-12 col-md-10 col-lg-10 article_box">
-              <!--article-->
-                <article class="article">
-                    <h2>Danh sách thành viên</h2>
-                
-                  <table class="table ">
-                      <thead class="table-secondary mt-5">
-                          <tr>
-                              <th scope="row">ID</th>
-                              <th>Họ tên</th>
-                              <th>Tên đăng nhập</th>
-                              <!-- <td>Mật khẩu</td> -->
-                              <th>Email</th>
-                              <th>Địa chỉ</th>
-                              <th></th>
-                            </tr>
-                      </thead>
-                      <tbody class="mt-5">
-                          <tr class="">
-                            <td scope="row">1</td>
-                            <td>Nguyễn Văn A</td>
-                            <td>vananguyen</td>
-                            <td>vananguyen@gmail.com</td>
-                            <td>Cần Thơ</td>
-                            <td>
-                              <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
-                              <i class="fa-solid fa-trash text-danger "></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td scope="row">2</td>
-                            <td>Nguyễn Văn B</td>
-                            <td>vanbnguyen</td>
-                            <!-- <td>Mật khẩu</td> -->
-                            <td>vanbnguyen@gmail.com</td>
-                            <td>Vĩnh Long</td>
-                            <td>
-                              <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
-                              <i class="fa-solid fa-trash text-danger "></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td scope="row">3</td>
-                            <td>Nguyễn Thị T</td>
-                            <td>thitnguyen</td>
-                            <!-- <td>Mật khẩu</td> -->
-                            <td>thitnguyen@gmail.com</td>
-                            <td>Bến Tre</td>
-                            <td>
-                              <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
-                              <i class="fa-solid fa-trash text-danger "></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td scope="row">4</td>
-                            <td>Trần Văn H</td>
-                            <td>vanhtran</td>
-                            <!-- <td>Mật khẩu</td> -->
-                            <td>vanhtran@gmail.com</td>
-                            <td>Trà Vinh</td>
-                            <td>
-                              <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
-                              <i class="fa-solid fa-trash text-danger "></i>
-                            </td>
-                          </tr>
-                        </tbody>
-                    </table>
-                 
-                </article>
-                <!--end article-->
-            </div>
+      <nav
+        class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5"
+        ng-include="'../../layout/navbar.html'"
+      ></nav>
+      <!--end navbar-->
+
+      <div class="row">
+        <div
+          class="aside_pc bg-dark col-md-2 col-lg-2 mt-5"
+          ng-include="'../../layout/aside.html'"
+        >
+          <!--include aside-->
         </div>
+        <div class="col-12 col-md-10 col-lg-10 article_box">
+          <!--article-->
+          <article class="article">
+            <h2>Danh sách thành viên</h2>
+
+            <table class="table">
+              <thead class="table-secondary mt-5">
+                <tr>
+                  <th scope="row">STT</th>
+                  <th>Họ tên</th>
+                  <th>Tên đăng nhập</th>
+                  <!-- <td>Mật khẩu</td> -->
+                  <th>Email</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody class="mt-5 body_list_user"></tbody>
+            </table>
+          </article>
+          <!--end article-->
+        </div>
+      </div>
+
+      <!--from edit user-->
+
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                Cập nhật thông tin thành viên
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label"
+                      >Tên đăng nhập</label
+                    >
+                    <input
+                      id="tenDangnhapEdit"
+                      readonly
+                      type="text"
+                      class="form-control"
+                    />
+                    <input
+                      hidden
+                      id="iduserEdit"
+                      readonly
+                      type="text"
+                      class="form-control"
+                    />
+                  </div>
+                  <label for="formGroupExampleInput" class="form-label"
+                    >Họ tên</label
+                  >
+                  <input id="hoTenuserEdit" type="text" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput2" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    id="emailuserEdit"
+                    readonly
+                    type="email"
+                    class="form-control"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Thoát
+              </button>
+              <button
+                type="button"
+                onclick="handleEdituser()"
+                class="btn btn-primary"
+              >
+                Cập nhật
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
     <script>
-          var app  = angular.module('myApp',[]);
-          app.controller('myController',function($scope){
-          
-          })
+      var userAPI = "http://localhost:3000/Students";
+      // get API user
+      function getStudent(callback) {
+        fetch(userAPI)
+          .then((response) => response.json())
+          .then(callback);
+      }
+      // render list user
+      function renderUser(listuser) {
+        var body_list_user = document.querySelector(".body_list_user");
+        var htmls = listuser.map(function (item, index) {
+          return `
+                      <tr ng-repeat="item in data" class="">
+                        <td scope="row">${index + 1}</td>
+                        <td>${item.fullname}</td>
+                        <td>${item.username}</td>
+                        <td>${item.email}</td>
+                        <td>
+                          <i onclick = "getUserById(${
+                            item.id
+                          })" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="fa-solid fa-pen-to-square text-primary me-3"></i>
+                          <i onclick = "deleteUser(${
+                            item.id
+                          })" class="fa-solid fa-trash text-danger "></i>
+                        </td>
+                      </tr>
+            `;
+        });
+        if (body_list_user) {
+          body_list_user.innerHTML = htmls.join("");
+        }
+      }
+
+      // edit user
+
+      function getUserById(id) {
+        fetch(userAPI)
+          .then((response) => response.json())
+          .then((data) => {
+            var userEdit = data.filter(function (item) {
+              return item.id == id;
+            });
+            var tenDangnhapEdit = document.querySelector("#tenDangnhapEdit");
+            var hoTenuserEdit = document.querySelector("#hoTenuserEdit");
+            var emailuserEdit = document.querySelector("#emailuserEdit");
+            var iduserEdit = document.querySelector("#iduserEdit");
+            tenDangnhapEdit.value = userEdit[0].username;
+            hoTenuserEdit.value = userEdit[0].fullname;
+            emailuserEdit.value = userEdit[0].email;
+            iduserEdit.value = userEdit[0].id;
+          });
+      }
+
+      function edituser(id, data, callback) {
+        var option = {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        };
+        fetch(userAPI + "/" + id, option)
+          .then((response) => response.json())
+          .then(callback);
+      }
+
+      function handleEdituser() {
+        var tenDangnhapEdit = document.querySelector("#tenDangnhapEdit");
+        var hoTenuserEdit = document.querySelector("#hoTenuserEdit");
+        var emailuserEdit = document.querySelector("#emailuserEdit");
+        var id = document.querySelector("#iduserEdit");
+
+        var data = {
+          username: tenDangnhapEdit.value,
+          fullname: hoTenuserEdit.value,
+          email: emailuserEdit.value,
+        };
+
+        var id = document.querySelector("#iduserEdit").value;
+        edituser(id, data, getStudent(renderUser));
+      }
+
+      function deleteUser(id) {
+
+        let conf = confirm(`Xóa thành viên ${id} ?`);
+        if (conf) {
+          let option = {
+            method: "DELETE",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          };
+          fetch(userAPI + "/" + id, option)
+            .then((respone) => respone.json())
+            .then((data) => {
+              location.reload();
+            });
+        }
+      }
+
+      function app() {
+        getStudent(renderUser);
+      }
+
+      app();
     </script>
-</body>
+
+
+<script>
+  var app = angular.module('myapp',[]);
+  app.controller('myController', function($scope){
+    
+  })
+</script>
+
+  </body>
 </html>
