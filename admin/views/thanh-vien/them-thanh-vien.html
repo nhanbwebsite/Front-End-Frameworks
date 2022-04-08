@@ -34,26 +34,26 @@
                     <form>
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label">Họ tên</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập họ tên">
+                            <input type="text" class="form-control" ng-model="username" id="username" placeholder="Nhập họ tên">
                           </div>
                           <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Tên đăng nhập</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            <input type="text" class="form-control" ng-model="fullname"  id="fullname" placeholder="Nhập tên đăng nhập">
                           </div>
                           <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            <input type="password" class="form-control" ng-model ="password" id="password" placeholder="Nhập mật khẩu">
                           </div>
                           <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Nhập lại mật khẩu</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                            <input type="password" class="form-control" ng-model ="confirmpassword" id="confirmpassword" placeholder="Nhập lại mật khẩu">
                           </div>
                           <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Nhập địa chỉ email">
+                            <input type="email" class="form-control" id="email" ng-model="email" placeholder="Nhập địa chỉ email">
                           </div>
                           <div class="mb-3">
-                            <button class="btn btn-primary">Thêm thành viên</button>
+                            <button ng-click = "addUser()" id= "addUser" class="btn btn-primary">Thêm thành viên</button>
                             <button type="reset" class="btn btn-primary">Làm mới</button>
                           </div>
                     </form>
@@ -65,10 +65,31 @@
         </div>
     </div>
     
+    <script src = "../../asset/js/admin.js">
+
+    </script>
+
     <script>
           var app  = angular.module('myApp',[]);
-          app.controller('myController',function($scope){
-          
+          app.controller('myController',function($scope,$http){
+            
+            $scope.addUser = function(){
+                if($scope.password == $scope.confirmpassword){
+                  var data = {
+                    username: $scope.username,
+                    password: $scope.password,
+                    fullname:$scope.fullname,
+                    email:$scope.email
+                  }
+
+                  $http.post('http://localhost:3000/Students',data)
+                
+
+                } else{
+                  alert('xác nhận mật khẩu giống đúng')
+                }
+            }
+
           })
     </script>
 </body>
