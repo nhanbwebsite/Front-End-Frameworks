@@ -11,7 +11,7 @@
       "id": 2,
       "username": "pheonv",
       "password": "iloveyou",
-      "fullname": "Nguyễn Văn Chí Phèo",
+      "fullname": "Nguyễn Văn Chí Phèo", 
       "email": "pheonv@fpt.edu.vn"
     },
     {
@@ -38,102 +38,102 @@
   ],
   "Subjects": [
     {
-      "Id": "1",
+      "Id": 1,
       "Name": "Lập trình Android nâng cao",
       "Logo": "ADAV.jpg"
     },
     {
-      "Id": "2",
+      "Id": 2,
       "Name": "Lập trình Android cơ bản",
       "Logo": "ADBS.jpg"
     },
     {
-      "Id": "3",
+      "Id": 3,
       "Name": "Kiểm thử và triển khai ứng dụng Android",
       "Logo": "ADTE.jpg"
     },
     {
-      "Id": "4",
+      "Id": 4,
       "Name": "Thiết kế giao diện trên Android",
       "Logo": "ADUI.jpg"
     },
     {
-      "Id": "5",
+      "Id": 5,
       "Name": "Lập trình ASP.NET",
       "Logo": "ASNE.png"
     },
     {
-      "Id": "6",
+      "Id": 6,
       "Name": "Điện toán đám mây",
       "Logo": "CLCO.jpg"
     },
     {
-      "Id": "7",
+      "Id": 7,
       "Name": "SQL Server",
       "Logo": "DBAV.png"
     },
     {
-      "Id": "8",
+      "Id": 8,
       "Name": "Cơ sở dữ liệu",
       "Logo": "DBBS.png"
     },
     {
-      "Id": "9",
+      "Id": 9,
       "Name": "Lập trình game 2D",
       "Logo": "GAME.png"
     },
     {
-      "Id": "10",
+      "Id": 10,
       "Name": "HTML5 và CSS3",
       "Logo": "HTCS.jpg"
     },
     {
-      "Id": "11",
+      "Id": 11,
       "Name": "Internet Marketing",
       "Logo": "INMA.jpg"
     },
     {
-      "Id": "12",
+      "Id": 12,
       "Name": "Lập trình Java nâng cao",
       "Logo": "JAAV.png"
     },
     {
-      "Id": "12",
+      "Id": 12,
       "Name": "Lập trình hướng đối tượng với Java",
       "Logo": "JABS.png"
     },
     {
-      "Id": "14",
+      "Id": 14,
       "Name": "Lập trình JavaScript",
       "Logo": "JSPR.png"
     },
     {
-      "Id": "15",
+      "Id": 15,
       "Name": "Thiết kế layout",
       "Logo": "LAYO.jpg"
     },
     {
-      "Id": "16",
+      "Id": 16,
       "Name": "Thiết kế web cho điện thoại di động",
       "Logo": "MOWE.png"
     },
     {
-      "Id": "17",
+      "Id": 17,
       "Name": "Lập trình PHP",
       "Logo": "PHPP.png"
     },
     {
-      "Id": "18",
+      "Id": 18,
       "Name": "Quản lý dự án với Agile",
       "Logo": "PMAG.jpg"
     },
     {
-      "Id": "19",
+      "Id": 19,
       "Name": "Lập trình VB.NET",
       "Logo": "VBPR.png"
     },
     {
-      "Id": "20",
+      "Id": 20,
       "Name": "Xây dựng trang web",
       "Logo": "WEBU.jpg"
     }

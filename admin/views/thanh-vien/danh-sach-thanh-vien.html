@@ -38,63 +38,26 @@
                   <table class="table ">
                       <thead class="table-secondary mt-5">
                           <tr>
-                              <th scope="row">ID</th>
+                              <th scope="row">STT</th>
                               <th>Họ tên</th>
                               <th>Tên đăng nhập</th>
                               <!-- <td>Mật khẩu</td> -->
-                              <th>Email</th>
-                              <th>Địa chỉ</th>
+                              <th>Email</th>                          
                               <th></th>
                             </tr>
                       </thead>
                       <tbody class="mt-5">
-                          <tr class="">
-                            <td scope="row">1</td>
-                            <td>Nguyễn Văn A</td>
-                            <td>vananguyen</td>
-                            <td>vananguyen@gmail.com</td>
-                            <td>Cần Thơ</td>
+                          <tr ng-repeat="item in data" class="">
+                            <td scope="row">{{$index+1}}</td>
+                            <td>{{item.fullname}}</td>
+                            <td>{{item.username}}</td>
+                            <td>{{item.email}}</td>
                             <td>
                               <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
                               <i class="fa-solid fa-trash text-danger "></i>
                             </td>
                           </tr>
-                          <tr>
-                            <td scope="row">2</td>
-                            <td>Nguyễn Văn B</td>
-                            <td>vanbnguyen</td>
-                            <!-- <td>Mật khẩu</td> -->
-                            <td>vanbnguyen@gmail.com</td>
-                            <td>Vĩnh Long</td>
-                            <td>
-                              <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
-                              <i class="fa-solid fa-trash text-danger "></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td scope="row">3</td>
-                            <td>Nguyễn Thị T</td>
-                            <td>thitnguyen</td>
-                            <!-- <td>Mật khẩu</td> -->
-                            <td>thitnguyen@gmail.com</td>
-                            <td>Bến Tre</td>
-                            <td>
-                              <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
-                              <i class="fa-solid fa-trash text-danger "></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td scope="row">4</td>
-                            <td>Trần Văn H</td>
-                            <td>vanhtran</td>
-                            <!-- <td>Mật khẩu</td> -->
-                            <td>vanhtran@gmail.com</td>
-                            <td>Trà Vinh</td>
-                            <td>
-                              <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
-                              <i class="fa-solid fa-trash text-danger "></i>
-                            </td>
-                          </tr>
+                        
                         </tbody>
                     </table>
                  
@@ -106,8 +69,13 @@
     
     <script>
           var app  = angular.module('myApp',[]);
-          app.controller('myController',function($scope){
+          app.controller('myController',function($scope,$http){
           
+          $http.get('http://localhost:3000/Students') 
+          .then(function(response){
+            $scope.data = response.data;
+          })
+
           })
     </script>
 </body>
