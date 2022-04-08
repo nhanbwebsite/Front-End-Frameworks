@@ -14,7 +14,7 @@ app.config(function($routeProvider){
 });
 app.controller('subjectsCtrl',function($scope,$http){
     $scope.list_subject = [];
-    $http.get('http://localhost:3000/subjects/{{Id}}/{{Name}}').then(function(res){
+    $http.get('http://localhost:3000/subjects').then(function(res){
         $scope.list_subject = res.data;
     })
 })
@@ -83,7 +83,7 @@ app.directive('quizPoly', function (quizFactory) {
     }
 });
 app.factory('quizFactory',function($http){
-    $http.get('http://localhost:3000/quiz').then(function(res){
+    $http.get('http://localhost:3000/ADBS').then(function(res){
         questions = res.data;
     console.log(questions.length);
     });
