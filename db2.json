@@ -27,6 +27,13 @@
       "password": "test",
       "email": "tét",
       "id": 4
+    },
+    {
+      "fullname": "Đạt Minh",
+      "username": "datgoodboy",
+      "password": "123456",
+      "email": "datgoodboy2002@gmail.com",
+      "id": 5
     }
   ],
   "Subjects": [
