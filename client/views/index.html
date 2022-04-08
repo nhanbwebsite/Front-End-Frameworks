@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>index</title>
     <link
       rel="stylesheet"
       href="../../node_modules/bootstrap/dist/css/bootstrap.css"
     />
     <link rel="stylesheet" href="../../asset/css/footer.css" />
     <script src="../../node_modules/angular/angular.min.js"></script>
-
+    <script src="../../node_modules/angular-route/angular-route.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -21,8 +21,9 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
-  <body ng-controller="myController" class="p-0">
+  <body  class="p-0">
     <div class="container-fluid p-0">
       <header ng-include="'../layout/header.html'"  class="row header_box-container">
         
@@ -201,8 +202,9 @@
 </div> -->
 
       </header>
-     
-      <div ng-view></div>
+     <main class="mt-4 w-75 m-auto">
+       <div ng-view></div>
+     </main>
       <!-- <main class="mt-4 w-75 m-auto">
         <h4 class="text-danger">Đề thi online</h4>
 
@@ -526,6 +528,6 @@
 
   
     <script src="../../asset/js/quiz.js"></script>
-    <script src ="../../asset/js/app.js"></script>
+    <!-- <script src ="../../asset/js/app.js"></script> -->
   </body>
 </html>
