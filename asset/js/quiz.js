@@ -1,11 +1,21 @@
 var app = angular.module('assignment', ['ngRoute']);
 app.config(function($routeProvider){
     $routeProvider
-    .when('/subjects',{
-        templateUrl:'../layout/subjects.html'
-    })
     .when('/',{
         templateUrl:'home.html'
+    })
+    .when('/subjects',{
+        templateUrl:'../layout/subjects.html',
+        controller:'subjectsCtrl'
+    })
+    .when('/quiz/:id/:name',{
+        templateUrl:'../layout/quiz-app.hmtl'
+    })
+});
+app.controller('subjectsCtrl',function($scope,$http){
+    $scope.list_subject = [];
+    $http.get('http://localhost:3000/subjects/{{Id}}/{{Name}}').then(function(res){
+        $scope.list_subject = res.data;
     })
 })
 app.directive('quizPoly', function (quizFactory) {
