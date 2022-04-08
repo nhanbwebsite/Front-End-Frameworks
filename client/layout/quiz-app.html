@@ -1,1 +1,33 @@
-<quiz-poly></quiz-poly>
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../asset/css/footer.css">
+    <script src="../../node_modules/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="../../node_modules/angular-route/angular-route.js"></script>
+</head>
+
+<body ng-app="assignment" class="p-0">
+    <div class="container-fluid p-0">
+        <header ng-include="'../layout/header.html'" class="row header_box-container">
+            
+        </header>
+            <quiz-poly></quiz-poly>
+            <footer ng-include="'../layout/footer.html'" class="row py-2">
+
+        </footer>
+    </div>
+<script src="../../asset/js/quiz.js"></script>
+<!-- <script src="../../asset/js/app.js"></script> -->
+</body>
+
+</html>

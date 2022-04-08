@@ -9,13 +9,15 @@ app.config(function($routeProvider){
         controller:'subjectsCtrl'
     })
     .when('/quiz/:id/:name',{
-        templateUrl:'../layout/quiz-app.hmtl'
+        templateUrl:'../layout/quiz-app.html',
+        controller:'quiz'
     })
 });
 app.controller('subjectsCtrl',function($scope,$http){
     $scope.list_subject = [];
-    $http.get('http://localhost:3000/subjects').then(function(res){
+    $http.get('http://localhost:3000/Subjects').then(function(res){
         $scope.list_subject = res.data;
+        console.log(res);
     })
 })
 app.directive('quizPoly', function (quizFactory) {
@@ -30,11 +32,7 @@ app.directive('quizPoly', function (quizFactory) {
                 scope.inProgess=true;
                 scope.getQuestion();
             };
-            scope.end = function(){
-                scope.id=1;
-                scope.inProgess=true;
-                scope.getQuestion();
-            }
+           
             scope.reset = function(){
                 scope.inProgess=false;
                 scope.score = 0;
@@ -49,8 +47,7 @@ app.directive('quizPoly', function (quizFactory) {
                 }else{
                         scope.quizOver = true; //khi hết câu hỏi thì true
                 }
-                // localStorage.setItem("quiz",JSON.stringify(quiz));
-                // console.log(quiz);
+               
             }
             scope.checkAnswer = function(){
                 if(!$('input[name = answer]:checked').length) return;
@@ -85,7 +82,7 @@ app.directive('quizPoly', function (quizFactory) {
 app.factory('quizFactory',function($http){
     $http.get('http://localhost:3000/ADBS').then(function(res){
         questions = res.data;
-    console.log(questions.length);
+    console.log(res);
     });
     return {
         getQuestion:function(id){
