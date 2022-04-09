@@ -11,12 +11,15 @@
                                 <div class="test_code py-1">Mã đề: <span class="fw-bold"> {{subject}} </span></div>
                                 <div class="subject py-1">Môn: <span class="fw-bold">{{subject_name}}</span></div>
                                 <div class="question py-1">Số câu hỏi: <span class="fw-bold">10</span></div>
-                                <div class="time py-1">Thời gian: <span class="fw-bold">15</span> phút</div>
+                                <div class="time py-1">Thời gian: <span class="fw-bold">5</span> phút</div>
+                                <div class="marks" ng-show = "showDiem">
+                        Số điểm của bạn: <span class="text-dark"><b class="diem_max" >{{diem_max > 0 ? diem_max : '0'}}</b></span>    
+                                </div>
                             </div>
                             <div class="col-sm-6 text-end align-content-end mt-auto">
                                 <div class="clock_and_btn_end">
                                     <span class="clock mx-2">Thời gian còn lại: <span
-                                            class="clock_run fw-bold">15:00</span></span>
+                                            class="clock_run fw-bold btn btn-info" id="time">5:00</span></span>
                                     <button class="btn btn-outline-danger mx-2" ng-click="end()">Kết thúc bài thi</button>
                                 </div>
                             </div>
@@ -51,7 +54,7 @@
                                     <span ng-show="!correctAns">sorry in correct</span>
                             </div>
                             <div>
-                                điểm: {{score}}
+                                <!-- điểm: {{score}} -->
                             </div>
                         </div>
                         <div class="list_quest text-center py-2">

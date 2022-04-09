@@ -28,14 +28,16 @@ app.controller('quizController',function($scope,$http,$routeParams,quizFactory){
         // console.log(response)
        
     })
-
+// app.controller('timeOut',function($scope,$timeOut){
+//     $scope.
+// })
     // $http.get('http://localhost:3000/' + $routeParams.id).then(function(res){
        
     //     quizFactory.question = res.data;
       
     // })
 })
-app.directive('quizPoly', function (quizFactory,$routeParams) {
+app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
 
     return {
         restrict: 'AE',
@@ -44,14 +46,51 @@ app.directive('quizPoly', function (quizFactory,$routeParams) {
         link: function (scope, element, attr) {
             scope.start = function(){
                 scope.id=1;
+                scope.mang_dap_an = [];
                 scope.quizOver = false;//Chưa hoàn thành quiz
                 scope.inProgess=true;
+                scope.showDiem = false;
                 scope.getQuestion();
+                scope.timeOut();
                 scope.subject = $routeParams.id
                 scope.subject_name = $routeParams.name
                 // time out
             };
-           
+            scope.end = function(){
+                scope.quizOver = true;
+                scope.showDiem = true;
+                clearInterval(scope.dongho)
+               
+            }
+           scope.timeOut = function(){
+               var phut = 5-1;
+               var giay = 60;
+               scope.dongho=setInterval(function(){
+                if(giay!=0)
+                {
+                    giay--;
+                }
+                else
+                {
+                    phut--;
+                    giay=60-1;
+                }
+                console.log(phut+":"+giay); 
+                document.getElementById("time").innerHTML=phut+":"+giay;
+                if(phut==0 && giay==0)
+            {
+                scope.elementDiem = document.querySelector('.diem_max');
+                scope.elementDiem.innerHTML = scope.diem;
+                    clearInterval(dongho);
+            }
+    
+            },1000);
+                $timeout(function(){
+                  
+                    scope.showDiem = true;
+                    scope.quizOver = true;
+                },500000)
+           }
             scope.reset = function(){
                 scope.inProgess=false;
                 scope.score = 0;
@@ -73,10 +112,14 @@ app.directive('quizPoly', function (quizFactory,$routeParams) {
             scope.checkAnswer = function(){
                 if(!$('input[name = answer]:checked').length) return;
                 var ans = $('input[name="answer"]:checked').val();
-                console.log(ans);
+                
+              
+               
                 if(ans == scope.answer){
                     // alert('answer');
                     scope.score++;
+                    scope.mang_dap_an.push(ans);
+                    scope.diem_max = scope.mang_dap_an.length
                     scope.correctAns = true;
                 }else{
                     // alert('sai');
@@ -85,6 +128,7 @@ app.directive('quizPoly', function (quizFactory,$routeParams) {
                 scope.answerMode = false;
                 // console.log(scope.answer);
             };
+           
             scope.nextQuestion = function(){
                 scope.id++;
                 if(scope.id <=10){
