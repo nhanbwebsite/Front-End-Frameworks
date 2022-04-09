@@ -1,6 +1,6 @@
 
 var app = angular.module("assignment", []);
-app.controller("myController", function ($scope,$http) {
+app.controller("dkdnController", function ($scope,$http) {
     // đăng ký tài khoản
   $scope.dangKyTK = function () {
     var password = $scope.password;
