@@ -5,26 +5,42 @@ app.config(function($routeProvider){
         templateUrl:'home.html'
     })
     .when('/subjects',{
-        templateUrl:'../layout/subjects.html',
+        templateUrl:'subjects.html',
         controller:'subjectsCtrl'
     })
     .when('/quiz/:id/:name',{
-        templateUrl:'../layout/quiz-app.html',
-        controller:'quiz'
+        templateUrl:'baithi.html',
+        // controller:'quizController'
     })
 });
 app.controller('subjectsCtrl',function($scope,$http){
     $scope.list_subject = [];
     $http.get('http://localhost:3000/Subjects').then(function(res){
         $scope.list_subject = res.data;
-        console.log(res);
     })
 })
+app.controller('quizController',function($scope,$http,$routeParams,quizFactory){
+    $http.get('http://localhost:3000/' + $routeParams.id)
+    .then(function(response){
+      
+        quizFactory.question = response.data;
+     
+        // console.log(response)
+       
+    })
+
+    // $http.get('http://localhost:3000/' + $routeParams.id).then(function(res){
+       
+    //     quizFactory.question = res.data;
+      
+    // })
+})
 app.directive('quizPoly', function (quizFactory) {
+
     return {
         restrict: 'AE',
         scope:{},
-        templateUrl: '../layout/thi.html',
+        templateUrl: 'templateQuiz.html',
         link: function (scope, element, attr) {
             scope.start = function(){
                 scope.id=1;
@@ -39,6 +55,7 @@ app.directive('quizPoly', function (quizFactory) {
             };
             scope.getQuestion = function(){
                 var quiz = quizFactory.getQuestion(scope.id);
+
                 if(quiz){
                     scope.question = quiz.Text;
                     scope.options = quiz.Answers;
@@ -79,11 +96,13 @@ app.directive('quizPoly', function (quizFactory) {
         }
     }
 });
-app.factory('quizFactory',function($http){
-    $http.get('http://localhost:3000/ADBS').then(function(res){
+app.factory('quizFactory',function($http,$routeParams){
+    $http.get('http://localhost:3000/' + $routeParams.id).then(function(res){
+        
         questions = res.data;
-    console.log(res);
-    });
+       
+
+    })
     return {
         getQuestion:function(id){
             var ramdomItem = questions[Math.floor(Math.random()*questions.length)];
