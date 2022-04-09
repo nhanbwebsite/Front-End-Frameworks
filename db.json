@@ -6,12 +6,30 @@
       "Marks": 1,
       "AnswerId": 106849,
       "Answers": [
-        { "Id": 106846, "Text": "\u003cyoutube\u003e" },
-        { "Id": 106847, "Text": "\u003cmedia\u003e" },
-        { "Id": 106848, "Text": "\u003cclip\u003e" },
-        { "Id": 106849, "Text": "\u003cvideo\u003e" },
-        { "Id": 106850, "Text": "\u003ccanvas\u003e" },
-        { "Id": 106851, "Text": "\u003cfilm\u003e" }
+        {
+          "Id": 106846,
+          "Text": "<youtube>"
+        },
+        {
+          "Id": 106847,
+          "Text": "<media>"
+        },
+        {
+          "Id": 106848,
+          "Text": "<clip>"
+        },
+        {
+          "Id": 106849,
+          "Text": "<video>"
+        },
+        {
+          "Id": 106850,
+          "Text": "<canvas>"
+        },
+        {
+          "Id": 106851,
+          "Text": "<film>"
+        }
       ]
     },
     {
@@ -22,19 +40,28 @@
       "Answers": [
         {
           "Id": 106852,
-          "Text": "\u003cdiv class=\"head\"\u003e\u003c/div\u003e"
+          "Text": "<div class=\"head\"></div>"
         },
         {
           "Id": 106853,
-          "Text": "\u003cdiv class=\"header\"\u003e\u003c/div\u003e"
+          "Text": "<div class=\"header\"></div>"
         },
-        { "Id": 106854, "Text": "\u003chead\u003e\u003c/head\u003e" },
-        { "Id": 106855, "Text": "\u003cdiv id=\"head\"\u003e\u003c/div\u003e" },
+        {
+          "Id": 106854,
+          "Text": "<head></head>"
+        },
+        {
+          "Id": 106855,
+          "Text": "<div id=\"head\"></div>"
+        },
         {
           "Id": 106856,
-          "Text": "\u003cdiv id=\"header\"\u003e\u003c/div\u003e"
+          "Text": "<div id=\"header\"></div>"
         },
-        { "Id": 106857, "Text": "\u003cheader\u003e\u003c/header\u003e" }
+        {
+          "Id": 106857,
+          "Text": "<header></header>"
+        }
       ]
     },
     {
@@ -43,12 +70,30 @@
       "Marks": 1,
       "AnswerId": 106862,
       "Answers": [
-        { "Id": 106858, "Text": "\u003cp\u003e" },
-        { "Id": 106859, "Text": "\u003caudio\u003e" },
-        { "Id": 106860, "Text": "\u003cdraw\u003e" },
-        { "Id": 106861, "Text": "\u003cvideo\u003e" },
-        { "Id": 106862, "Text": "\u003ccanvas\u003e" },
-        { "Id": 106863, "Text": "\u003cdiv\u003e" }
+        {
+          "Id": 106858,
+          "Text": "<p>"
+        },
+        {
+          "Id": 106859,
+          "Text": "<audio>"
+        },
+        {
+          "Id": 106860,
+          "Text": "<draw>"
+        },
+        {
+          "Id": 106861,
+          "Text": "<video>"
+        },
+        {
+          "Id": 106862,
+          "Text": "<canvas>"
+        },
+        {
+          "Id": 106863,
+          "Text": "<div>"
+        }
       ]
     },
     {
@@ -57,12 +102,30 @@
       "Marks": 1,
       "AnswerId": 106865,
       "Answers": [
-        { "Id": 106864, "Text": "Web 2.0" },
-        { "Id": 106865, "Text": "Web storage" },
-        { "Id": 106866, "Text": "Web server" },
-        { "Id": 106867, "Text": "Web code" },
-        { "Id": 106868, "Text": "Web 1.0" },
-        { "Id": 106869, "Text": "Web design" }
+        {
+          "Id": 106864,
+          "Text": "Web 2.0"
+        },
+        {
+          "Id": 106865,
+          "Text": "Web storage"
+        },
+        {
+          "Id": 106866,
+          "Text": "Web server"
+        },
+        {
+          "Id": 106867,
+          "Text": "Web code"
+        },
+        {
+          "Id": 106868,
+          "Text": "Web 1.0"
+        },
+        {
+          "Id": 106869,
+          "Text": "Web design"
+        }
       ]
     },
     {
@@ -71,12 +134,30 @@
       "Marks": 1,
       "AnswerId": 106872,
       "Answers": [
-        { "Id": 106870, "Text": "HTML5" },
-        { "Id": 106871, "Text": "HTML4" },
-        { "Id": 106872, "Text": "CSS3" },
-        { "Id": 106873, "Text": "CSS2" },
-        { "Id": 106874, "Text": "CSS4" },
-        { "Id": 106875, "Text": "HTML6" }
+        {
+          "Id": 106870,
+          "Text": "HTML5"
+        },
+        {
+          "Id": 106871,
+          "Text": "HTML4"
+        },
+        {
+          "Id": 106872,
+          "Text": "CSS3"
+        },
+        {
+          "Id": 106873,
+          "Text": "CSS2"
+        },
+        {
+          "Id": 106874,
+          "Text": "CSS4"
+        },
+        {
+          "Id": 106875,
+          "Text": "HTML6"
+        }
       ]
     },
     {
@@ -85,12 +166,30 @@
       "Marks": 1,
       "AnswerId": 106881,
       "Answers": [
-        { "Id": 106876, "Text": "HTML8" },
-        { "Id": 106877, "Text": "HTML6" },
-        { "Id": 106878, "Text": "HTML4" },
-        { "Id": 106879, "Text": "HTML7" },
-        { "Id": 106880, "Text": "HTML3" },
-        { "Id": 106881, "Text": "HTML5" }
+        {
+          "Id": 106876,
+          "Text": "HTML8"
+        },
+        {
+          "Id": 106877,
+          "Text": "HTML6"
+        },
+        {
+          "Id": 106878,
+          "Text": "HTML4"
+        },
+        {
+          "Id": 106879,
+          "Text": "HTML7"
+        },
+        {
+          "Id": 106880,
+          "Text": "HTML3"
+        },
+        {
+          "Id": 106881,
+          "Text": "HTML5"
+        }
       ]
     },
     {
@@ -99,12 +198,30 @@
       "Marks": 1,
       "AnswerId": 106883,
       "Answers": [
-        { "Id": 106882, "Text": "AFS" },
-        { "Id": 106883, "Text": "API" },
-        { "Id": 106884, "Text": "AKT" },
-        { "Id": 106885, "Text": "ASK" },
-        { "Id": 106886, "Text": "ATK" },
-        { "Id": 106887, "Text": "APP" }
+        {
+          "Id": 106882,
+          "Text": "AFS"
+        },
+        {
+          "Id": 106883,
+          "Text": "API"
+        },
+        {
+          "Id": 106884,
+          "Text": "AKT"
+        },
+        {
+          "Id": 106885,
+          "Text": "ASK"
+        },
+        {
+          "Id": 106886,
+          "Text": "ATK"
+        },
+        {
+          "Id": 106887,
+          "Text": "APP"
+        }
       ]
     },
     {
@@ -145,12 +262,30 @@
       "Marks": 1,
       "AnswerId": 106899,
       "Answers": [
-        { "Id": 106894, "Text": "HTML5 đã thêm thẻ youtube" },
-        { "Id": 106895, "Text": "So với HTML4, HTML5 không có các thẻ mới" },
-        { "Id": 106896, "Text": "HTML5 đã loại bỏ JavaScript" },
-        { "Id": 106897, "Text": "HTML5 không hỗ trợ các thuộc tính CSS3" },
-        { "Id": 106898, "Text": "HTML5 ra đời năm 2006" },
-        { "Id": 106899, "Text": "HTML5 hỗ trợ đầy đủ CSS3" }
+        {
+          "Id": 106894,
+          "Text": "HTML5 đã thêm thẻ youtube"
+        },
+        {
+          "Id": 106895,
+          "Text": "So với HTML4, HTML5 không có các thẻ mới"
+        },
+        {
+          "Id": 106896,
+          "Text": "HTML5 đã loại bỏ JavaScript"
+        },
+        {
+          "Id": 106897,
+          "Text": "HTML5 không hỗ trợ các thuộc tính CSS3"
+        },
+        {
+          "Id": 106898,
+          "Text": "HTML5 ra đời năm 2006"
+        },
+        {
+          "Id": 106899,
+          "Text": "HTML5 hỗ trợ đầy đủ CSS3"
+        }
       ]
     },
     {
@@ -159,15 +294,30 @@
       "Marks": 1,
       "AnswerId": 106904,
       "Answers": [
-        { "Id": 106900, "Text": "Tạo ra các phần tử có thể kéo thả" },
+        {
+          "Id": 106900,
+          "Text": "Tạo ra các phần tử có thể kéo thả"
+        },
         {
           "Id": 106901,
           "Text": "Thao tác với dữ liệu trong cơ sở dữ liệu MySQL"
         },
-        { "Id": 106902, "Text": "Xem video" },
-        { "Id": 106903, "Text": "Hiển thị bản ghi trong cơ sở dữ liệu" },
-        { "Id": 106904, "Text": "Vẽ đồ họa" },
-        { "Id": 106905, "Text": "Chơi nhạc" }
+        {
+          "Id": 106902,
+          "Text": "Xem video"
+        },
+        {
+          "Id": 106903,
+          "Text": "Hiển thị bản ghi trong cơ sở dữ liệu"
+        },
+        {
+          "Id": 106904,
+          "Text": "Vẽ đồ họa"
+        },
+        {
+          "Id": 106905,
+          "Text": "Chơi nhạc"
+        }
       ]
     },
     {
@@ -176,48 +326,57 @@
       "Marks": 1,
       "AnswerId": 106907,
       "Answers": [
-        { "Id": 106906, "Text": "\u003c!DOCTYPE html PUBLIC \u003e" },
-        { "Id": 106907, "Text": "\u003c!DOCTYPE html\u003e" },
+        {
+          "Id": 106906,
+          "Text": "<!DOCTYPE html PUBLIC >"
+        },
+        {
+          "Id": 106907,
+          "Text": "<!DOCTYPE html>"
+        },
         {
           "Id": 106908,
-          "Text": "\u003c!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 5.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"\u003e"
+          "Text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 5.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"
         },
         {
           "Id": 106909,
-          "Text": "\u003c!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \u003e"
+          "Text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" >"
         },
-        { "Id": 106910, "Text": "\u003c!DOCTYPE html5\u003e" }
+        {
+          "Id": 106910,
+          "Text": "<!DOCTYPE html5>"
+        }
       ]
     },
     {
       "Id": 25831,
-      "Text": "Đâu là phát biểu đúng về phần tử \u003cheader\u003e trong HTML5?",
+      "Text": "Đâu là phát biểu đúng về phần tử <header> trong HTML5?",
       "Marks": 1,
       "AnswerId": 106912,
       "Answers": [
         {
           "Id": 106911,
-          "Text": "Phần tử \u003cheader\u003e được sử dụng tối đa 5 lần trên trang"
+          "Text": "Phần tử <header> được sử dụng tối đa 5 lần trên trang"
         },
         {
           "Id": 106912,
-          "Text": "Phần tử \u003cheader\u003e được sử dụng nhiều lần trên trang"
+          "Text": "Phần tử <header> được sử dụng nhiều lần trên trang"
         },
         {
           "Id": 106913,
-          "Text": "Phần tử \u003cheader\u003e được sử dụng tối đa 2 lần trên trang"
+          "Text": "Phần tử <header> được sử dụng tối đa 2 lần trên trang"
         },
         {
           "Id": 106914,
-          "Text": "Phần tử \u003cheader\u003e bắt buộc phải được khai báo ở phía dưới cùng đoạn mã trang"
+          "Text": "Phần tử <header> bắt buộc phải được khai báo ở phía dưới cùng đoạn mã trang"
         },
         {
           "Id": 106915,
-          "Text": "Phần tử \u003cheader\u003e được sử dụng tối đa 3 lần trên trang"
+          "Text": "Phần tử <header> được sử dụng tối đa 3 lần trên trang"
         },
         {
           "Id": 106916,
-          "Text": "Phần tử \u003cheader\u003e chỉ được sử dụng một lần trên trang"
+          "Text": "Phần tử <header> chỉ được sử dụng một lần trên trang"
         }
       ]
     },
@@ -229,27 +388,27 @@
       "Answers": [
         {
           "Id": 106917,
-          "Text": "\u003cinput font=\"datetime\" name=\"bdaytime\"\u003e"
+          "Text": "<input font=\"datetime\" name=\"bdaytime\">"
         },
         {
           "Id": 106918,
-          "Text": "\u003cinput type=\"datetime\" name=\"bdaytime\"\u003e"
+          "Text": "<input type=\"datetime\" name=\"bdaytime\">"
         },
         {
           "Id": 106919,
-          "Text": "\u003cinput style=\"datetime\" name=\"bdaytime\"\u003e"
+          "Text": "<input style=\"datetime\" name=\"bdaytime\">"
         },
         {
           "Id": 106920,
-          "Text": "\u003cinput id=\"datetime\" name=\"bdaytime\"\u003e"
+          "Text": "<input id=\"datetime\" name=\"bdaytime\">"
         },
         {
           "Id": 106921,
-          "Text": "\u003cinput for=\"datetime\" name=\"bdaytime\"\u003e"
+          "Text": "<input for=\"datetime\" name=\"bdaytime\">"
         },
         {
           "Id": 106922,
-          "Text": "\u003cinput format=\"datetime\" name=\"bdaytime\"\u003e"
+          "Text": "<input format=\"datetime\" name=\"bdaytime\">"
         }
       ]
     },
@@ -259,12 +418,30 @@
       "Marks": 1,
       "AnswerId": 106928,
       "Answers": [
-        { "Id": 106923, "Text": "Thiết kế đẹp" },
-        { "Id": 106924, "Text": "Định nghĩa trang web theo chuẩn HTML5" },
-        { "Id": 106925, "Text": "Theo xu thế" },
-        { "Id": 106926, "Text": "Viết code rõ ràng" },
-        { "Id": 106927, "Text": "Định nghĩa trang web theo chuẩn HTML4" },
-        { "Id": 106928, "Text": "Tương tác với người dùng" }
+        {
+          "Id": 106923,
+          "Text": "Thiết kế đẹp"
+        },
+        {
+          "Id": 106924,
+          "Text": "Định nghĩa trang web theo chuẩn HTML5"
+        },
+        {
+          "Id": 106925,
+          "Text": "Theo xu thế"
+        },
+        {
+          "Id": 106926,
+          "Text": "Viết code rõ ràng"
+        },
+        {
+          "Id": 106927,
+          "Text": "Định nghĩa trang web theo chuẩn HTML4"
+        },
+        {
+          "Id": 106928,
+          "Text": "Tương tác với người dùng"
+        }
       ]
     },
     {
@@ -273,12 +450,30 @@
       "Marks": 1,
       "AnswerId": 106929,
       "Answers": [
-        { "Id": 106929, "Text": "\u003chgroup\u003e" },
-        { "Id": 106930, "Text": "\u003chheader\u003e" },
-        { "Id": 106931, "Text": "\u003chembedded\u003e" },
-        { "Id": 106932, "Text": "\u003chsession\u003e" },
-        { "Id": 106933, "Text": "\u003chcontent\u003e" },
-        { "Id": 106934, "Text": "\u003chbody\u003e" }
+        {
+          "Id": 106929,
+          "Text": "<hgroup>"
+        },
+        {
+          "Id": 106930,
+          "Text": "<hheader>"
+        },
+        {
+          "Id": 106931,
+          "Text": "<hembedded>"
+        },
+        {
+          "Id": 106932,
+          "Text": "<hsession>"
+        },
+        {
+          "Id": 106933,
+          "Text": "<hcontent>"
+        },
+        {
+          "Id": 106934,
+          "Text": "<hbody>"
+        }
       ]
     },
     {
@@ -287,12 +482,30 @@
       "Marks": 1,
       "AnswerId": 106935,
       "Answers": [
-        { "Id": 106935, "Text": "required" },
-        { "Id": 106936, "Text": "notnull" },
-        { "Id": 106937, "Text": "checkempty" },
-        { "Id": 106938, "Text": "validate" },
-        { "Id": 106939, "Text": "placeholder" },
-        { "Id": 106940, "Text": "formvalidate" }
+        {
+          "Id": 106935,
+          "Text": "required"
+        },
+        {
+          "Id": 106936,
+          "Text": "notnull"
+        },
+        {
+          "Id": 106937,
+          "Text": "checkempty"
+        },
+        {
+          "Id": 106938,
+          "Text": "validate"
+        },
+        {
+          "Id": 106939,
+          "Text": "placeholder"
+        },
+        {
+          "Id": 106940,
+          "Text": "formvalidate"
+        }
       ]
     },
     {
@@ -301,12 +514,30 @@
       "Marks": 1,
       "AnswerId": 106943,
       "Answers": [
-        { "Id": 106941, "Text": "\u003cbrand\u003e" },
-        { "Id": 106942, "Text": "\u003ctext\u003e" },
-        { "Id": 106943, "Text": "\u003clabel\u003e" },
-        { "Id": 106944, "Text": "\u003cinput\u003e" },
-        { "Id": 106945, "Text": "\u003csubmit\u003e" },
-        { "Id": 106946, "Text": "\u003ctop input\u003e" }
+        {
+          "Id": 106941,
+          "Text": "<brand>"
+        },
+        {
+          "Id": 106942,
+          "Text": "<text>"
+        },
+        {
+          "Id": 106943,
+          "Text": "<label>"
+        },
+        {
+          "Id": 106944,
+          "Text": "<input>"
+        },
+        {
+          "Id": 106945,
+          "Text": "<submit>"
+        },
+        {
+          "Id": 106946,
+          "Text": "<top input>"
+        }
       ]
     },
     {
@@ -317,27 +548,27 @@
       "Answers": [
         {
           "Id": 106947,
-          "Text": "\u003clabel name=\"male\"\u003eMale\u003c/label\u003e"
+          "Text": "<label name=\"male\">Male</label>"
         },
         {
           "Id": 106948,
-          "Text": "\u003clabel type=\"label\"\u003eMale\u003c/label\u003e"
+          "Text": "<label type=\"label\">Male</label>"
         },
         {
           "Id": 106949,
-          "Text": "\u003clabel for=\"male\"\u003eMale\u003c/label\u003e"
+          "Text": "<label for=\"male\">Male</label>"
         },
         {
           "Id": 106950,
-          "Text": "\u003clabel font=\"arial\"\u003eMale\u003c/label\u003e"
+          "Text": "<label font=\"arial\">Male</label>"
         },
         {
           "Id": 106951,
-          "Text": "\u003clabel id=\"male\"\u003eMale\u003c/label\u003e"
+          "Text": "<label id=\"male\">Male</label>"
         },
         {
           "Id": 106952,
-          "Text": "\u003clabel color=\"red\"\u003eMale\u003c/label\u003e"
+          "Text": "<label color=\"red\">Male</label>"
         }
       ]
     },
@@ -347,12 +578,30 @@
       "Marks": 1,
       "AnswerId": 106957,
       "Answers": [
-        { "Id": 106953, "Text": "\u003cfieldstyle\u003e" },
-        { "Id": 106954, "Text": "\u003cfieldshow\u003e" },
-        { "Id": 106955, "Text": "\u003cfieldrow\u003e" },
-        { "Id": 106956, "Text": "\u003cfieldcolumn\u003e" },
-        { "Id": 106957, "Text": "\u003cfieldset\u003e" },
-        { "Id": 106958, "Text": "\u003cfieldground\u003e" }
+        {
+          "Id": 106953,
+          "Text": "<fieldstyle>"
+        },
+        {
+          "Id": 106954,
+          "Text": "<fieldshow>"
+        },
+        {
+          "Id": 106955,
+          "Text": "<fieldrow>"
+        },
+        {
+          "Id": 106956,
+          "Text": "<fieldcolumn>"
+        },
+        {
+          "Id": 106957,
+          "Text": "<fieldset>"
+        },
+        {
+          "Id": 106958,
+          "Text": "<fieldground>"
+        }
       ]
     },
     {
@@ -363,27 +612,27 @@
       "Answers": [
         {
           "Id": 106959,
-          "Text": "\u003ccharset\u003eunicode\u003c/charset\u003e"
+          "Text": "<charset>unicode</charset>"
         },
         {
           "Id": 106960,
-          "Text": "\u003cmeta\u003echarset=\"utf-8\"\u003c/meta\u003e"
+          "Text": "<meta>charset=\"utf-8\"</meta>"
         },
         {
           "Id": 106961,
-          "Text": "\u003ccharset\u003eutf-8\u003c/charset\u003e"
+          "Text": "<charset>utf-8</charset>"
         },
         {
           "Id": 106962,
-          "Text": "\u003cmeta style=\"utf-8\"\u003e\u003c/meta\u003e"
+          "Text": "<meta style=\"utf-8\"></meta>"
         },
         {
           "Id": 106963,
-          "Text": "\u003cmeta charset=\"utf-8\"\u003e\u003c/meta\u003e"
+          "Text": "<meta charset=\"utf-8\"></meta>"
         },
         {
           "Id": 106964,
-          "Text": "\u003cmeta\u003echarset=\"unicode\"\u003c/meta\u003e"
+          "Text": "<meta>charset=\"unicode\"</meta>"
         }
       ]
     },
@@ -393,12 +642,30 @@
       "Marks": 1,
       "AnswerId": 106966,
       "Answers": [
-        { "Id": 106965, "Text": "response.write(\"Hello World\");" },
-        { "Id": 106966, "Text": "document.write(\"Hello World\");" },
-        { "Id": 106967, "Text": "request.write(\"Hello World\");" },
-        { "Id": 106968, "Text": "print \"Hello World\";" },
-        { "Id": 106969, "Text": "(\"Hello World\");" },
-        { "Id": 106970, "Text": "echo \"Hello World\";" }
+        {
+          "Id": 106965,
+          "Text": "response.write(\"Hello World\");"
+        },
+        {
+          "Id": 106966,
+          "Text": "document.write(\"Hello World\");"
+        },
+        {
+          "Id": 106967,
+          "Text": "request.write(\"Hello World\");"
+        },
+        {
+          "Id": 106968,
+          "Text": "print \"Hello World\";"
+        },
+        {
+          "Id": 106969,
+          "Text": "(\"Hello World\");"
+        },
+        {
+          "Id": 106970,
+          "Text": "echo \"Hello World\";"
+        }
       ]
     },
     {
@@ -407,26 +674,62 @@
       "Marks": 1,
       "AnswerId": 106975,
       "Answers": [
-        { "Id": 106971, "Text": "back" },
-        { "Id": 106972, "Text": "forward" },
-        { "Id": 106973, "Text": "upward" },
-        { "Id": 106974, "Text": "backward" },
-        { "Id": 106975, "Text": "return" },
-        { "Id": 106976, "Text": "wayback" }
+        {
+          "Id": 106971,
+          "Text": "back"
+        },
+        {
+          "Id": 106972,
+          "Text": "forward"
+        },
+        {
+          "Id": 106973,
+          "Text": "upward"
+        },
+        {
+          "Id": 106974,
+          "Text": "backward"
+        },
+        {
+          "Id": 106975,
+          "Text": "return"
+        },
+        {
+          "Id": 106976,
+          "Text": "wayback"
+        }
       ]
     },
     {
       "Id": 25842,
-      "Text": "Câu lệnh Jquery nào để thiết lập độ cao cho tất cả phần tử \u003cdiv\u003e là 100 pixel",
+      "Text": "Câu lệnh Jquery nào để thiết lập độ cao cho tất cả phần tử <div> là 100 pixel",
       "Marks": 1,
       "AnswerId": 106980,
       "Answers": [
-        { "Id": 106977, "Text": "$(\"div\").yPos(100);" },
-        { "Id": 106978, "Text": "$(\"div\").length=\"100\";" },
-        { "Id": 106979, "Text": "$(\"div\").xPos(100);" },
-        { "Id": 106980, "Text": "$(\"div\").height(100);" },
-        { "Id": 106981, "Text": "$(\"div\").height=\"100\";" },
-        { "Id": 106982, "Text": "$(\"div\").length(100);" }
+        {
+          "Id": 106977,
+          "Text": "$(\"div\").yPos(100);"
+        },
+        {
+          "Id": 106978,
+          "Text": "$(\"div\").length=\"100\";"
+        },
+        {
+          "Id": 106979,
+          "Text": "$(\"div\").xPos(100);"
+        },
+        {
+          "Id": 106980,
+          "Text": "$(\"div\").height(100);"
+        },
+        {
+          "Id": 106981,
+          "Text": "$(\"div\").height=\"100\";"
+        },
+        {
+          "Id": 106982,
+          "Text": "$(\"div\").length(100);"
+        }
       ]
     },
     {
@@ -435,12 +738,30 @@
       "Marks": 1,
       "AnswerId": 106983,
       "Answers": [
-        { "Id": 106983, "Text": "hide();" },
-        { "Id": 106984, "Text": "visible(false);" },
-        { "Id": 106985, "Text": "display(none);" },
-        { "Id": 106986, "Text": "invisable(false);" },
-        { "Id": 106987, "Text": "invisable(true);" },
-        { "Id": 106988, "Text": "hidden();" }
+        {
+          "Id": 106983,
+          "Text": "hide();"
+        },
+        {
+          "Id": 106984,
+          "Text": "visible(false);"
+        },
+        {
+          "Id": 106985,
+          "Text": "display(none);"
+        },
+        {
+          "Id": 106986,
+          "Text": "invisable(false);"
+        },
+        {
+          "Id": 106987,
+          "Text": "invisable(true);"
+        },
+        {
+          "Id": 106988,
+          "Text": "hidden();"
+        }
       ]
     },
     {
@@ -449,26 +770,62 @@
       "Marks": 1,
       "AnswerId": 106990,
       "Answers": [
-        { "Id": 106989, "Text": "execute myFunction();" },
-        { "Id": 106990, "Text": "myFunction();" },
-        { "Id": 106991, "Text": "call myFunction();" },
-        { "Id": 106992, "Text": "call function myFunction();" },
-        { "Id": 106993, "Text": "execute function myFunction();" },
-        { "Id": 106994, "Text": "run function myFunction();" }
+        {
+          "Id": 106989,
+          "Text": "execute myFunction();"
+        },
+        {
+          "Id": 106990,
+          "Text": "myFunction();"
+        },
+        {
+          "Id": 106991,
+          "Text": "call myFunction();"
+        },
+        {
+          "Id": 106992,
+          "Text": "call function myFunction();"
+        },
+        {
+          "Id": 106993,
+          "Text": "execute function myFunction();"
+        },
+        {
+          "Id": 106994,
+          "Text": "run function myFunction();"
+        }
       ]
     },
     {
       "Id": 25845,
-      "Text": "Hàm sau có tác dụng như thế nào? \u003cscript\u003efunction displayShow(){document.getElementById(\"demo\").innerHTML=Date();}\u003c/script\u003e",
+      "Text": "Hàm sau có tác dụng như thế nào? <script>function displayShow(){document.getElementById(\"demo\").innerHTML=Date();}</script>",
       "Marks": 1,
       "AnswerId": 106997,
       "Answers": [
-        { "Id": 106995, "Text": "Bật âm thanh" },
-        { "Id": 106996, "Text": "Hiển thị hình ảnh" },
-        { "Id": 106997, "Text": "Hiển thị ngày tháng" },
-        { "Id": 106998, "Text": "Hiển thị màu sắc cho đoạn văn bản" },
-        { "Id": 106999, "Text": "Xem video" },
-        { "Id": 107000, "Text": "Hiển thị hình ảnh động" }
+        {
+          "Id": 106995,
+          "Text": "Bật âm thanh"
+        },
+        {
+          "Id": 106996,
+          "Text": "Hiển thị hình ảnh"
+        },
+        {
+          "Id": 106997,
+          "Text": "Hiển thị ngày tháng"
+        },
+        {
+          "Id": 106998,
+          "Text": "Hiển thị màu sắc cho đoạn văn bản"
+        },
+        {
+          "Id": 106999,
+          "Text": "Xem video"
+        },
+        {
+          "Id": 107000,
+          "Text": "Hiển thị hình ảnh động"
+        }
       ]
     },
     {
@@ -477,24 +834,54 @@
       "Marks": 1,
       "AnswerId": 107004,
       "Answers": [
-        { "Id": 107001, "Text": "if i=5 then" },
-        { "Id": 107002, "Text": "if i=5" },
-        { "Id": 107003, "Text": "if i==5 then" },
-        { "Id": 107004, "Text": "if (i==5)" },
-        { "Id": 107005, "Text": "if (i===5)" },
-        { "Id": 107006, "Text": "if i===5 then" }
+        {
+          "Id": 107001,
+          "Text": "if i=5 then"
+        },
+        {
+          "Id": 107002,
+          "Text": "if i=5"
+        },
+        {
+          "Id": 107003,
+          "Text": "if i==5 then"
+        },
+        {
+          "Id": 107004,
+          "Text": "if (i==5)"
+        },
+        {
+          "Id": 107005,
+          "Text": "if (i===5)"
+        },
+        {
+          "Id": 107006,
+          "Text": "if i===5 then"
+        }
       ]
     },
     {
       "Id": 25847,
-      "Text": "Trong dòng mã sau:\u003cinput type=\"button\" onclick=\"show\" value=\"Submit\"\u003eTừ khóa onclick nhằm tác dụng gì?",
+      "Text": "Trong dòng mã sau:<input type=\"button\" onclick=\"show\" value=\"Submit\">Từ khóa onclick nhằm tác dụng gì?",
       "Marks": 1,
       "AnswerId": 107010,
       "Answers": [
-        { "Id": 107007, "Text": "Thực thi sự kiện show khi trang web được mở" },
-        { "Id": 107008, "Text": "Thực thi sự kiện show khi nhả nút" },
-        { "Id": 107009, "Text": "Thực thi sự kiện show khi đóng trình duyệt" },
-        { "Id": 107010, "Text": "Thực thi sự kiện show khi nhấn nút" },
+        {
+          "Id": 107007,
+          "Text": "Thực thi sự kiện show khi trang web được mở"
+        },
+        {
+          "Id": 107008,
+          "Text": "Thực thi sự kiện show khi nhả nút"
+        },
+        {
+          "Id": 107009,
+          "Text": "Thực thi sự kiện show khi đóng trình duyệt"
+        },
+        {
+          "Id": 107010,
+          "Text": "Thực thi sự kiện show khi nhấn nút"
+        },
         {
           "Id": 107011,
           "Text": "Thực thi sự kiện show khi nhấn đúp chuột vào nút"
@@ -511,14 +898,26 @@
       "Marks": 1,
       "AnswerId": 107013,
       "Answers": [
-        { "Id": 107013, "Text": "Là một thư viện của JavaScript" },
+        {
+          "Id": 107013,
+          "Text": "Là một thư viện của JavaScript"
+        },
         {
           "Id": 107014,
           "Text": "Là một tệp tin dạng doc và được trỏ tới thông qua lệnh @font-face của HTML5"
         },
-        { "Id": 107015, "Text": "Là một tệp tin dạng excel" },
-        { "Id": 107016, "Text": "Là một thư viện của PHP" },
-        { "Id": 107017, "Text": "Là một tệp tin dạng doc" },
+        {
+          "Id": 107015,
+          "Text": "Là một tệp tin dạng excel"
+        },
+        {
+          "Id": 107016,
+          "Text": "Là một thư viện của PHP"
+        },
+        {
+          "Id": 107017,
+          "Text": "Là một tệp tin dạng doc"
+        },
         {
           "Id": 107018,
           "Text": "Là một công nghệ riêng biệt, hình thành song song với công nghệ JavaScript"
@@ -531,12 +930,30 @@
       "Marks": 1,
       "AnswerId": 107021,
       "Answers": [
-        { "Id": 107019, "Text": "show name=ducati" },
-        { "Id": 107020, "Text": "var Ducati" },
-        { "Id": 107021, "Text": "var name=\"Ducati\";" },
-        { "Id": 107022, "Text": "show name=ducati;" },
-        { "Id": 107023, "Text": "show name=\"Ducati\";" },
-        { "Id": 107024, "Text": "showvar name;" }
+        {
+          "Id": 107019,
+          "Text": "show name=ducati"
+        },
+        {
+          "Id": 107020,
+          "Text": "var Ducati"
+        },
+        {
+          "Id": 107021,
+          "Text": "var name=\"Ducati\";"
+        },
+        {
+          "Id": 107022,
+          "Text": "show name=ducati;"
+        },
+        {
+          "Id": 107023,
+          "Text": "show name=\"Ducati\";"
+        },
+        {
+          "Id": 107024,
+          "Text": "showvar name;"
+        }
       ]
     },
     {
@@ -545,15 +962,30 @@
       "Marks": 1,
       "AnswerId": 107025,
       "Answers": [
-        { "Id": 107025, "Text": "Canvas là hàm API vẽ hai chiều của HTML5" },
-        { "Id": 107026, "Text": "Canvas là đối tượng hình học trong HTML5" },
-        { "Id": 107027, "Text": "Canvas là giá trị vẽ hình trong HTML5" },
-        { "Id": 107028, "Text": "Canvas là thẻ vẽ ba chiều của HTML5" },
+        {
+          "Id": 107025,
+          "Text": "Canvas là hàm API vẽ hai chiều của HTML5"
+        },
+        {
+          "Id": 107026,
+          "Text": "Canvas là đối tượng hình học trong HTML5"
+        },
+        {
+          "Id": 107027,
+          "Text": "Canvas là giá trị vẽ hình trong HTML5"
+        },
+        {
+          "Id": 107028,
+          "Text": "Canvas là thẻ vẽ ba chiều của HTML5"
+        },
         {
           "Id": 107029,
           "Text": "Canvas là thành phần làm việc chèn ảnh đặc biệt trong HTML5"
         },
-        { "Id": 107030, "Text": "Canvas là thuộc tính vẽ hình trong HTML5" }
+        {
+          "Id": 107030,
+          "Text": "Canvas là thuộc tính vẽ hình trong HTML5"
+        }
       ]
     },
     {
@@ -590,12 +1022,30 @@
       "Marks": 1,
       "AnswerId": 107038,
       "Answers": [
-        { "Id": 107036, "Text": "handling" },
-        { "Id": 107037, "Text": "controlling" },
-        { "Id": 107038, "Text": "controls" },
-        { "Id": 107039, "Text": "play" },
-        { "Id": 107040, "Text": "pause" },
-        { "Id": 107041, "Text": "handle" }
+        {
+          "Id": 107036,
+          "Text": "handling"
+        },
+        {
+          "Id": 107037,
+          "Text": "controlling"
+        },
+        {
+          "Id": 107038,
+          "Text": "controls"
+        },
+        {
+          "Id": 107039,
+          "Text": "play"
+        },
+        {
+          "Id": 107040,
+          "Text": "pause"
+        },
+        {
+          "Id": 107041,
+          "Text": "handle"
+        }
       ]
     },
     {
@@ -604,15 +1054,30 @@
       "Marks": 1,
       "AnswerId": 107043,
       "Answers": [
-        { "Id": 107042, "Text": "Quy định dải màu" },
+        {
+          "Id": 107042,
+          "Text": "Quy định dải màu"
+        },
         {
           "Id": 107043,
           "Text": "Quy định cụ thể một màu và vị trí màu sắc trong đối tượng gradient"
         },
-        { "Id": 107044, "Text": "Quy định điểm dừng màu" },
-        { "Id": 107045, "Text": "Quy định dải màu cho đối tượng Canvas" },
-        { "Id": 107046, "Text": "Quy định điểm bắt đầu màu" },
-        { "Id": 107047, "Text": "Quy định màu sắc cho đối tượng Canvas" }
+        {
+          "Id": 107044,
+          "Text": "Quy định điểm dừng màu"
+        },
+        {
+          "Id": 107045,
+          "Text": "Quy định dải màu cho đối tượng Canvas"
+        },
+        {
+          "Id": 107046,
+          "Text": "Quy định điểm bắt đầu màu"
+        },
+        {
+          "Id": 107047,
+          "Text": "Quy định màu sắc cho đối tượng Canvas"
+        }
       ]
     },
     {
@@ -621,12 +1086,30 @@
       "Marks": 1,
       "AnswerId": 107048,
       "Answers": [
-        { "Id": 107048, "Text": "JavaScript" },
-        { "Id": 107049, "Text": "Java" },
-        { "Id": 107050, "Text": "PHP" },
-        { "Id": 107051, "Text": "ASP.NET" },
-        { "Id": 107052, "Text": "Python" },
-        { "Id": 107053, "Text": "ActionScript" }
+        {
+          "Id": 107048,
+          "Text": "JavaScript"
+        },
+        {
+          "Id": 107049,
+          "Text": "Java"
+        },
+        {
+          "Id": 107050,
+          "Text": "PHP"
+        },
+        {
+          "Id": 107051,
+          "Text": "ASP.NET"
+        },
+        {
+          "Id": 107052,
+          "Text": "Python"
+        },
+        {
+          "Id": 107053,
+          "Text": "ActionScript"
+        }
       ]
     },
     {
@@ -635,12 +1118,30 @@
       "Marks": 1,
       "AnswerId": 107059,
       "Answers": [
-        { "Id": 107054, "Text": "drawTo" },
-        { "Id": 107055, "Text": "lineTo" },
-        { "Id": 107056, "Text": "drawTo(x,y)" },
-        { "Id": 107057, "Text": "moveTo" },
-        { "Id": 107058, "Text": "lineTo(x, y)" },
-        { "Id": 107059, "Text": "moveTo(x,y)" }
+        {
+          "Id": 107054,
+          "Text": "drawTo"
+        },
+        {
+          "Id": 107055,
+          "Text": "lineTo"
+        },
+        {
+          "Id": 107056,
+          "Text": "drawTo(x,y)"
+        },
+        {
+          "Id": 107057,
+          "Text": "moveTo"
+        },
+        {
+          "Id": 107058,
+          "Text": "lineTo(x, y)"
+        },
+        {
+          "Id": 107059,
+          "Text": "moveTo(x,y)"
+        }
       ]
     },
     {
@@ -649,12 +1150,30 @@
       "Marks": 1,
       "AnswerId": 107063,
       "Answers": [
-        { "Id": 107060, "Text": "applet và javascript" },
-        { "Id": 107061, "Text": "video và embed" },
-        { "Id": 107062, "Text": "applet và span" },
-        { "Id": 107063, "Text": "video và audio" },
-        { "Id": 107064, "Text": "video và jscript" },
-        { "Id": 107065, "Text": "audio và jscript" }
+        {
+          "Id": 107060,
+          "Text": "applet và javascript"
+        },
+        {
+          "Id": 107061,
+          "Text": "video và embed"
+        },
+        {
+          "Id": 107062,
+          "Text": "applet và span"
+        },
+        {
+          "Id": 107063,
+          "Text": "video và audio"
+        },
+        {
+          "Id": 107064,
+          "Text": "video và jscript"
+        },
+        {
+          "Id": 107065,
+          "Text": "audio và jscript"
+        }
       ]
     },
     {
@@ -663,11 +1182,26 @@
       "Marks": 1,
       "AnswerId": 107070,
       "Answers": [
-        { "Id": 107066, "Text": "getGraphics" },
-        { "Id": 107067, "Text": "getCanvas" },
-        { "Id": 107068, "Text": "getDrawing" },
-        { "Id": 107069, "Text": "getScreen" },
-        { "Id": 107070, "Text": "getContext" }
+        {
+          "Id": 107066,
+          "Text": "getGraphics"
+        },
+        {
+          "Id": 107067,
+          "Text": "getCanvas"
+        },
+        {
+          "Id": 107068,
+          "Text": "getDrawing"
+        },
+        {
+          "Id": 107069,
+          "Text": "getScreen"
+        },
+        {
+          "Id": 107070,
+          "Text": "getContext"
+        }
       ]
     },
     {
@@ -676,12 +1210,30 @@
       "Marks": 1,
       "AnswerId": 107075,
       "Answers": [
-        { "Id": 107071, "Text": "avi" },
-        { "Id": 107072, "Text": "swf" },
-        { "Id": 107073, "Text": "saaw" },
-        { "Id": 107074, "Text": "flash" },
-        { "Id": 107075, "Text": "png" },
-        { "Id": 107076, "Text": "mp4" }
+        {
+          "Id": 107071,
+          "Text": "avi"
+        },
+        {
+          "Id": 107072,
+          "Text": "swf"
+        },
+        {
+          "Id": 107073,
+          "Text": "saaw"
+        },
+        {
+          "Id": 107074,
+          "Text": "flash"
+        },
+        {
+          "Id": 107075,
+          "Text": "png"
+        },
+        {
+          "Id": 107076,
+          "Text": "mp4"
+        }
       ]
     },
     {
@@ -690,12 +1242,30 @@
       "Marks": 1,
       "AnswerId": 107079,
       "Answers": [
-        { "Id": 107077, "Text": "fillTo" },
-        { "Id": 107078, "Text": "fillTo(x,y)" },
-        { "Id": 107079, "Text": "lineTo(x, y)" },
-        { "Id": 107080, "Text": "strokeTo(x,y)" },
-        { "Id": 107081, "Text": "strokeTo" },
-        { "Id": 107082, "Text": "lineTo" }
+        {
+          "Id": 107077,
+          "Text": "fillTo"
+        },
+        {
+          "Id": 107078,
+          "Text": "fillTo(x,y)"
+        },
+        {
+          "Id": 107079,
+          "Text": "lineTo(x, y)"
+        },
+        {
+          "Id": 107080,
+          "Text": "strokeTo(x,y)"
+        },
+        {
+          "Id": 107081,
+          "Text": "strokeTo"
+        },
+        {
+          "Id": 107082,
+          "Text": "lineTo"
+        }
       ]
     },
     {
@@ -704,10 +1274,22 @@
       "Marks": 1,
       "AnswerId": 107085,
       "Answers": [
-        { "Id": 107083, "Text": "box-show và box-align" },
-        { "Id": 107084, "Text": "box-align và box-float" },
-        { "Id": 107085, "Text": "box-pack và box-align" },
-        { "Id": 107086, "Text": "box-float và box-pack" }
+        {
+          "Id": 107083,
+          "Text": "box-show và box-align"
+        },
+        {
+          "Id": 107084,
+          "Text": "box-align và box-float"
+        },
+        {
+          "Id": 107085,
+          "Text": "box-pack và box-align"
+        },
+        {
+          "Id": 107086,
+          "Text": "box-float và box-pack"
+        }
       ]
     },
     {
@@ -716,12 +1298,30 @@
       "Marks": 1,
       "AnswerId": 107088,
       "Answers": [
-        { "Id": 107087, "Text": "animation-duration" },
-        { "Id": 107088, "Text": "animation-iteration-count" },
-        { "Id": 107089, "Text": "animation-count" },
-        { "Id": 107090, "Text": "animation-name" },
-        { "Id": 107091, "Text": "animation-timing-function" },
-        { "Id": 107092, "Text": "animation-timing-times" }
+        {
+          "Id": 107087,
+          "Text": "animation-duration"
+        },
+        {
+          "Id": 107088,
+          "Text": "animation-iteration-count"
+        },
+        {
+          "Id": 107089,
+          "Text": "animation-count"
+        },
+        {
+          "Id": 107090,
+          "Text": "animation-name"
+        },
+        {
+          "Id": 107091,
+          "Text": "animation-timing-function"
+        },
+        {
+          "Id": 107092,
+          "Text": "animation-timing-times"
+        }
       ]
     },
     {
@@ -738,12 +1338,18 @@
           "Id": 107094,
           "Text": "Một keyframe được sử dụng để thiết lập border-radius"
         },
-        { "Id": 107095, "Text": "Một keyframe được sử dụng trong vẽ canvas" },
+        {
+          "Id": 107095,
+          "Text": "Một keyframe được sử dụng trong vẽ canvas"
+        },
         {
           "Id": 107096,
           "Text": "Một keyframe được sử dụng trong hiển thị video"
         },
-        { "Id": 107097, "Text": "Một keyframe được sử dụng trong xem audio" },
+        {
+          "Id": 107097,
+          "Text": "Một keyframe được sử dụng trong xem audio"
+        },
         {
           "Id": 107098,
           "Text": "Một keyframe được sử dụng trong hoạt hình CSS3 và định nghĩa giá trị xác định của một thuộc tính, ví dụ như góc quay"
@@ -756,12 +1362,30 @@
       "Marks": 1,
       "AnswerId": 107104,
       "Answers": [
-        { "Id": 107099, "Text": "Ease" },
-        { "Id": 107100, "Text": "medium" },
-        { "Id": 107101, "Text": "Ease-in" },
-        { "Id": 107102, "Text": "Ease-out" },
-        { "Id": 107103, "Text": "Ease-in-out" },
-        { "Id": 107104, "Text": "linear" }
+        {
+          "Id": 107099,
+          "Text": "Ease"
+        },
+        {
+          "Id": 107100,
+          "Text": "medium"
+        },
+        {
+          "Id": 107101,
+          "Text": "Ease-in"
+        },
+        {
+          "Id": 107102,
+          "Text": "Ease-out"
+        },
+        {
+          "Id": 107103,
+          "Text": "Ease-in-out"
+        },
+        {
+          "Id": 107104,
+          "Text": "linear"
+        }
       ]
     },
     {
@@ -770,12 +1394,30 @@
       "Marks": 1,
       "AnswerId": 107110,
       "Answers": [
-        { "Id": 107105, "Text": "border" },
-        { "Id": 107106, "Text": "radius-border" },
-        { "Id": 107107, "Text": "border-round" },
-        { "Id": 107108, "Text": "round" },
-        { "Id": 107109, "Text": "round-border" },
-        { "Id": 107110, "Text": "border-radius" }
+        {
+          "Id": 107105,
+          "Text": "border"
+        },
+        {
+          "Id": 107106,
+          "Text": "radius-border"
+        },
+        {
+          "Id": 107107,
+          "Text": "border-round"
+        },
+        {
+          "Id": 107108,
+          "Text": "round"
+        },
+        {
+          "Id": 107109,
+          "Text": "round-border"
+        },
+        {
+          "Id": 107110,
+          "Text": "border-radius"
+        }
       ]
     },
     {
@@ -784,12 +1426,30 @@
       "Marks": 1,
       "AnswerId": 107111,
       "Answers": [
-        { "Id": 107111, "Text": "CSS2.1" },
-        { "Id": 107112, "Text": "CSS2" },
-        { "Id": 107113, "Text": "Linux" },
-        { "Id": 107114, "Text": "Flash" },
-        { "Id": 107115, "Text": "Adobe" },
-        { "Id": 107116, "Text": "CSS1" }
+        {
+          "Id": 107111,
+          "Text": "CSS2.1"
+        },
+        {
+          "Id": 107112,
+          "Text": "CSS2"
+        },
+        {
+          "Id": 107113,
+          "Text": "Linux"
+        },
+        {
+          "Id": 107114,
+          "Text": "Flash"
+        },
+        {
+          "Id": 107115,
+          "Text": "Adobe"
+        },
+        {
+          "Id": 107116,
+          "Text": "CSS1"
+        }
       ]
     },
     {
@@ -798,12 +1458,30 @@
       "Marks": 1,
       "AnswerId": 107118,
       "Answers": [
-        { "Id": 107117, "Text": "3" },
-        { "Id": 107118, "Text": "Không giới hạn" },
-        { "Id": 107119, "Text": "5" },
-        { "Id": 107120, "Text": "1" },
-        { "Id": 107121, "Text": "4" },
-        { "Id": 107122, "Text": "2" }
+        {
+          "Id": 107117,
+          "Text": "3"
+        },
+        {
+          "Id": 107118,
+          "Text": "Không giới hạn"
+        },
+        {
+          "Id": 107119,
+          "Text": "5"
+        },
+        {
+          "Id": 107120,
+          "Text": "1"
+        },
+        {
+          "Id": 107121,
+          "Text": "4"
+        },
+        {
+          "Id": 107122,
+          "Text": "2"
+        }
       ]
     },
     {
@@ -812,12 +1490,30 @@
       "Marks": 1,
       "AnswerId": 107127,
       "Answers": [
-        { "Id": 107123, "Text": "Dolphin" },
-        { "Id": 107124, "Text": "Opera" },
-        { "Id": 107125, "Text": "Firefox" },
-        { "Id": 107126, "Text": "Opera Mini" },
-        { "Id": 107127, "Text": "IE" },
-        { "Id": 107128, "Text": "Safari" }
+        {
+          "Id": 107123,
+          "Text": "Dolphin"
+        },
+        {
+          "Id": 107124,
+          "Text": "Opera"
+        },
+        {
+          "Id": 107125,
+          "Text": "Firefox"
+        },
+        {
+          "Id": 107126,
+          "Text": "Opera Mini"
+        },
+        {
+          "Id": 107127,
+          "Text": "IE"
+        },
+        {
+          "Id": 107128,
+          "Text": "Safari"
+        }
       ]
     },
     {
@@ -826,12 +1522,30 @@
       "Marks": 1,
       "AnswerId": 107131,
       "Answers": [
-        { "Id": 107129, "Text": "@add-font" },
-        { "Id": 107130, "Text": "edit-font" },
-        { "Id": 107131, "Text": "@font-face" },
-        { "Id": 107132, "Text": "font-style" },
-        { "Id": 107133, "Text": "set-font" },
-        { "Id": 107134, "Text": "Gimme-Gimme" }
+        {
+          "Id": 107129,
+          "Text": "@add-font"
+        },
+        {
+          "Id": 107130,
+          "Text": "edit-font"
+        },
+        {
+          "Id": 107131,
+          "Text": "@font-face"
+        },
+        {
+          "Id": 107132,
+          "Text": "font-style"
+        },
+        {
+          "Id": 107133,
+          "Text": "set-font"
+        },
+        {
+          "Id": 107134,
+          "Text": "Gimme-Gimme"
+        }
       ]
     },
     {
@@ -840,10 +1554,22 @@
       "Marks": 1,
       "AnswerId": 107136,
       "Answers": [
-        { "Id": 107135, "Text": "Paint" },
-        { "Id": 107136, "Text": "Adobe Flash" },
-        { "Id": 107137, "Text": "Notepad" },
-        { "Id": 107138, "Text": "Etch-a-Sketch" }
+        {
+          "Id": 107135,
+          "Text": "Paint"
+        },
+        {
+          "Id": 107136,
+          "Text": "Adobe Flash"
+        },
+        {
+          "Id": 107137,
+          "Text": "Notepad"
+        },
+        {
+          "Id": 107138,
+          "Text": "Etch-a-Sketch"
+        }
       ]
     },
     {
@@ -852,12 +1578,30 @@
       "Marks": 1,
       "AnswerId": 107140,
       "Answers": [
-        { "Id": 107139, "Text": "directing:landscape" },
-        { "Id": 107140, "Text": "orientation:landscape" },
-        { "Id": 107141, "Text": "oriented:landscape" },
-        { "Id": 107142, "Text": "orienting:landscape" },
-        { "Id": 107143, "Text": "direction:landscape" },
-        { "Id": 107144, "Text": "directed:landscape" }
+        {
+          "Id": 107139,
+          "Text": "directing:landscape"
+        },
+        {
+          "Id": 107140,
+          "Text": "orientation:landscape"
+        },
+        {
+          "Id": 107141,
+          "Text": "oriented:landscape"
+        },
+        {
+          "Id": 107142,
+          "Text": "orienting:landscape"
+        },
+        {
+          "Id": 107143,
+          "Text": "direction:landscape"
+        },
+        {
+          "Id": 107144,
+          "Text": "directed:landscape"
+        }
       ]
     },
     {
@@ -894,10 +1638,22 @@
       "Marks": 1,
       "AnswerId": 107153,
       "Answers": [
-        { "Id": 107150, "Text": "resizing:none" },
-        { "Id": 107151, "Text": "change-size:none" },
-        { "Id": 107152, "Text": "changing-size:none" },
-        { "Id": 107153, "Text": "resize:none" }
+        {
+          "Id": 107150,
+          "Text": "resizing:none"
+        },
+        {
+          "Id": 107151,
+          "Text": "change-size:none"
+        },
+        {
+          "Id": 107152,
+          "Text": "changing-size:none"
+        },
+        {
+          "Id": 107153,
+          "Text": "resize:none"
+        }
       ]
     },
     {
@@ -906,10 +1662,22 @@
       "Marks": 1,
       "AnswerId": 107157,
       "Answers": [
-        { "Id": 107154, "Text": "Layout 2 cột" },
-        { "Id": 107155, "Text": "Layout dạng 4 cột" },
-        { "Id": 107156, "Text": "Layout 3 cột" },
-        { "Id": 107157, "Text": "Layout dạng hộp linh động" }
+        {
+          "Id": 107154,
+          "Text": "Layout 2 cột"
+        },
+        {
+          "Id": 107155,
+          "Text": "Layout dạng 4 cột"
+        },
+        {
+          "Id": 107156,
+          "Text": "Layout 3 cột"
+        },
+        {
+          "Id": 107157,
+          "Text": "Layout dạng hộp linh động"
+        }
       ]
     },
     {
@@ -938,7 +1706,10 @@
           "Id": 107162,
           "Text": "Website có độ phản hồi cao là website được xây dựng bằng JSP"
         },
-        { "Id": 107163, "Text": "Website có độ phản hồi cao là website CMS" }
+        {
+          "Id": 107163,
+          "Text": "Website có độ phản hồi cao là website CMS"
+        }
       ]
     },
     {
@@ -947,12 +1718,30 @@
       "Marks": 1,
       "AnswerId": 107165,
       "Answers": [
-        { "Id": 107164, "Text": "Space-around" },
-        { "Id": 107165, "Text": "center" },
-        { "Id": 107166, "Text": "flex-start" },
-        { "Id": 107167, "Text": "Space-between" },
-        { "Id": 107168, "Text": "flex-center" },
-        { "Id": 107169, "Text": "flex-end" }
+        {
+          "Id": 107164,
+          "Text": "Space-around"
+        },
+        {
+          "Id": 107165,
+          "Text": "center"
+        },
+        {
+          "Id": 107166,
+          "Text": "flex-start"
+        },
+        {
+          "Id": 107167,
+          "Text": "Space-between"
+        },
+        {
+          "Id": 107168,
+          "Text": "flex-center"
+        },
+        {
+          "Id": 107169,
+          "Text": "flex-end"
+        }
       ]
     },
     {
@@ -961,12 +1750,30 @@
       "Marks": 1,
       "AnswerId": 107172,
       "Answers": [
-        { "Id": 107170, "Text": "Chrome và Firefox" },
-        { "Id": 107171, "Text": "Safari và Nestcape" },
-        { "Id": 107172, "Text": "Safari và Chrome" },
-        { "Id": 107173, "Text": "Opera và Dolphin" },
-        { "Id": 107174, "Text": "Firefox và Safari" },
-        { "Id": 107175, "Text": "Safari và Opera" }
+        {
+          "Id": 107170,
+          "Text": "Chrome và Firefox"
+        },
+        {
+          "Id": 107171,
+          "Text": "Safari và Nestcape"
+        },
+        {
+          "Id": 107172,
+          "Text": "Safari và Chrome"
+        },
+        {
+          "Id": 107173,
+          "Text": "Opera và Dolphin"
+        },
+        {
+          "Id": 107174,
+          "Text": "Firefox và Safari"
+        },
+        {
+          "Id": 107175,
+          "Text": "Safari và Opera"
+        }
       ]
     },
     {
@@ -975,12 +1782,30 @@
       "Marks": 1,
       "AnswerId": 107178,
       "Answers": [
-        { "Id": 107176, "Text": "JavaScript" },
-        { "Id": 107177, "Text": "CSS3 media" },
-        { "Id": 107178, "Text": "CSS3 media queries" },
-        { "Id": 107179, "Text": "CSS3 queries" },
-        { "Id": 107180, "Text": "Jquery" },
-        { "Id": 107181, "Text": "PHP" }
+        {
+          "Id": 107176,
+          "Text": "JavaScript"
+        },
+        {
+          "Id": 107177,
+          "Text": "CSS3 media"
+        },
+        {
+          "Id": 107178,
+          "Text": "CSS3 media queries"
+        },
+        {
+          "Id": 107179,
+          "Text": "CSS3 queries"
+        },
+        {
+          "Id": 107180,
+          "Text": "Jquery"
+        },
+        {
+          "Id": 107181,
+          "Text": "PHP"
+        }
       ]
     },
     {
@@ -989,12 +1814,30 @@
       "Marks": 1,
       "AnswerId": 107187,
       "Answers": [
-        { "Id": 107182, "Text": "column-go" },
-        { "Id": 107183, "Text": "column-given" },
-        { "Id": 107184, "Text": "column-space" },
-        { "Id": 107185, "Text": "column-gud" },
-        { "Id": 107186, "Text": "column_different" },
-        { "Id": 107187, "Text": "column-gap" }
+        {
+          "Id": 107182,
+          "Text": "column-go"
+        },
+        {
+          "Id": 107183,
+          "Text": "column-given"
+        },
+        {
+          "Id": 107184,
+          "Text": "column-space"
+        },
+        {
+          "Id": 107185,
+          "Text": "column-gud"
+        },
+        {
+          "Id": 107186,
+          "Text": "column_different"
+        },
+        {
+          "Id": 107187,
+          "Text": "column-gap"
+        }
       ]
     },
     {
@@ -1003,12 +1846,30 @@
       "Marks": 1,
       "AnswerId": 107188,
       "Answers": [
-        { "Id": 107188, "Text": "Device-aspect-ratio" },
-        { "Id": 107189, "Text": "Device-aspect-difference" },
-        { "Id": 107190, "Text": "Max-device" },
-        { "Id": 107191, "Text": "Min-device-width" },
-        { "Id": 107192, "Text": "Min-device" },
-        { "Id": 107193, "Text": "Max-device-width" }
+        {
+          "Id": 107188,
+          "Text": "Device-aspect-ratio"
+        },
+        {
+          "Id": 107189,
+          "Text": "Device-aspect-difference"
+        },
+        {
+          "Id": 107190,
+          "Text": "Max-device"
+        },
+        {
+          "Id": 107191,
+          "Text": "Min-device-width"
+        },
+        {
+          "Id": 107192,
+          "Text": "Min-device"
+        },
+        {
+          "Id": 107193,
+          "Text": "Max-device-width"
+        }
       ]
     },
     {
@@ -1017,12 +1878,30 @@
       "Marks": 1,
       "AnswerId": 107196,
       "Answers": [
-        { "Id": 107194, "Text": "setItem" },
-        { "Id": 107195, "Text": "getItem" },
-        { "Id": 107196, "Text": "length" },
-        { "Id": 107197, "Text": "count" },
-        { "Id": 107198, "Text": "total" },
-        { "Id": 107199, "Text": "value" }
+        {
+          "Id": 107194,
+          "Text": "setItem"
+        },
+        {
+          "Id": 107195,
+          "Text": "getItem"
+        },
+        {
+          "Id": 107196,
+          "Text": "length"
+        },
+        {
+          "Id": 107197,
+          "Text": "count"
+        },
+        {
+          "Id": 107198,
+          "Text": "total"
+        },
+        {
+          "Id": 107199,
+          "Text": "value"
+        }
       ]
     },
     {
@@ -1031,12 +1910,30 @@
       "Marks": 1,
       "AnswerId": 107203,
       "Answers": [
-        { "Id": 107200, "Text": "getValue" },
-        { "Id": 107201, "Text": "setItem(key, value)" },
-        { "Id": 107202, "Text": "setItem" },
-        { "Id": 107203, "Text": "getItem(key)" },
-        { "Id": 107204, "Text": "value" },
-        { "Id": 107205, "Text": "getItem" }
+        {
+          "Id": 107200,
+          "Text": "getValue"
+        },
+        {
+          "Id": 107201,
+          "Text": "setItem(key, value)"
+        },
+        {
+          "Id": 107202,
+          "Text": "setItem"
+        },
+        {
+          "Id": 107203,
+          "Text": "getItem(key)"
+        },
+        {
+          "Id": 107204,
+          "Text": "value"
+        },
+        {
+          "Id": 107205,
+          "Text": "getItem"
+        }
       ]
     },
     {
@@ -1045,12 +1942,30 @@
       "Marks": 1,
       "AnswerId": 107208,
       "Answers": [
-        { "Id": 107206, "Text": "6" },
-        { "Id": 107207, "Text": "4" },
-        { "Id": 107208, "Text": "2" },
-        { "Id": 107209, "Text": "3" },
-        { "Id": 107210, "Text": "1" },
-        { "Id": 107211, "Text": "5" }
+        {
+          "Id": 107206,
+          "Text": "6"
+        },
+        {
+          "Id": 107207,
+          "Text": "4"
+        },
+        {
+          "Id": 107208,
+          "Text": "2"
+        },
+        {
+          "Id": 107209,
+          "Text": "3"
+        },
+        {
+          "Id": 107210,
+          "Text": "1"
+        },
+        {
+          "Id": 107211,
+          "Text": "5"
+        }
       ]
     },
     {
@@ -1059,12 +1974,30 @@
       "Marks": 1,
       "AnswerId": 107213,
       "Answers": [
-        { "Id": 107212, "Text": "getPositions()" },
-        { "Id": 107213, "Text": "getCurrentPosition()" },
-        { "Id": 107214, "Text": "getUserPosition()" },
-        { "Id": 107215, "Text": "getPosition()" },
-        { "Id": 107216, "Text": "getNearestPosition()" },
-        { "Id": 107217, "Text": "getUserPositions()" }
+        {
+          "Id": 107212,
+          "Text": "getPositions()"
+        },
+        {
+          "Id": 107213,
+          "Text": "getCurrentPosition()"
+        },
+        {
+          "Id": 107214,
+          "Text": "getUserPosition()"
+        },
+        {
+          "Id": 107215,
+          "Text": "getPosition()"
+        },
+        {
+          "Id": 107216,
+          "Text": "getNearestPosition()"
+        },
+        {
+          "Id": 107217,
+          "Text": "getUserPositions()"
+        }
       ]
     },
     {
@@ -1073,12 +2006,30 @@
       "Marks": 1,
       "AnswerId": 107222,
       "Answers": [
-        { "Id": 107218, "Text": "setValue" },
-        { "Id": 107219, "Text": "get" },
-        { "Id": 107220, "Text": "set" },
-        { "Id": 107221, "Text": "setValues" },
-        { "Id": 107222, "Text": "setData" },
-        { "Id": 107223, "Text": "getData" }
+        {
+          "Id": 107218,
+          "Text": "setValue"
+        },
+        {
+          "Id": 107219,
+          "Text": "get"
+        },
+        {
+          "Id": 107220,
+          "Text": "set"
+        },
+        {
+          "Id": 107221,
+          "Text": "setValues"
+        },
+        {
+          "Id": 107222,
+          "Text": "setData"
+        },
+        {
+          "Id": 107223,
+          "Text": "getData"
+        }
       ]
     },
     {
@@ -1087,12 +2038,30 @@
       "Marks": 1,
       "AnswerId": 107229,
       "Answers": [
-        { "Id": 107224, "Text": "var" },
-        { "Id": 107225, "Text": "number" },
-        { "Id": 107226, "Text": "int" },
-        { "Id": 107227, "Text": "bit" },
-        { "Id": 107228, "Text": "varchar" },
-        { "Id": 107229, "Text": "string" }
+        {
+          "Id": 107224,
+          "Text": "var"
+        },
+        {
+          "Id": 107225,
+          "Text": "number"
+        },
+        {
+          "Id": 107226,
+          "Text": "int"
+        },
+        {
+          "Id": 107227,
+          "Text": "bit"
+        },
+        {
+          "Id": 107228,
+          "Text": "varchar"
+        },
+        {
+          "Id": 107229,
+          "Text": "string"
+        }
       ]
     },
     {
@@ -1101,12 +2070,30 @@
       "Marks": 1,
       "AnswerId": 107232,
       "Answers": [
-        { "Id": 107230, "Text": "getOptions" },
-        { "Id": 107231, "Text": "getCurrentPositions" },
-        { "Id": 107232, "Text": "getCurrentPosition" },
-        { "Id": 107233, "Text": "getPositions" },
-        { "Id": 107234, "Text": "getPosition" },
-        { "Id": 107235, "Text": "getOption" }
+        {
+          "Id": 107230,
+          "Text": "getOptions"
+        },
+        {
+          "Id": 107231,
+          "Text": "getCurrentPositions"
+        },
+        {
+          "Id": 107232,
+          "Text": "getCurrentPosition"
+        },
+        {
+          "Id": 107233,
+          "Text": "getPositions"
+        },
+        {
+          "Id": 107234,
+          "Text": "getPosition"
+        },
+        {
+          "Id": 107235,
+          "Text": "getOption"
+        }
       ]
     },
     {
@@ -1115,12 +2102,30 @@
       "Marks": 1,
       "AnswerId": 107241,
       "Answers": [
-        { "Id": 107236, "Text": "6" },
-        { "Id": 107237, "Text": "7" },
-        { "Id": 107238, "Text": "5" },
-        { "Id": 107239, "Text": "4" },
-        { "Id": 107240, "Text": "3" },
-        { "Id": 107241, "Text": "1" }
+        {
+          "Id": 107236,
+          "Text": "6"
+        },
+        {
+          "Id": 107237,
+          "Text": "7"
+        },
+        {
+          "Id": 107238,
+          "Text": "5"
+        },
+        {
+          "Id": 107239,
+          "Text": "4"
+        },
+        {
+          "Id": 107240,
+          "Text": "3"
+        },
+        {
+          "Id": 107241,
+          "Text": "1"
+        }
       ]
     },
     {
@@ -1129,10 +2134,22 @@
       "Marks": 1,
       "AnswerId": 107243,
       "Answers": [
-        { "Id": 107242, "Text": "sessionStorage" },
-        { "Id": 107243, "Text": "localStorage" },
-        { "Id": 107244, "Text": "removeItem" },
-        { "Id": 107245, "Text": "getItem" }
+        {
+          "Id": 107242,
+          "Text": "sessionStorage"
+        },
+        {
+          "Id": 107243,
+          "Text": "localStorage"
+        },
+        {
+          "Id": 107244,
+          "Text": "removeItem"
+        },
+        {
+          "Id": 107245,
+          "Text": "getItem"
+        }
       ]
     },
     {
@@ -1141,11 +2158,26 @@
       "Marks": 1,
       "AnswerId": 107246,
       "Answers": [
-        { "Id": 107246, "Text": "Google Map API" },
-        { "Id": 107247, "Text": "DetectLocation API" },
-        { "Id": 107248, "Text": "Location API" },
-        { "Id": 107249, "Text": "Nokia map API" },
-        { "Id": 107250, "Text": "Bing Map API" }
+        {
+          "Id": 107246,
+          "Text": "Google Map API"
+        },
+        {
+          "Id": 107247,
+          "Text": "DetectLocation API"
+        },
+        {
+          "Id": 107248,
+          "Text": "Location API"
+        },
+        {
+          "Id": 107249,
+          "Text": "Nokia map API"
+        },
+        {
+          "Id": 107250,
+          "Text": "Bing Map API"
+        }
       ]
     }
   ],
@@ -6572,7 +7604,7 @@
     },
     {
       "Id": 25247,
-      "Text": "Để bật Javascript, gọi : myWebView.setSettings().setJavaScriptEnabled(true); đối với đối tượng WebView\u003e, điều này đúng hay sai?",
+      "Text": "Để bật Javascript, gọi : myWebView.setSettings().setJavaScriptEnabled(true); đối với đối tượng WebView>, điều này đúng hay sai?",
       "Marks": 1,
       "AnswerId": 104659,
       "Answers": [
@@ -7276,19 +8308,19 @@
       "Answers": [
         {
           "Id": 107631,
-          "Text": "\u003casp:HyperLink ID=\"HyperLink1\" runat=\"server\" ImageUrl=\"home.gif\" NavigateUrl=\"index.apsx\"\u003eTrang chủ\u003c/asp:HyperLink\u003e"
+          "Text": "<asp:HyperLink ID=\"HyperLink1\" runat=\"server\" ImageUrl=\"home.gif\" NavigateUrl=\"index.apsx\">Trang chủ</asp:HyperLink>"
         },
         {
           "Id": 107632,
-          "Text": "\u003casp:HyperLink ID=\"HyperLink1\" runat=\"server\" ImageUrl=\"home.gif\" href=\"index.apsx\" text= “Trang chủ”\u003e\u003c/asp:HyperLink\u003e"
+          "Text": "<asp:HyperLink ID=\"HyperLink1\" runat=\"server\" ImageUrl=\"home.gif\" href=\"index.apsx\" text= “Trang chủ”></asp:HyperLink>"
         },
         {
           "Id": 107633,
-          "Text": "\u003casp:HyperLink ID=\"HyperLink1\" runat=\"server\" Image=\"home.gif\" href =\"index.apsx\"\u003eTrang chủ\u003c/asp:HyperLink\u003e"
+          "Text": "<asp:HyperLink ID=\"HyperLink1\" runat=\"server\" Image=\"home.gif\" href =\"index.apsx\">Trang chủ</asp:HyperLink>"
         },
         {
           "Id": 107634,
-          "Text": "\u003casp:HyperLink ID=\"HyperLink1\" runat=\"server\" Image=\"home.gif\" NavigateUrl=\"index.apsx\" text= “Trang chủ”\u003e\u003c/asp:HyperLink\u003e"
+          "Text": "<asp:HyperLink ID=\"HyperLink1\" runat=\"server\" Image=\"home.gif\" NavigateUrl=\"index.apsx\" text= “Trang chủ”></asp:HyperLink>"
         }
       ]
     },
@@ -7636,19 +8668,19 @@
       "Answers": [
         {
           "Id": 107691,
-          "Text": "Thêm phần tử Theme vào file web.config. Chỉ định giá trị thuộc tính fileName bằng tên Theme         \u003csystem.web\u003e                   \u003ctheme fileName=\"ThemeName\" /\u003e         \u003c/system.web\u003e"
+          "Text": "Thêm phần tử Theme vào file web.config. Chỉ định giá trị thuộc tính fileName bằng tên Theme         <system.web>                   <theme fileName=\"ThemeName\" />         </system.web>"
         },
         {
           "Id": 107692,
-          "Text": "Thêm thuộc tính Theme vào chỉ dẫn Page     \u003c%@ Page=\"\" Language=\"C#\" Theme=\" ThemeName\" %\u003e"
+          "Text": "Thêm thuộc tính Theme vào chỉ dẫn Page     <%@ Page=\"\" Language=\"C#\" Theme=\" ThemeName\" %>"
         },
         {
           "Id": 107693,
-          "Text": "Thêm thuộc tính Skin vào chỉ dẫn Page     \u003c%@ Page=\"\" Language=\"C#\" Skin=\" ThemeName\" %\u003e"
+          "Text": "Thêm thuộc tính Skin vào chỉ dẫn Page     <%@ Page=\"\" Language=\"C#\" Skin=\" ThemeName\" %>"
         },
         {
           "Id": 107694,
-          "Text": "Thêm phần tử Pages vào file web.config. Chỉ định giá trị thuộc tính Theme bằng tên Theme         \u003csystem.web\u003e                   \u003cpages theme=\"ThemeName\" /\u003e         \u003c/system.web\u003e"
+          "Text": "Thêm phần tử Pages vào file web.config. Chỉ định giá trị thuộc tính Theme bằng tên Theme         <system.web>                   <pages theme=\"ThemeName\" />         </system.web>"
         }
       ]
     },
@@ -7894,7 +8926,7 @@
     },
     {
       "Id": 26011,
-      "Text": "Giả sử bạn đã thiết lập một chuỗi kết nối trong file web.config với tên “demoConnectionString” trong thẻ \"\u003cconnectionStrings\u003e\" Câu lệnh nào trong lớp code-behind để lấy thông tin chuỗi kết nối?",
+      "Text": "Giả sử bạn đã thiết lập một chuỗi kết nối trong file web.config với tên “demoConnectionString” trong thẻ \"<connectionStrings>\" Câu lệnh nào trong lớp code-behind để lấy thông tin chuỗi kết nối?",
       "Marks": 1,
       "AnswerId": 107738,
       "Answers": [
@@ -8524,19 +9556,19 @@
       "Answers": [
         {
           "Id": 107839,
-          "Text": "3-\u003e2-\u003e1-\u003e5-\u003e4"
+          "Text": "3->2->1->5->4"
         },
         {
           "Id": 107840,
-          "Text": "1-\u003e2-\u003e3-\u003e4-\u003e5"
+          "Text": "1->2->3->4->5"
         },
         {
           "Id": 107841,
-          "Text": "2-\u003e1-\u003e3-\u003e5-\u003e4"
+          "Text": "2->1->3->5->4"
         },
         {
           "Id": 107842,
-          "Text": "1-\u003e2-\u003e3-\u003e5-\u003e4"
+          "Text": "1->2->3->5->4"
         }
       ]
     },
@@ -8596,15 +9628,15 @@
       "Answers": [
         {
           "Id": 107851,
-          "Text": "\u003clinked href=\"my_style_sheet.css\" media=\"screen\" rel=\"stylesheet\"  type=\"text/css\"  /\u003e"
+          "Text": "<linked href=\"my_style_sheet.css\" media=\"screen\" rel=\"stylesheet\"  type=\"text/css\"  />"
         },
         {
           "Id": 107852,
-          "Text": "\u003clink href=\"my_style_sheet.css\" media=\"screen\" rel=\"stylesheet\"  type=\"text/css\"  /\u003e"
+          "Text": "<link href=\"my_style_sheet.css\" media=\"screen\" rel=\"stylesheet\"  type=\"text/css\"  />"
         },
         {
           "Id": 107853,
-          "Text": "\u003clink href=\"my_style_sheet.css\" media=\"screen\" type=\"text/css\"  /\u003e"
+          "Text": "<link href=\"my_style_sheet.css\" media=\"screen\" type=\"text/css\"  />"
         },
         {
           "Id": 107854,
@@ -10352,19 +11384,19 @@
       "Answers": [
         {
           "Id": 103555,
-          "Text": "SELECT @a = 1, @b = \u0027kí tự Unicode\u0027"
+          "Text": "SELECT @a = 1, @b = 'kí tự Unicode'"
         },
         {
           "Id": 103556,
-          "Text": "SET @a = 1, @b = \u0027kí tự Unicode\u0027"
+          "Text": "SET @a = 1, @b = 'kí tự Unicode'"
         },
         {
           "Id": 103557,
-          "Text": "SET @a = 1, @b = N\u0027kí tự Unicode\u0027"
+          "Text": "SET @a = 1, @b = N'kí tự Unicode'"
         },
         {
           "Id": 103558,
-          "Text": "SELECT @a = 1, @b = N\u0027kí tự Unicode\u0027"
+          "Text": "SELECT @a = 1, @b = N'kí tự Unicode'"
         }
       ]
     },
@@ -10514,7 +11546,7 @@
     },
     {
       "Id": 24976,
-      "Text": "Giả sử biến @String được khai báo như sau DECLARE @String varchar.Mã kịch bản sau trả về kết quả là SET @String = \u0027SQL Server 2008\u0027 SELECT LEN(@String)",
+      "Text": "Giả sử biến @String được khai báo như sau DECLARE @String varchar.Mã kịch bản sau trả về kết quả là SET @String = 'SQL Server 2008' SELECT LEN(@String)",
       "Marks": 1,
       "AnswerId": 103586,
       "Answers": [
@@ -10586,7 +11618,7 @@
     },
     {
       "Id": 24979,
-      "Text": "Lệnh gán giá trị cho cột PaymentDate có kiểu SmallDatetime sau đây có thực hiện phép chuyển đổi ngầm không PaymentDate = \u00272008-08-05\u0027",
+      "Text": "Lệnh gán giá trị cho cột PaymentDate có kiểu SmallDatetime sau đây có thực hiện phép chuyển đổi ngầm không PaymentDate = '2008-08-05'",
       "Marks": 1,
       "AnswerId": 103597,
       "Answers": [
@@ -10658,7 +11690,7 @@
     },
     {
       "Id": 24982,
-      "Text": "Câu lệnh SELECT DATEDIFF(month, \u00272008-09-30\u0027, \u00272007-12-01\u0027) sau đây trả về kết quả là:",
+      "Text": "Câu lệnh SELECT DATEDIFF(month, '2008-09-30', '2007-12-01') sau đây trả về kết quả là:",
       "Marks": 1,
       "AnswerId": 103609,
       "Answers": [
@@ -10682,7 +11714,7 @@
     },
     {
       "Id": 24983,
-      "Text": "Cột StartDate của bảng DateSample có kiểu dữ liệu datetime. Câu lệnh SELECT nào sau đây trả về tất cả các cột của bảng DateSample có StartDate là ngày 28-02-2012 A. SELECT * FROM DateSample WHERE StartDate = \u00272012-02-28\u0027 B. SELECT * FROM DateSample WHERE ",
+      "Text": "Cột StartDate của bảng DateSample có kiểu dữ liệu datetime. Câu lệnh SELECT nào sau đây trả về tất cả các cột của bảng DateSample có StartDate là ngày 28-02-2012 A. SELECT * FROM DateSample WHERE StartDate = '2012-02-28' B. SELECT * FROM DateSample WHERE ",
       "Marks": 1,
       "AnswerId": 103612,
       "Answers": [
@@ -10730,7 +11762,7 @@
     },
     {
       "Id": 24985,
-      "Text": "Câu lệnh SELECT CHARINDEX(\u0027SQL\u0027, \u0027HELLO SQL Server\u0027) trả về kết quả là",
+      "Text": "Câu lệnh SELECT CHARINDEX('SQL', 'HELLO SQL Server') trả về kết quả là",
       "Marks": 1,
       "AnswerId": 103622,
       "Answers": [
@@ -10860,11 +11892,11 @@
         },
         {
           "Id": 103640,
-          "Text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT \u003e 1, mọi thay đổi đã được thực hiện trên CSDL trong suốt giao dịch sẽ được commit."
+          "Text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT > 1, mọi thay đổi đã được thực hiện trên CSDL trong suốt giao dịch sẽ được commit."
         },
         {
           "Id": 103641,
-          "Text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT \u003e 1, các thay đổi sẽ không được commit. Thay vào đó @@TRANCOUNT giảm đi 1."
+          "Text": "Khi thực thi câu lệnh COMMIT TRAN, nếu @@TRANCOUNT > 1, các thay đổi sẽ không được commit. Thay vào đó @@TRANCOUNT giảm đi 1."
         },
         {
           "Id": 103642,
@@ -10898,7 +11930,7 @@
     },
     {
       "Id": 24992,
-      "Text": "Phát biểu nào sau đây đúng về Stored Procedure sau: CREATE PROC spParameters @a int = 0, @b int OUT, @String Nvarchar(50) = \u0027%\u0027 AS",
+      "Text": "Phát biểu nào sau đây đúng về Stored Procedure sau: CREATE PROC spParameters @a int = 0, @b int OUT, @String Nvarchar(50) = '%' AS",
       "Marks": 1,
       "AnswerId": 103650,
       "Answers": [
@@ -10970,7 +12002,7 @@
     },
     {
       "Id": 24995,
-      "Text": "Mã kịch bản sau sẽ làm gì khi được thực thi IF OBJECT_ID(\u0027spCopyInvoices\u0027) IS NOT NULL DROP PROC spCopyInvoices CREATE PROC spCopyInvoices AS SELECT * INTO InvoiceCopy FROM Invoices",
+      "Text": "Mã kịch bản sau sẽ làm gì khi được thực thi IF OBJECT_ID('spCopyInvoices') IS NOT NULL DROP PROC spCopyInvoices CREATE PROC spCopyInvoices AS SELECT * INTO InvoiceCopy FROM Invoices",
       "Marks": 1,
       "AnswerId": 103660,
       "Answers": [
@@ -11024,7 +12056,7 @@
       "Answers": [
         {
           "Id": 103667,
-          "Text": "DROP \u0027Vendors_SW\u0027"
+          "Text": "DROP 'Vendors_SW'"
         },
         {
           "Id": 103668,
@@ -11032,7 +12064,7 @@
         },
         {
           "Id": 103669,
-          "Text": "DROP VIEW \u0027Vendors_SW\u0027"
+          "Text": "DROP VIEW 'Vendors_SW'"
         },
         {
           "Id": 103670,
@@ -11138,7 +12170,7 @@
     },
     {
       "Id": 25002,
-      "Text": "Phát biểu nào ĐÚNG về đoạn mã dưới đây? CREATE VIEW OutstandingInvoices AS SELECT InvoiceNumber, InvoiceDate, InvoiceTotal, InvoiceTotal - PaymentTotal – CreditTotal AS BalanceDue FROM Invoices WHERE InvoiceTotal - PaymentTotal - CreditTotal \u003e 0",
+      "Text": "Phát biểu nào ĐÚNG về đoạn mã dưới đây? CREATE VIEW OutstandingInvoices AS SELECT InvoiceNumber, InvoiceDate, InvoiceTotal, InvoiceTotal - PaymentTotal – CreditTotal AS BalanceDue FROM Invoices WHERE InvoiceTotal - PaymentTotal - CreditTotal > 0",
       "Marks": 1,
       "AnswerId": 103689,
       "Answers": [
@@ -11360,19 +12392,19 @@
       "Answers": [
         {
           "Id": 103723,
-          "Text": "CREATE LOGIN JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN JohnDoe"
+          "Text": "CREATE LOGIN JohnDoe WITH PASSWORD = 'pt8806FG$B', DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN JohnDoe"
         },
         {
           "Id": 103724,
-          "Text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe"
+          "Text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = 'pt8806FG$B', DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe"
         },
         {
           "Id": 103725,
-          "Text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN ID JohnDoe"
+          "Text": "CREATE LOGIN ID JohnDoe WITH PASSWORD = 'pt8806FG$B', DEFAULT_DATABASE = AP USE APCREATE USER JohnDoe FOR LOGIN ID JohnDoe"
         },
         {
           "Id": 103726,
-          "Text": "CREATE LOGIN JohnDoe WITH PASSWORD = \u0027pt8806FG$B\u0027, DEFAULT_DATABASE = AP USE APCREATE DATABASE USER JohnDoe FOR LOGIN JohnDoe"
+          "Text": "CREATE LOGIN JohnDoe WITH PASSWORD = 'pt8806FG$B', DEFAULT_DATABASE = AP USE APCREATE DATABASE USER JohnDoe FOR LOGIN JohnDoe"
         }
       ]
     },
@@ -11474,7 +12506,7 @@
     },
     {
       "Id": 25016,
-      "Text": "Invoices là tên một bảng trong CSDL. Câu lệnh sp_Help \u0027Invoices\u0027 trả về___________",
+      "Text": "Invoices là tên một bảng trong CSDL. Câu lệnh sp_Help 'Invoices' trả về___________",
       "Marks": 1,
       "AnswerId": 103743,
       "Answers": [
@@ -11732,7 +12764,10 @@
           "Id": 103345,
           "Text": "Quản lý lưu trữ dữ liệu, thêm, sửa, xóa dữ liệu"
         },
-        { "Id": 103346, "Text": "Cho phép lưu trữ dữ liệu và truy vấn dữ liệu" }
+        {
+          "Id": 103346,
+          "Text": "Cho phép lưu trữ dữ liệu và truy vấn dữ liệu"
+        }
       ]
     },
     {
@@ -11741,13 +12776,22 @@
       "Marks": 1,
       "AnswerId": 103349,
       "Answers": [
-        { "Id": 103347, "Text": "Hỗ trợ các ngôn ngữ giao tiếp" },
-        { "Id": 103348, "Text": "Quản trị các cơ sở dữ liệu" },
+        {
+          "Id": 103347,
+          "Text": "Hỗ trợ các ngôn ngữ giao tiếp"
+        },
+        {
+          "Id": 103348,
+          "Text": "Quản trị các cơ sở dữ liệu"
+        },
         {
           "Id": 103349,
           "Text": "Cung cấp các truy cập đến tổ chức dữ liệu vật lý"
         },
-        { "Id": 103350, "Text": "Có cơ chế an toàn, bảo mật cao" }
+        {
+          "Id": 103350,
+          "Text": "Có cơ chế an toàn, bảo mật cao"
+        }
       ]
     },
     {
@@ -11764,7 +12808,10 @@
           "Id": 103352,
           "Text": "Liên hệ dữ liệu có thể thừa kế giữa cha và con"
         },
-        { "Id": 103353, "Text": "Kiểu quan hệ là 1-N và N-N" },
+        {
+          "Id": 103353,
+          "Text": "Kiểu quan hệ là 1-N và N-N"
+        },
         {
           "Id": 103354,
           "Text": "Mỗi nút biểu diễn một thực thể dữ liệu và được tổ chức theo hình cây"
@@ -11801,10 +12848,22 @@
       "Marks": 1,
       "AnswerId": 103361,
       "Answers": [
-        { "Id": 103359, "Text": "Các ký tự, ký số" },
-        { "Id": 103360, "Text": "Hình ảnh, âm thanh" },
-        { "Id": 103361, "Text": "Các phương án đều đúng" },
-        { "Id": 103362, "Text": "Ký hiệu" }
+        {
+          "Id": 103359,
+          "Text": "Các ký tự, ký số"
+        },
+        {
+          "Id": 103360,
+          "Text": "Hình ảnh, âm thanh"
+        },
+        {
+          "Id": 103361,
+          "Text": "Các phương án đều đúng"
+        },
+        {
+          "Id": 103362,
+          "Text": "Ký hiệu"
+        }
       ]
     },
     {
@@ -11813,10 +12872,22 @@
       "Marks": 1,
       "AnswerId": 103366,
       "Answers": [
-        { "Id": 103363, "Text": "Dữ liệu dạng âm thanh" },
-        { "Id": 103364, "Text": "Dữ liệu dạng ký hiệu" },
-        { "Id": 103365, "Text": "Dữ liệu dạng ký số" },
-        { "Id": 103366, "Text": "Dữ liệu dạng hình ảnh" }
+        {
+          "Id": 103363,
+          "Text": "Dữ liệu dạng âm thanh"
+        },
+        {
+          "Id": 103364,
+          "Text": "Dữ liệu dạng ký hiệu"
+        },
+        {
+          "Id": 103365,
+          "Text": "Dữ liệu dạng ký số"
+        },
+        {
+          "Id": 103366,
+          "Text": "Dữ liệu dạng hình ảnh"
+        }
       ]
     },
     {
@@ -11849,10 +12920,22 @@
       "Marks": 1,
       "AnswerId": 103372,
       "Answers": [
-        { "Id": 103371, "Text": "Hệ quản trị cơ sở dữ liệu phân cấp" },
-        { "Id": 103372, "Text": "Hệ quản trị cơ sở dữ liệu quan hệ" },
-        { "Id": 103373, "Text": "Hệ quản trị cơ sở dữ liệu mạng" },
-        { "Id": 103374, "Text": "Hệ quản trị cơ sở dữ liệu hướng đối tượng" }
+        {
+          "Id": 103371,
+          "Text": "Hệ quản trị cơ sở dữ liệu phân cấp"
+        },
+        {
+          "Id": 103372,
+          "Text": "Hệ quản trị cơ sở dữ liệu quan hệ"
+        },
+        {
+          "Id": 103373,
+          "Text": "Hệ quản trị cơ sở dữ liệu mạng"
+        },
+        {
+          "Id": 103374,
+          "Text": "Hệ quản trị cơ sở dữ liệu hướng đối tượng"
+        }
       ]
     },
     {
@@ -11885,10 +12968,22 @@
       "Marks": 1,
       "AnswerId": 103382,
       "Answers": [
-        { "Id": 103379, "Text": "Dữ liệu dạng âm thanh" },
-        { "Id": 103380, "Text": "Dữ liệu dạng hình ảnh" },
-        { "Id": 103381, "Text": "Dữ liệu dạng ký hiệu" },
-        { "Id": 103382, "Text": "Dữ liệu dạng ký tự, ký số" }
+        {
+          "Id": 103379,
+          "Text": "Dữ liệu dạng âm thanh"
+        },
+        {
+          "Id": 103380,
+          "Text": "Dữ liệu dạng hình ảnh"
+        },
+        {
+          "Id": 103381,
+          "Text": "Dữ liệu dạng ký hiệu"
+        },
+        {
+          "Id": 103382,
+          "Text": "Dữ liệu dạng ký tự, ký số"
+        }
       ]
     },
     {
@@ -11969,10 +13064,22 @@
       "Marks": 1,
       "AnswerId": 103398,
       "Answers": [
-        { "Id": 103395, "Text": "Hàng" },
-        { "Id": 103396, "Text": "Khóa" },
-        { "Id": 103397, "Text": "Cột" },
-        { "Id": 103398, "Text": "Bảng" }
+        {
+          "Id": 103395,
+          "Text": "Hàng"
+        },
+        {
+          "Id": 103396,
+          "Text": "Khóa"
+        },
+        {
+          "Id": 103397,
+          "Text": "Cột"
+        },
+        {
+          "Id": 103398,
+          "Text": "Bảng"
+        }
       ]
     },
     {
@@ -11981,10 +13088,22 @@
       "Marks": 1,
       "AnswerId": 103400,
       "Answers": [
-        { "Id": 103399, "Text": "Quan hệ 0-0, 1-1, n-n" },
-        { "Id": 103400, "Text": "Quan hệ 1-1, 1-n, n-n" },
-        { "Id": 103401, "Text": "Quan hệ 0-1, 1-1, n-n" },
-        { "Id": 103402, "Text": "Quan hệ 1-n, n-n, n-1" }
+        {
+          "Id": 103399,
+          "Text": "Quan hệ 0-0, 1-1, n-n"
+        },
+        {
+          "Id": 103400,
+          "Text": "Quan hệ 1-1, 1-n, n-n"
+        },
+        {
+          "Id": 103401,
+          "Text": "Quan hệ 0-1, 1-1, n-n"
+        },
+        {
+          "Id": 103402,
+          "Text": "Quan hệ 1-n, n-n, n-1"
+        }
       ]
     },
     {
@@ -11993,10 +13112,22 @@
       "Marks": 1,
       "AnswerId": 103404,
       "Answers": [
-        { "Id": 103403, "Text": "Ràng buộc quy tắc" },
-        { "Id": 103404, "Text": "Ràng buộc toàn vẹn" },
-        { "Id": 103405, "Text": "Ràng buộc sự kiện" },
-        { "Id": 103406, "Text": "Ràng buộc chính xác" }
+        {
+          "Id": 103403,
+          "Text": "Ràng buộc quy tắc"
+        },
+        {
+          "Id": 103404,
+          "Text": "Ràng buộc toàn vẹn"
+        },
+        {
+          "Id": 103405,
+          "Text": "Ràng buộc sự kiện"
+        },
+        {
+          "Id": 103406,
+          "Text": "Ràng buộc chính xác"
+        }
       ]
     },
     {
@@ -12005,10 +13136,22 @@
       "Marks": 1,
       "AnswerId": 103409,
       "Answers": [
-        { "Id": 103407, "Text": "Thủ tục công ty" },
-        { "Id": 103408, "Text": "Quy trình công việc" },
-        { "Id": 103409, "Text": "Quy tắc nghiệp vụ" },
-        { "Id": 103410, "Text": "Quy định công việc" }
+        {
+          "Id": 103407,
+          "Text": "Thủ tục công ty"
+        },
+        {
+          "Id": 103408,
+          "Text": "Quy trình công việc"
+        },
+        {
+          "Id": 103409,
+          "Text": "Quy tắc nghiệp vụ"
+        },
+        {
+          "Id": 103410,
+          "Text": "Quy định công việc"
+        }
       ]
     },
     {
@@ -12017,10 +13160,22 @@
       "Marks": 1,
       "AnswerId": 103412,
       "Answers": [
-        { "Id": 103411, "Text": "Company Name" },
-        { "Id": 103412, "Text": "Customer" },
-        { "Id": 103413, "Text": "Customer ID" },
-        { "Id": 103414, "Text": "Address" }
+        {
+          "Id": 103411,
+          "Text": "Company Name"
+        },
+        {
+          "Id": 103412,
+          "Text": "Customer"
+        },
+        {
+          "Id": 103413,
+          "Text": "Customer ID"
+        },
+        {
+          "Id": 103414,
+          "Text": "Address"
+        }
       ]
     },
     {
@@ -12029,10 +13184,22 @@
       "Marks": 1,
       "AnswerId": 103418,
       "Answers": [
-        { "Id": 103415, "Text": "Thuộc tính chính" },
-        { "Id": 103416, "Text": "Khóa ngoại" },
-        { "Id": 103417, "Text": "Thuộc tính xác định" },
-        { "Id": 103418, "Text": "Khóa chính" }
+        {
+          "Id": 103415,
+          "Text": "Thuộc tính chính"
+        },
+        {
+          "Id": 103416,
+          "Text": "Khóa ngoại"
+        },
+        {
+          "Id": 103417,
+          "Text": "Thuộc tính xác định"
+        },
+        {
+          "Id": 103418,
+          "Text": "Khóa chính"
+        }
       ]
     },
     {
@@ -12065,10 +13232,22 @@
       "Marks": 1,
       "AnswerId": 103424,
       "Answers": [
-        { "Id": 103423, "Text": "SELECT ALL FROM EMPLOYEES" },
-        { "Id": 103424, "Text": "SELECT * FROM EMPLOYEES" },
-        { "Id": 103425, "Text": "SELECT * WHERE EMPLOYEES" },
-        { "Id": 103426, "Text": "SELECT ALL WHERE EMPLOYEES" }
+        {
+          "Id": 103423,
+          "Text": "SELECT ALL FROM EMPLOYEES"
+        },
+        {
+          "Id": 103424,
+          "Text": "SELECT * FROM EMPLOYEES"
+        },
+        {
+          "Id": 103425,
+          "Text": "SELECT * WHERE EMPLOYEES"
+        },
+        {
+          "Id": 103426,
+          "Text": "SELECT ALL WHERE EMPLOYEES"
+        }
       ]
     },
     {
@@ -12079,19 +13258,19 @@
       "Answers": [
         {
           "Id": 103427,
-          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY \u003e 10000 ORDER WITH LAST_NAME, FIRST_NAME"
+          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY > 10000 ORDER WITH LAST_NAME, FIRST_NAME"
         },
         {
           "Id": 103428,
-          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY \u003e 10000 SORT BY LAST_NAME, FIRST_NAME"
+          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY > 10000 SORT BY LAST_NAME, FIRST_NAME"
         },
         {
           "Id": 103429,
-          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY \u003e 10000 ORDER BY FIRST_NAME, LAST_NAME"
+          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY > 10000 ORDER BY FIRST_NAME, LAST_NAME"
         },
         {
           "Id": 103430,
-          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY \u003e 10000 ORDER LAST_NAME, FIRST_NAME"
+          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY > 10000 ORDER LAST_NAME, FIRST_NAME"
         }
       ]
     },
@@ -12127,19 +13306,19 @@
       "Answers": [
         {
           "Id": 103435,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE \u0027Pete%\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE 'Pete%'"
         },
         {
           "Id": 103436,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE \u0027%Pete%\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE '%Pete%'"
         },
         {
           "Id": 103437,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE \u0027Pete\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE 'Pete'"
         },
         {
           "Id": 103438,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE \u0027%Pete\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE '%Pete'"
         }
       ]
     },
@@ -12159,11 +13338,11 @@
         },
         {
           "Id": 103441,
-          "Text": "SELECT * FROM EMPLOYEES SORT \u0027First_Name\u0027 DESC"
+          "Text": "SELECT * FROM EMPLOYEES SORT 'First_Name' DESC"
         },
         {
           "Id": 103442,
-          "Text": "SELECT * FROM EMPLOYEES SORT BY \u0027First_Name\u0027 DESC"
+          "Text": "SELECT * FROM EMPLOYEES SORT BY 'First_Name' DESC"
         }
       ]
     },
@@ -12175,19 +13354,19 @@
       "Answers": [
         {
           "Id": 103443,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME \u003c\u003e\u0027Peter\u0027 AND LAST_NAME\u003c\u003e\u0027Jackson\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME <>'Peter' AND LAST_NAME<>'Jackson'"
         },
         {
           "Id": 103444,
-          "Text": "SELECT FIRST_NAME=\u0027Peter\u0027 AND LAST_NAME=\u0027Jackson\u0027 FROM EMPLOYEES WHERE FIRST_NAME =\u0027Peter\u0027 AND LAST_NAME=\u0027Jackson\u0027"
+          "Text": "SELECT FIRST_NAME='Peter' AND LAST_NAME='Jackson' FROM EMPLOYEES WHERE FIRST_NAME ='Peter' AND LAST_NAME='Jackson'"
         },
         {
           "Id": 103445,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME =\u0027Peter\u0027 AND LAST_NAME=\u0027Jackson\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME ='Peter' AND LAST_NAME='Jackson'"
         },
         {
           "Id": 103446,
-          "Text": "SELECT FIRST_NAME=\u0027Peter\u0027 AND LAST_NAME=\u0027Jackson\u0027 FROM EMPLOYEES"
+          "Text": "SELECT FIRST_NAME='Peter' AND LAST_NAME='Jackson' FROM EMPLOYEES"
         }
       ]
     },
@@ -12197,10 +13376,22 @@
       "Marks": 1,
       "AnswerId": 103449,
       "Answers": [
-        { "Id": 103447, "Text": "SORT BY" },
-        { "Id": 103448, "Text": "SORT" },
-        { "Id": 103449, "Text": "ORDER BY" },
-        { "Id": 103450, "Text": "ORDER" }
+        {
+          "Id": 103447,
+          "Text": "SORT BY"
+        },
+        {
+          "Id": 103448,
+          "Text": "SORT"
+        },
+        {
+          "Id": 103449,
+          "Text": "ORDER BY"
+        },
+        {
+          "Id": 103450,
+          "Text": "ORDER"
+        }
       ]
     },
     {
@@ -12211,19 +13402,19 @@
       "Answers": [
         {
           "Id": 103451,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE \u0027[^ABC]%\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE '[^ABC]%'"
         },
         {
           "Id": 103452,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE \u0027[ABC]_\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE '[ABC]_'"
         },
         {
           "Id": 103453,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE \u0027[ABC]%\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE '[ABC]%'"
         },
         {
           "Id": 103454,
-          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE \u0027[ABC]*\u0027"
+          "Text": "SELECT * FROM EMPLOYEES WHERE FIRST_NAME LIKE '[ABC]*'"
         }
       ]
     },
@@ -12233,10 +13424,22 @@
       "Marks": 1,
       "AnswerId": 103458,
       "Answers": [
-        { "Id": 103455, "Text": "Insert, Update, Delete" },
-        { "Id": 103456, "Text": "Grant, Revoke" },
-        { "Id": 103457, "Text": "Select" },
-        { "Id": 103458, "Text": "Create, Drop, Alter" }
+        {
+          "Id": 103455,
+          "Text": "Insert, Update, Delete"
+        },
+        {
+          "Id": 103456,
+          "Text": "Grant, Revoke"
+        },
+        {
+          "Id": 103457,
+          "Text": "Select"
+        },
+        {
+          "Id": 103458,
+          "Text": "Create, Drop, Alter"
+        }
       ]
     },
     {
@@ -12259,7 +13462,7 @@
         },
         {
           "Id": 103462,
-          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY =\u003e 10000 AND \u003c= 11000"
+          "Text": "SELECT * FROM EMPLOYEES WHERE SALARY => 10000 AND <= 11000"
         }
       ]
     },
@@ -12271,19 +13474,19 @@
       "Answers": [
         {
           "Id": 103463,
-          "Text": "INSERT Employees(Employee_ID, First_Name, Last_Name) INTO (213, \u0027Abraham\u0027, \u0027Lincoln\u0027)"
+          "Text": "INSERT Employees(Employee_ID, First_Name, Last_Name) INTO (213, 'Abraham', 'Lincoln')"
         },
         {
           "Id": 103464,
-          "Text": "INSERT (213, \u0027Abraham\u0027, \u0027Lincoln\u0027) INTO Employees(Employee_ID, First_Name, Last_Name)"
+          "Text": "INSERT (213, 'Abraham', 'Lincoln') INTO Employees(Employee_ID, First_Name, Last_Name)"
         },
         {
           "Id": 103465,
-          "Text": "INSERT VALUES (213, \u0027Abraham\u0027, \u0027Lincoln\u0027) INTO Employees(Employee_ID, First_Name, Last_Name)"
+          "Text": "INSERT VALUES (213, 'Abraham', 'Lincoln') INTO Employees(Employee_ID, First_Name, Last_Name)"
         },
         {
           "Id": 103466,
-          "Text": "INSERT INTO Employees(Employee_ID, First_Name, Last_Name) VALUES (213, \u0027Abraham\u0027, \u0027Lincoln\u0027)"
+          "Text": "INSERT INTO Employees(Employee_ID, First_Name, Last_Name) VALUES (213, 'Abraham', 'Lincoln')"
         }
       ]
     },
@@ -12321,8 +13524,14 @@
           "Id": 103471,
           "Text": "DELETE * FROM Employees WHERE Employee_ID = 213"
         },
-        { "Id": 103472, "Text": "DELETE Employees WHERE Employee_ID = 213" },
-        { "Id": 103473, "Text": "DELETE Employees.Employee_ID = 213" },
+        {
+          "Id": 103472,
+          "Text": "DELETE Employees WHERE Employee_ID = 213"
+        },
+        {
+          "Id": 103473,
+          "Text": "DELETE Employees.Employee_ID = 213"
+        },
         {
           "Id": 103474,
           "Text": "DELETE FROM Employees WHERE Employee_ID = 213"
@@ -12359,10 +13568,22 @@
       "Marks": 1,
       "AnswerId": 103481,
       "Answers": [
-        { "Id": 103479, "Text": "SELECT SMALLEST(Salary) FROM Employees" },
-        { "Id": 103480, "Text": "SELECT MIN Salary FROM Employees" },
-        { "Id": 103481, "Text": "SELECT MIN(Salary) FROM Employees" },
-        { "Id": 103482, "Text": "SELECT SMALLEST Salary FROM Employees" }
+        {
+          "Id": 103479,
+          "Text": "SELECT SMALLEST(Salary) FROM Employees"
+        },
+        {
+          "Id": 103480,
+          "Text": "SELECT MIN Salary FROM Employees"
+        },
+        {
+          "Id": 103481,
+          "Text": "SELECT MIN(Salary) FROM Employees"
+        },
+        {
+          "Id": 103482,
+          "Text": "SELECT SMALLEST Salary FROM Employees"
+        }
       ]
     },
     {
@@ -12371,10 +13592,22 @@
       "Marks": 1,
       "AnswerId": 103486,
       "Answers": [
-        { "Id": 103483, "Text": "REVOKE UPDATE ON HR" },
-        { "Id": 103484, "Text": "REVOKE UPDATE TO HR" },
-        { "Id": 103485, "Text": "REVOKE UPDATE INTO HR" },
-        { "Id": 103486, "Text": "REVOKE UPDATE FROM HR" }
+        {
+          "Id": 103483,
+          "Text": "REVOKE UPDATE ON HR"
+        },
+        {
+          "Id": 103484,
+          "Text": "REVOKE UPDATE TO HR"
+        },
+        {
+          "Id": 103485,
+          "Text": "REVOKE UPDATE INTO HR"
+        },
+        {
+          "Id": 103486,
+          "Text": "REVOKE UPDATE FROM HR"
+        }
       ]
     },
     {
@@ -12387,9 +13620,18 @@
           "Id": 103487,
           "Text": "TRUNCATE TABLE Khach_Hang IGNORE CONSTRAINTS;"
         },
-        { "Id": 103488, "Text": "DROP TABLE Khach_Hang CASCADE CONSTRAINTS;" },
-        { "Id": 103489, "Text": "DROP TABLE Khach_Hang IGNORE CONSTRAINTS;" },
-        { "Id": 103490, "Text": "ERASE TABLE Khach_Hang CASCADE CONSTRAINTS;" }
+        {
+          "Id": 103488,
+          "Text": "DROP TABLE Khach_Hang CASCADE CONSTRAINTS;"
+        },
+        {
+          "Id": 103489,
+          "Text": "DROP TABLE Khach_Hang IGNORE CONSTRAINTS;"
+        },
+        {
+          "Id": 103490,
+          "Text": "ERASE TABLE Khach_Hang CASCADE CONSTRAINTS;"
+        }
       ]
     },
     {
@@ -12398,10 +13640,22 @@
       "Marks": 1,
       "AnswerId": 103493,
       "Answers": [
-        { "Id": 103491, "Text": "LARGE" },
-        { "Id": 103492, "Text": "BEST" },
-        { "Id": 103493, "Text": "MAX" },
-        { "Id": 103494, "Text": "BIG" }
+        {
+          "Id": 103491,
+          "Text": "LARGE"
+        },
+        {
+          "Id": 103492,
+          "Text": "BEST"
+        },
+        {
+          "Id": 103493,
+          "Text": "MAX"
+        },
+        {
+          "Id": 103494,
+          "Text": "BIG"
+        }
       ]
     },
     {
@@ -12422,7 +13676,10 @@
           "Id": 103497,
           "Text": "ALTER TABLE Khach_Hang INSERT CONSTRAINT Khach_Hang_UNQ_MaKH UNIQUE (MaKH);"
         },
-        { "Id": 103498, "Text": "ALTER TABLE Khach_Hang UNIQUE (MaKH);" }
+        {
+          "Id": 103498,
+          "Text": "ALTER TABLE Khach_Hang UNIQUE (MaKH);"
+        }
       ]
     },
     {
@@ -12431,10 +13688,22 @@
       "Marks": 1,
       "AnswerId": 103502,
       "Answers": [
-        { "Id": 103499, "Text": "REPAIR TABLE …" },
-        { "Id": 103500, "Text": "CHANGE TABLE …" },
-        { "Id": 103501, "Text": "REDO TABLE …" },
-        { "Id": 103502, "Text": "ALTER TABLE …" }
+        {
+          "Id": 103499,
+          "Text": "REPAIR TABLE …"
+        },
+        {
+          "Id": 103500,
+          "Text": "CHANGE TABLE …"
+        },
+        {
+          "Id": 103501,
+          "Text": "REDO TABLE …"
+        },
+        {
+          "Id": 103502,
+          "Text": "ALTER TABLE …"
+        }
       ]
     }
   ],
@@ -12443,7 +13712,7 @@
       "Id": "HTCS",
       "Name": "HTML5 và CSS3",
       "Logo": "HTCS.jpg"
-    },  
+    },
     {
       "Id": "ADBS",
       "Name": "Lập trình Android cơ bản",
@@ -12479,7 +13748,6 @@
       "Name": "Cơ sở dữ liệu",
       "Logo": "DBBS.png"
     }
-    
   ],
   "Students": [
     {
@@ -12495,6 +13763,13 @@
       "password": "iloveyou",
       "fullname": "Phạm Thị Nở",
       "email": "nopt@fpt.edu.vn"
+    },
+    {
+      "username": "test",
+      "password": "test",
+      "fullname": "test",
+      "email": "test@gmail.com",
+      "id": 4
     }
   ]
 }

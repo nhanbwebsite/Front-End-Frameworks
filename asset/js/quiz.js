@@ -20,11 +20,11 @@ app.controller('subjectsCtrl',function($scope,$http){
     })
 })
 app.controller('quizController',function($scope,$http,$routeParams,quizFactory){
+   
     $http.get('http://localhost:3000/' + $routeParams.id)
     .then(function(response){
       
         quizFactory.question = response.data;
-     
         // console.log(response)
        
     })
@@ -35,7 +35,7 @@ app.controller('quizController',function($scope,$http,$routeParams,quizFactory){
       
     // })
 })
-app.directive('quizPoly', function (quizFactory) {
+app.directive('quizPoly', function (quizFactory,$routeParams) {
 
     return {
         restrict: 'AE',
@@ -47,6 +47,8 @@ app.directive('quizPoly', function (quizFactory) {
                 scope.quizOver = false;//Chưa hoàn thành quiz
                 scope.inProgess=true;
                 scope.getQuestion();
+                scope.subject = $routeParams.id
+                scope.subject_name = $routeParams.name
             };
            
             scope.reset = function(){
@@ -57,6 +59,7 @@ app.directive('quizPoly', function (quizFactory) {
                 var quiz = quizFactory.getQuestion(scope.id);
 
                 if(quiz){
+                   
                     scope.question = quiz.Text;
                     scope.options = quiz.Answers;
                     scope.answer = quiz.AnswerId;
@@ -98,8 +101,9 @@ app.directive('quizPoly', function (quizFactory) {
 });
 app.factory('quizFactory',function($http,$routeParams){
     $http.get('http://localhost:3000/' + $routeParams.id).then(function(res){
-        
+        ma_de = $routeParams.id;
         questions = res.data;
+      
        
 
     })
