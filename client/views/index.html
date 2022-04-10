@@ -1,239 +1,265 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="assignment">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <link
-      rel="stylesheet"
-      href="../../node_modules/bootstrap/dist/css/bootstrap.css"
-    />
-    <link rel="stylesheet" href="../../asset/css/footer.css" />
-    <script src="../../node_modules/angular/angular.min.js"></script>
-    <script src="../../node_modules/angular-route/angular-route.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  </head>
-  <body  class="p-0">
-    <div class="container-fluid p-0">
-      <header class="row header_box-container">     
-  <div class="box__controllerdn-dn" ng-controller="dkdnController">
-    <div class="header-menu-top bg-gradient">
-      <ul class="nav d-flex justify-content-center list-group-item-secondary  fs-6 p-0">
-          <li class="nav-item text-light">
-              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Học trực tuyến</a>
-          </li>
-          <li class="nav-item text-light">
-              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Hỏi đáp</a>
-          </li>
-          <li class="nav-item text-light">
-              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Tài liệu học tập</a>
-          </li>
-          <li class="nav-item text-light">
-              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Tuyển sinh</a>
-          </li>
-          <li class="nav-item text-light">
-              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Trường học</a>
-          </li>
-         
-          <li class="nav-item text-light">
-              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Liên hệ</a>
-          </li>
-          <li class="nav-item text-light">
-              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6 " href="#">Hướng dẫn sử dụng</a>
-          </li>
-          <li class="nav-item text-light dropdown">
-              <a class="nav-link  list-group-item-action list-group-item-secondary text-dark fs-6  dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Kiến thức
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../asset/css/footer.css" />
+  <script src="../../node_modules/angular/angular.min.js"></script>
+  <script src="../../node_modules/angular-route/angular-route.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body class="p-0">
+  <div class="container-fluid p-0">
+    <header class="row header_box-container">
+      <div class="box__controllerdn-dn" ng-controller="dkdnController">
+        <div class="header-menu-top bg-gradient bg-header">
+          <ul class="nav d-flex justify-content-center  fs-6 p-0">
+            <li class="nav-item text-light">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover " href="#">Học trực
+                tuyến</a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover " href="#">Hỏi đáp</a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover " href="#">Ứng dụng nhanh</a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover " href="#">Thủ thuật tin học</a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover " href="#">Tài liệu
+                học tập</a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover " href="#">Tuyển
+                sinh</a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover " href="#">Trường
+                học</a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover " href="#">Hướng dẫn
+                sử dụng</a>
+            </li>
+            <li class="nav-item text-light dropdown">
+              <a class="nav-link  text-light list-group-item-action list-group-item-action-hover  dropdown-toggle"
+                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Kiến thức
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-                  <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
-                
-                  <li>
-                      <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
-                  <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
-                  <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
-                  <li>
-                      <hr class="dropdown-divider">
-                  </li>
-                 
-              </ul>
-          </li>
-      </ul>
-    </div>
-    <div class="header-menu-center_content">
-      <div class="row d-flex justify-content-center m-2">
-          <div class="col-sm-12 col-md-3 logo">
-              <img style="width:150px" src="../../asset/images/logo/logo2.png" alt="">
-          </div>
-          <div class="col-8 find-login-box d-flex justify-content-end align-items-center">
-             <span class="box__dk-dn-item">
-              <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-search"></i> Tìm kiếm
-                thông tin</a>
-            <a href="#exampleModalToggle" data-bs-toggle="modal" class="text-success p-3 text-decoration-none"><i class="bi bi-person-fill"></i> Đăng
-              nhập</a>
-              <a href="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" class="text-success p-3 text-decoration-none"><i class="bi bi-person-plus-fill"></i>
-                  Đăng ký</a>
-                  <a href="" class="text-success p-3 text-decoration-none">Quên mật khẩu</a>
-                </span>
-          </div>
-      </div>
-    </div>
-    
-    <!--form đăng ký đăng nhập-->
-    
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalToggleLabel">Đăng nhập</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form id="formDn">
-            <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
-              <input type="text" ng-model="username" class="form-control" id="formGroupExampleInput" placeholder="Nhập tên tài khoản">
-            </div>
-            <div class="mb-3">
-              <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
-              <input type="password" ng-model="password" class="form-control" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
-            </div>
-          
-            <div class="col-12">
-              <button type="" ng-click="btnDN()" class="btn btn-secondary">Đăng nhập</button>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Đăng ký tài khoản</button>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalToggleLabel2">Đăng ký</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form name ="formDK" id="formDK">
-            <div class="mb-3">
-              <label for="formGroupExampleInput2" class="form-label">Họ và tên</label>
-              <input type="text" class="form-control" name ="fullname" ng-model = "fullname" id="formGroupExampleInput2" placeholder="Nhập họ và tên">
-            </div>
-            <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
-              <input type="text" class="form-control" name = "username" ng-model = "username" id="formGroupExampleInput" placeholder="Nhập tên tài khoản">
-            </div>
-            <div class="mb-3">
-              <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
-              <input type="password" class="form-control" name = "password" ng-model = "password" id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
-            </div>
-            <div class="mb-3">
-              <label for="formGroupExampleInput2"  class="form-label">Xác nhận mật khẩu</label>
-              <input type="text" class="form-control" name = "confirmpassword" ng-model = "confirmpassword" id="formGroupExampleInput2" placeholder="Nhập lại mật khẩu">
-            </div>
-            <div class="mb-3">
-              <label for="formGroupExampleInput2" class="form-label">Địa chỉ email</label>
-              <input type="text" class="form-control"  name = "email" ng-model="email" id="formGroupExampleInput2" placeholder="Nhập địa chỉ email">
-            </div>
-            <div class="col-12">
-              <button  ng-click="dangKyTK()" class="btn btn-primary">Đăng ký</button>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Về form đăng nhập</button>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-  </div>
-        <!--Kết thúc đăng ký đăng nhập-->
-        
-        
-        <div class="header-menu-bottom">
-          <nav class="navbar navbar-expand-lg navbar-light bg-info bg-header pt-0 pb-0">
-              <div class="container-fluid">
-                <div class="collapse navbar-collapse mx-md-5 " id="navbarNavDropdown">
-                  <ul class="navbar-nav mx-4">
-                    <li class="nav-item">
-                      <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#/!">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#!subjects">Môn Học</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Liên Hệ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Góp ý</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Hỏi đáp</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-        </div>   
-      </header>
-     <main class="mt-4 w-75 m-auto">
-       <div ng-view ></div>
-     </main>
-          <div class="wrap_in4" >
-              <div class="in4 row w-75 m-auto pt-3 "style="margin: auto;">
-                  <div class="col-sm-12">
-                      <div class="row">
-                          <div class="col-sm-4">
-                              <p>
-                                  <span class="fw-bold">Công cụ trực tuyến hỗ trợ giáo dục - MaTran.edu.vn</span><br>
-                                  Copyright &copy; 2014-2021. All rights reserved. Bản quyền thuộc <span class="fw-bold">VinaGon</span><br> 
-                                  Email: info@vinagon.com <br>
-                                  <span class="fw-bold">Hotline: 0869243838</span>
-                              </p>
-                          </div>
-                          <div class="col-sm-4">
-                              <ul class="list_link_footer">
-                                  <li><a href="">Liên hệ hỗ trợ</a></li>
-                                  <li><a href="">Quy định chung</a></li>
-                                  <li><a href="">Chính sách bảo mật</a></li>
-                                  <!-- <li><a href="">Phương thức thanh toán</a></li> -->
-                              </ul>
-                          </div>
-                          <div class="col-sm-4">
-                              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </footer>
-    </div>
+                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
 
-    <script src="../../asset/js/quiz.js"></script>
-  
-    <!-- <script src ="../../asset/js/app.js"></script> -->
-  </body>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                <li><a class="dropdown-item" href="#">Cập nhật hồ sơ</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="header-menu-center_content container-fluid">
+          <div class="row d-flex justify-content-center m-2">
+            <div class="col-sm-12 col-md-3 logo">
+              <img style="width:150px" src="../../asset/images/logo/logo2.png" alt="">
+            </div>
+            <div class="col-8 find-login-box d-flex justify-content-end align-items-center">
+              <span class="box__dk-dn-item">
+                <a href="" class="text-success p-3 text-decoration-none"><i class="bi bi-search"></i> Tìm kiếm
+                  thông tin</a>
+                <a href="#exampleModalToggle" data-bs-toggle="modal" class="text-success p-3 text-decoration-none"><i
+                    class="bi bi-person-fill"></i> Đăng
+                  nhập</a>
+                <a href="" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  class="text-success p-3 text-decoration-none"><i class="bi bi-person-plus-fill"></i>
+                  Đăng ký</a>
+                <a href="" class="text-success p-3 text-decoration-none">Quên mật khẩu</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!--form đăng ký đăng nhập-->
+
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Đăng nhập</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="formDn">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
+                    <input type="text" ng-model="username" class="form-control" id="formGroupExampleInput"
+                      placeholder="Nhập tên tài khoản">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
+                    <input type="password" ng-model="password" class="form-control" id="formGroupExampleInput2"
+                      placeholder="Nhập mật khẩu">
+                  </div>
+
+                  <div class="col-12">
+                    <button type="" ng-click="btnDN()" class="btn btn-secondary">Đăng nhập</button>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Đăng ký tài
+                  khoản</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2">Đăng ký</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form name="formDK" id="formDK">
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Họ và tên</label>
+                    <input type="text" class="form-control" name="fullname" ng-model="fullname"
+                      id="formGroupExampleInput2" placeholder="Nhập họ và tên">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
+                    <input type="text" class="form-control" name="username" ng-model="username"
+                      id="formGroupExampleInput" placeholder="Nhập tên tài khoản">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
+                    <input type="password" class="form-control" name="password" ng-model="password"
+                      id="formGroupExampleInput2" placeholder="Nhập mật khẩu">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Xác nhận mật khẩu</label>
+                    <input type="text" class="form-control" name="confirmpassword" ng-model="confirmpassword"
+                      id="formGroupExampleInput2" placeholder="Nhập lại mật khẩu">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Địa chỉ email</label>
+                    <input type="text" class="form-control" name="email" ng-model="email" id="formGroupExampleInput2"
+                      placeholder="Nhập địa chỉ email">
+                  </div>
+                  <div class="col-12">
+                    <button ng-click="dangKyTK()" class="btn btn-primary">Đăng ký</button>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Về form đăng
+                  nhập</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--Kết thúc đăng ký đăng nhập-->
+
+
+      <div class="header-menu-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info bg-header pt-0 pb-0">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse mx-md-5 " id="navbarNavDropdown">
+              <ul class="navbar-nav mx-5">
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#/!">Trang
+                    chủ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover"
+                    href="#!subjects">Môn Học</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Giới
+                    thiệu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Liên
+                    Hệ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Góp ý</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link  text-light list-group-item-action list-group-item-action-hover" href="#">Hỏi
+                    đáp</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="mt-2 mb-2 m-auto" style="width:85%">
+      <div ng-view></div>
+    </main>
+    <div class="wrap_in4">
+      <div class="in4 row w-75 m-auto pt-3 " style="margin: auto;">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-4">
+              <p>
+                <span class="fw-bold">Công cụ trực tuyến hỗ trợ giáo dục - MaTran.edu.vn</span><br>
+                Copyright &copy; 2014-2021. All rights reserved. Bản quyền thuộc <span
+                  class="fw-bold">VinaGon</span><br>
+                Email: info@vinagon.com <br>
+                <span class="fw-bold">Hotline: 0869243838</span>
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <ul class="list_link_footer">
+                <li><a href="">Liên hệ hỗ trợ</a></li>
+                <li><a href="">Quy định chung</a></li>
+                <li><a href="">Chính sách bảo mật</a></li>
+                <!-- <li><a href="">Phương thức thanh toán</a></li> -->
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="340" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </footer>
+  </div>
+
+  <script src="../../asset/js/quiz.js"></script>
+
+  <!-- <script src ="../../asset/js/app.js"></script> -->
+</body>
+
 </html>
