@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app ="myApp" >
+<html lang="en" ng-app ="danh_sach_mon_thi" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
      }
    </style>
 </head>
-<body ng-controller="myController">
+<body ng-controller="load">
     <div class="container-fluid">
         <nav class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5" ng-include="'../../layout/navbar.html'">
            
@@ -42,27 +42,26 @@
                           <tr>
                               <th scope="row">ID</th>
                               <th>Tên môn thi</th>
-                              <th>hinh </th>
+                              <th>Hình</th>
                               <th>Thời gian làm bài</th>
-                              <th>Tổng số câu hỏi</th>
+                              <th>Số câu hỏi</th>
                               <th></th>
                             </tr>
                       </thead>
                       <tbody class="mt-5">
-                          <tr class="">
-                            <td scope="row">2</td>
-                            <td>Javascript</td>
-                            <td><img style="width:100px" src="../../../asset/images/monthi/JSPR.png" alt=""></td>
+                          <tr class="" ng-repeat="mon in ds_mon_thi">
+                            <td scope="row">{{mon.Id}}</td>
+                            <td>{{mon.Name}}</td>
+                            <td><img style="width:100px" src="../../../asset/images/monthi/{{mon.Logo}}" alt=""></td>
                             <td>15 Phút</td>
-                            <td>30</td>
+                            <td>10</td>
                             <td>
-                              <i class="fa-solid fa-circle-info text-info me-3"></i>
-                              <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
-                              <i class="fa-solid fa-trash text-danger"></i>
-                              
+                              <a href=""><i class="fa-solid fa-circle-info text-info me-3"></i></a>
+                              <a href=""><i class="fa-solid fa-pen-to-square text-primary me-3"></i></a>
+                              <a href=""><i class="fa-solid fa-trash text-danger"></i></a>
                             </td>
                           </tr>
-                          <tr class="">
+                          <!-- <tr class="">
                             <td scope="row">1</td>
                             <td>PHP</td>
                             <td><img style="width:100px" src="../../../asset/images/monthi/PHPP.png" alt=""></td>
@@ -97,7 +96,7 @@
                               <i class="fa-solid fa-pen-to-square text-primary me-3"></i>
                               <i class="fa-solid fa-trash text-danger"></i>
                             </td>
-                          </tr>
+                          </tr> -->
                         </tbody>
                     </table>
                  
@@ -107,11 +106,6 @@
         </div>
     </div>
     
-    <script>
-          var app  = angular.module('myApp',[]);
-          app.controller('myController',function($scope){
-          
-          })
-    </script>
+   <script src="../../asset/js/danh_sach_mon_thi.js"></script>
 </body>
 </html>

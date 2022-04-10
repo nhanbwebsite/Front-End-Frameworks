@@ -34039,9 +34039,9 @@
       ]
     },
     {
-        "Id": "PHPP",
-        "Name": "Lập trình PHP",
-        "Logo": "PHPP.png"
+      "Id": "PHPP",
+      "Name": "Lập trình PHP",
+      "Logo": "PHPP.png"
     },
     {
       "Id": 24913,
@@ -36018,6 +36018,16 @@
       "Id": "WEBU",
       "Name": "Xây dựng trang web",
       "Logo": "WEBU.jpg"
+    },
+    {
+      "id": "a",
+      "name": "a",
+      "logo": "a"
+    },
+    {
+      "id": "A",
+      "Name": "a",
+      "Logo": "ADAV.jpg"
     }
   ],
   "Students": [
