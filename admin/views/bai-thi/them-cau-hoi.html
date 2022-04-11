@@ -51,7 +51,7 @@
                 aria-label="Default select example"
                 ng-model="subject"
               >
-              <option value="">Chọn môn học</option>
+              <option value="" selected>Chọn môn học</option>
                 <option
                   ng-repeat="sub in list_subjects"
                   value="{{sub.Id}}"
@@ -155,7 +155,7 @@
             case 1:
               correct = Math.floor(Math.random() * (100000 - 1))+1;
               data2 = {
-                Id: Math.floor(Math.random() * (100000 - 1))+1,
+                id: Math.floor(Math.random() * (100000 - 1))+1,
                 Text: $scope.content,
                 Mark: 1,
                 AnswerId: Math.floor(Math.random() * (100000 - 1))+1,
@@ -183,7 +183,7 @@
             case 2:
               correct = Math.floor(Math.random() * (100000 - 1))+1;
               data2 = {
-                Id: Math.floor(Math.random() * (100000 - 1))+1,
+                id: Math.floor(Math.random() * (100000 - 1))+1,
                 Text: $scope.content,
                 Mark: 1,
                 AnswerId: correct,
@@ -211,7 +211,7 @@
             case 3:
               correct = Math.floor(Math.random() * (100000 - 1))+1;
               data2 = {
-                Id: Math.floor(Math.random() * (100000 - 1))+1,
+                id: Math.floor(Math.random() * (100000 - 1))+1,
                 Text: $scope.content,
                 Mark: 1,
                 AnswerId: correct,
@@ -239,7 +239,7 @@
             case 4: 
               correct = Math.floor(Math.random() * (100000 - 1))+1;
               data2 = {
-                Id: Math.floor(Math.random() * (100000 - 1))+1,
+                id: Math.floor(Math.random() * (100000 - 1))+1,
                 Text: $scope.content,
                 Mark: 1,
                 AnswerId: correct,
