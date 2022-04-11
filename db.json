@@ -13751,11 +13751,11 @@
   ],
   "Students": [
     {
-      "id": 2,
-      "username": "pheonv",
-      "password": "iloveyou",
       "fullname": "Nguyễn Văn Chí Phèo",
-      "email": "pheonv@fpt.edu.vn"
+      "username": "pheonv",
+      "email": "pheonv@fpt.edu.vn",
+      "id": 2,
+      "password": "123456"
     },
     {
       "id": 3,

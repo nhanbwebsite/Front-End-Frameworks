@@ -1,36 +1,31 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="assignment">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../../asset/css/footer.css">
-    <script src="../../node_modules/angular/angular.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-</head>
-<body ng-controller="myController" class="p-0">
-    <div class="container-fluid p-0">
-            
-            <header ng-include="'../layout/header.html'" class="row header_box-container">
-
-            </header>
-            <main style="min-height:80vh;" class="row mt-4 w-75 m-auto"ng-include="'../layout/quenmk.html'" >
-
-            </main>
-            <footer ng-include="'../layout/footer.html'" class="row py-2">
-        
-            </footer>
-        
-    </div>
-
-    <script>
-        var app = angular.module('assignment',[]);
-        app.controller('myController',function($scope){
+<div class="row">
+    <article class="artichle col-md-8 border-primary">
+        <div class="row">
+            <div class="aside_images col-md-2">
+                <!-- <img src="../../asset/images/anon_user.png" class="w-100" alt=""> -->
+            </div>
+            <div class="col-md-10 mb-10">
+                <label for="exampleFormControlInput1" class="form-label ">Nhập địa chỉ email</label>
+                <input type="email" class="form-control w-75" id="laylaimk"
+                    placeholder="Nhập địa chỉ email, vd: thietkewweb@gmail.com">
+                 
+                    <span style="color:red" id="mklayLai"></span>
+                    <br />
+                    <button id="btn_laymk" class="btn btn-sm btn-success my-3">Lấy lại mật khẩu</button>
+                    <p>Nếu bạn gặp vấn đề trong việc lấy lại mật khẩu xin hãy liên hệ với chúng tôi</p>
+            </div>
           
-        })
-    </script>
-</body>
-</html>
+            
+        </div>
+    </article>
+    <aside class="aside col-md-4 ">
+        <h2 class="fs-6 ">Đề thi trắc nghiệm mới</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0" style="font-size: 0.9rem !important;" >Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt nghiệp THPT môn Toán năm 2021</a></li>
+            <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0" style="font-size: 0.9rem !important;" >Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt nghiệp THPT môn Toán năm 2021</a></li>
+            <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0" style="font-size: 0.9rem !important;" >Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt nghiệp THPT môn Toán năm 2021</a></li>
+            <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0" style="font-size: 0.9rem !important;" >Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt nghiệp THPT môn Toán năm 2021</a></li>
+            <li class="list-group-item px-0"><a href="" class="text-decoration-none fs-6 p-0" style="font-size: 0.9rem !important;" >Đề thi thử chuẩn cấu trúc minh họa số 02 Kỳ thi tốt nghiệp THPT môn Toán năm 2021</a></li>
+          </ul>
+    </aside>
+</div>

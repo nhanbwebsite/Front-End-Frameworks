@@ -12,12 +12,40 @@ app.config(function($routeProvider){
         templateUrl:'baithi.html',
         // controller:'quizController'
     })
+    .when('/quan-ly-tai-khoan',{
+        templateUrl:'suathongtin.html',
+        controller:'quanlytaikhoan'
+    })
+    .when('/quen-mk',{
+        templateUrl:'quenmk.html',
+        controller:'quenmk'
+    })
+   
 });
 app.controller('subjectsCtrl',function($scope,$http){
     $scope.list_subject = [];
     $http.get('http://localhost:3000/Subjects').then(function(res){
         $scope.list_subject = res.data;
     })
+   
+})
+app.controller('quenmk',function($scope,$http){
+    var btn_laymk = document.querySelector('#btn_laymk');
+    btn_laymk.onclick = function(){
+        $http.get('http://localhost:3000/Students')
+        .then(function(res){
+           data = res.data;
+           var emailInput = document.querySelector('#laylaimk').value;
+          var user = data.find(function(item){
+               return item.email = emailInput;
+           })
+         if(user){
+           document.querySelector('#mklayLai').innerHTML = 'Mật khẩu của bạn là: ' + user.password
+         }
+        })
+    }
+
+   
 })
 app.controller('quizController',function($scope,$http,$routeParams,quizFactory){
    
@@ -37,7 +65,7 @@ app.controller('quizController',function($scope,$http,$routeParams,quizFactory){
       
     // })
 })
-app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
+app.directive('quizPoly', function (quizFactory,$routeParams,$timeout,$window) {
 
     return {
         restrict: 'AE',
@@ -45,6 +73,9 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
         templateUrl: 'templateQuiz.html',
         link: function (scope, element, attr) {
             scope.start = function(){
+                
+                var local =  $window.localStorage['Userlogin'];
+              if(local) {
                 scope.id=0;
                 scope.mang_dap_an = [];
                 scope.quizOver = false;//Chưa hoàn thành quiz
@@ -54,6 +85,10 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
                 scope.timeOut();
                 scope.subject = $routeParams.id
                 scope.subject_name = $routeParams.name
+              } else{
+                $window.alert("Vui lòng đăng nhập để làm bài thi");
+              }
+               
                 // time out
             };
             scope.end = function(){
@@ -64,7 +99,7 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
             }
            scope.timeOut = function(){
                var phut = 5-1;
-               var giay = 60-1;
+               var giay = 60;
                scope.dongho=setInterval(function(){
                 if(giay!=0)
                 {
@@ -79,9 +114,9 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
                 document.getElementById("time").innerHTML=phut+":"+giay;
                 if(phut==0 && giay==0)
             {
-                // scope.elementDiem = document.querySelector('.diem_max');
-                // scope.elementDiem.innerHTML = scope.diem_max;
-                    clearInterval(scope.dongho);
+                scope.elementDiem = document.querySelector('.diem_max');
+                scope.elementDiem.innerHTML = scope.diem;
+                    clearInterval(dongho);
             }
     
             },1000);
@@ -196,6 +231,83 @@ app.factory('quizFactory',function($http,$routeParams){
     
 });
 
+app.controller('quanlytaikhoan',function($scope,$window,$http){
+    var local =  $window.localStorage['Userlogin'];
+    if(local){
+     var user = JSON.parse(local);
+
+    $http.get('http://localhost:3000/Students')
+    .then(function(response){
+       var data = response.data
+       console.log(data)
+        var returnData = data.find(function(item){
+            return item.username == user;
+        })
+
+        if(returnData){
+         var username = document.querySelector('#username');
+         var idUser = document.querySelector('#idUser');
+         var password = document.querySelector('#password');
+         var email = document.querySelector('#email');
+         var fullname = document.querySelector('#fullname');
+         idUser.value = returnData.id
+        username.value = returnData.username
+        email.value = returnData.email
+        fullname.value = returnData.fullname
+        password.value = returnData.password
+        var luu = document.querySelector('#save');
+            luu.onclick = function(){
+                var fullnamee = document.querySelector('#fullname');
+                var password = document.querySelector('#password');
+                var username = document.querySelector('#username');
+                var idUser = document.querySelector('#idUser');
+                var email = document.querySelector('#email');
+                var idUser = document.querySelector('#idUser').value;
+
+                data = {
+                    fullname: fullnamee.value,
+                    username: username.value,
+                    email: email.value,
+                    password: password.value
+                }
+               var con =  $http.put('http://localhost:3000/Students/' + idUser, data);
+               if(con){
+                   alert('Cập nhật thành công');
+               }
+
+
+            }
+
+            var btndoiml = document.querySelector('#btndoiml');
+            btndoiml.onclick = function(){
+                var mk_curen = document.querySelector('#mk_curen');
+                var mk_change = document.querySelector('#mk_change');
+                var mk_change_confirm = document.querySelector('#mk_change_confirm');
+              if(mk_curen.value != returnData.password) {
+                  $window.alert('Mật khẩu hiện tại không đúng')
+              }  else {
+                  if(mk_change.value != mk_change_confirm.value){
+                    $window.alert('Mật khẩu xác nhận không trùng khớp')
+                  } else {
+                    var idUser = document.querySelector('#idUser').value;
+                data = {
+                    password: mk_change.value
+                }
+                var con =  $http.patch('http://localhost:3000/Students/' + idUser, data);
+                if(con){
+                    $window.alert('Đổi mật khẩu thành công')
+                }
+                  }
+              }
+            }
+
+        }
+
+        
+    })
+    
+    }
+})
 
 app.controller("dkdnController", function ($scope,$http) {
     // đăng ký tài khoản
@@ -271,7 +383,7 @@ app.controller("dkdnController", function ($scope,$http) {
          ${getUserLogin.fullname}
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Quản lý tài khoản</a></li>
+          <li><a class="dropdown-item" href="#!quan-ly-tai-khoan">Quản lý tài khoản</a></li>
           <li><a class="dropdown-item btn_dx"  href="#">Đăng xuất</a></li>
         </ul>
       </div>
@@ -286,6 +398,7 @@ app.controller("dkdnController", function ($scope,$http) {
     })
   
  }
+
 
  
  function setItemLocastore(name, data) {
