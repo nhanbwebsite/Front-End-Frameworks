@@ -1,5 +1,5 @@
 <div class="row">
-    <div ng-show="!inProgess" class="text-center mb-4">
+    <div ng-show="!inProgess" class="text-center mb-4 mt-4">
         <button ng-click="start()" class="btn btn-lg btn-info text-light">Bắt đầu làm bài thi</button>
     </div>
     <div ng-show="inProgess" class="mb-4">
@@ -14,7 +14,7 @@
                             <div class="time py-1">Thời gian: <span class="fw-bold">5</span> phút</div>
                             <div class="marks" ng-show="showDiem">
                                 Số điểm của bạn: <span class="text-dark"><b class="diem_max">{{diem_max > 0 ? diem_max :
-                                        '0'}}</b></span>
+                                        0}}</b></span>
                             </div>
                         </div>
                         <div class="col-sm-6 text-end align-content-end mt-auto">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="card-body" ng-show="!quizOver">
                     <div class="quest_num pb-3">
-                        <span class="fw-bold">Câu số <span class="num">{{id}}</span>:</span>
+                        <span class="fw-bold">Câu số <span class="num">{{id + 1}}</span>:</span>
                     </div>
                     <div class="content_quest">
                         <label for="">{{question}}</label>
