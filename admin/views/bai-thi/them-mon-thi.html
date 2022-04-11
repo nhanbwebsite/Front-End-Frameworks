@@ -1,64 +1,133 @@
 <!DOCTYPE html>
-<html lang="en" ng-app ="myApp" >
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" ng-app="them_mon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh sách môn thi</title>
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="../../asset/css/respone.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../asset/css/respone.css" />
     <script src="../../../node_modules/angular/angular.js"></script>
-   <style>
-     img{
-       width: 200px;
-     }
-   </style>
-</head>
-<body ng-controller="myController">
+    <style>
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body ng-controller="add_subject">
     <div class="container-fluid">
-        <nav class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5" ng-include="'../../layout/navbar.html'">
-           
-          </nav>
-          <!--end navbar-->
-        
-         
-        <div class="row">
-            <div class=" aside_pc bg-dark col-md-2 col-lg-2 mt-5" ng-include="'../../layout/aside.html'">
-                <!--include aside-->
-            </div>
-            <div class="col-12 col-md-10 col-lg-10 article_box">
-              <!--article-->
-                <article class="article">
-                   <h1>Thêm môn thi</h1>
-                   
-                   <from>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Tên môn thi</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập tên môn thi">
-                        </div>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput2" class="form-label">Hình:</label>
-                            <input type="file" class="form-control" id="formGroupExampleInput2" placeholder="Chọn hình">
-                        </div>
-                        <div class="mb-3">
-                        <button class="btn btn-primary">Thêm môn thi</button>
-                        </div>
-                   </from>
+      <nav
+        class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5"
+        ng-include="'../../layout/navbar.html'"
+      ></nav>
+      <!--end navbar-->
 
-                </article>
-                <!--end article-->
-            </div>
+      <div class="row">
+        <div
+          class="aside_pc bg-dark col-md-2 col-lg-2 mt-5"
+          ng-include="'../../layout/aside.html'"
+        >
+          <!--include aside-->
         </div>
+        <div class="col-12 col-md-10 col-lg-10 article_box">
+          <!--article-->
+          <article class="article">
+            <h1>Thêm môn thi</h1>
+
+            <form action="" class="form" name="form_them_mon_thi">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"
+                  >ID môn thi</label
+                >
+                <input
+                  type="text"
+                  name="id"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Nhập ID môn thi"
+                  ng-model="id"
+                  maxlength="4"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Tên môn thi</label
+                >
+                <input
+                  type="text"
+                  name="ten_mon"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Nhập tên môn thi"
+                  ng-model="ten_mon"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label"
+                  >Hình:</label
+                >
+                <input
+                  type="file"
+                  class="form-control"
+                  name="hinh"
+                  id="formGroupExampleInput2"
+                  placeholder="Chọn hình"
+                  ng-model="hinh"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="button"
+                  class="btn btn-primary"
+                  value="Thêm"
+                  ng-click="them()"
+                />
+              </div>
+            </form>
+          </article>
+          <!--end article-->
+        </div>
+      </div>
     </div>
-    
+
     <script>
-          var app  = angular.module('myApp',[]);
-          app.controller('myController',function($scope){
-          
-          })
+      var app = angular.module("them_mon", []);
+      app.controller("add_subject", function ($scope, $http) {
+
+        $scope.them = function () {
+          var data = {
+            id: $scope.id.toUpperCase(),
+            Name: $scope.ten_mon,
+            Logo: form_them_mon_thi.hinh.value.slice(
+            form_them_mon_thi.hinh.value.lastIndexOf("\\") + 1
+          ),
+          };
+          var data2 = $scope.ten_mon
+          console.log(JSON.stringify(data));
+          $http.post('http://localhost:3000', )
+          $http.post('http://localhost:3000/Subjects', JSON.stringify(data)).then(
+            function (response) {
+              alert("Thêm thành công !");
+            },
+            function (response) {
+              alert("Thêm thất bại !");
+            }
+          );
+        }
+        
+      });
     </script>
-</body>
+  </body>
 </html>
