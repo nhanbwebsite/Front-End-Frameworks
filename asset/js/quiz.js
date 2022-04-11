@@ -64,7 +64,7 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
             }
            scope.timeOut = function(){
                var phut = 5-1;
-               var giay = 60;
+               var giay = 60-1;
                scope.dongho=setInterval(function(){
                 if(giay!=0)
                 {
@@ -79,9 +79,9 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
                 document.getElementById("time").innerHTML=phut+":"+giay;
                 if(phut==0 && giay==0)
             {
-                scope.elementDiem = document.querySelector('.diem_max');
-                scope.elementDiem.innerHTML = scope.diem;
-                    clearInterval(dongho);
+                // scope.elementDiem = document.querySelector('.diem_max');
+                // scope.elementDiem.innerHTML = scope.diem_max;
+                    clearInterval(scope.dongho);
             }
     
             },1000);
@@ -89,7 +89,7 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
                   
                     scope.showDiem = true;
                     scope.quizOver = true;
-                },500000)
+                },10000)
            }
             scope.reset = function(){
                 scope.inProgess=false;
