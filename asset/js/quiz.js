@@ -45,7 +45,7 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
         templateUrl: 'templateQuiz.html',
         link: function (scope, element, attr) {
             scope.start = function(){
-                scope.id=1;
+                scope.id=0;
                 scope.mang_dap_an = [];
                 scope.quizOver = false;//Chưa hoàn thành quiz
                 scope.inProgess=true;
@@ -75,7 +75,7 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
                     phut--;
                     giay=60-1;
                 }
-                console.log(phut+":"+giay); 
+             
                 document.getElementById("time").innerHTML=phut+":"+giay;
                 if(phut==0 && giay==0)
             {
@@ -105,7 +105,7 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
                     scope.answer = quiz.AnswerId;
                     scope.answerMode = true;
                 }else{
-                        scope.quizOver = true; //khi hết câu hỏi thì true
+                        // scope.quizOver = true; //khi hết câu hỏi thì true
                 }
                
             }
@@ -131,13 +131,17 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
            
             scope.nextQuestion = function(){
                 scope.id++;
-                if(scope.id <=10){
-                    document.querySelector('#chuyen').disabled = true;
+                if(scope.id >=10){
+                    scope.id = 0;
+                    // document.querySelector('#chuyen').disabled = true;
                 }
                 scope.getQuestion();
             }
             scope.prevQuestion = function(){
                 scope.id--;
+                if(scope.id < 0){
+                    scope.id = 9;
+                }
                 scope.getQuestion();
             }
             scope.reset();
@@ -147,17 +151,33 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
 app.factory('quizFactory',function($http,$routeParams){
     $http.get('http://localhost:3000/' + $routeParams.id).then(function(res){
         ma_de = $routeParams.id;
+        
         questions = res.data;
-      
+      var arrayQ = [];
+        var numRandom = Math.floor(Math.random()*questions.length);
        
+         for(var i = 0; i < 10; i++){
+            var numRandom = Math.floor(Math.random()*questions.length);
+            arrayQ.push(questions[numRandom])
+         }
+
+        
+         questions = arrayQ
+     console.log(questions)
 
     })
     return {
+        
         getQuestion:function(id){
-            var ramdomItem = questions[Math.floor(Math.random()*questions.length)];
+            
+            var ramdomItem = questions[id];
+         
+       
+          
             var count = questions.length;
-            if (count>10){
-                count = 10;
+            if (count>=10){
+                id= 0;
+
             }
             if(id<10){
                 return ramdomItem;
@@ -246,7 +266,7 @@ app.controller("dkdnController", function ($scope,$http) {
         box__user.innerHTML = ''
         var spanElemnt = document.createElement('span');
         spanElemnt.innerHTML = `
-        <div class="dropdown">
+        <div class="dropdown boxDangNhap">
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
          ${getUserLogin.fullname}
         </button>
