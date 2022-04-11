@@ -49,14 +49,14 @@
               <select
                 class="form-select mb-3"
                 aria-label="Default select example"
-                ng-model="id_subject"
+                ng-model="subject"
               >
-                <option selected>Chọn môn thi</option>
+              <option value="">Chọn môn học</option>
                 <option
-                  value="{{subject.id}}"
-                  ng-repeat="subject in list_subjects"
+                  ng-repeat="sub in list_subjects"
+                  value="{{sub.Id}}"
                 >
-                  {{subject.Name}}
+                  {{sub.Name}}
                 </option>
               </select>
               <div class="mb-3">
@@ -145,8 +145,136 @@
         );
 
         $scope.add_quest = function () {
-          alert($scope.id_subject);
-        }
+          var subject = $scope.subject;
+          console.log(subject);
+          var data2 = {};
+          var correct;
+          var random = Math.floor(Math.random() * (4 - 1)) + 1;
+          console.log(random);
+          switch (random) {
+            case 1:
+              correct = Math.floor(Math.random() * (100000 - 1))+1;
+              data2 = {
+                Id: Math.floor(Math.random() * (100000 - 1))+1,
+                Text: $scope.content,
+                Mark: 1,
+                AnswerId: Math.floor(Math.random() * (100000 - 1))+1,
+                Answer: [
+                  {
+                    Id: correct,
+                    text: $scope.d1,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d2,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d3,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d4,
+                  },
+                ]
+              };
+              break;
+
+            case 2:
+              correct = Math.floor(Math.random() * (100000 - 1))+1;
+              data2 = {
+                Id: Math.floor(Math.random() * (100000 - 1))+1,
+                Text: $scope.content,
+                Mark: 1,
+                AnswerId: correct,
+                Answer: [
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d1,
+                  },
+                  {
+                    Id: correct,
+                    text: $scope.d2,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d3,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d4,
+                  },
+                ]
+              };
+              break;
+
+            case 3:
+              correct = Math.floor(Math.random() * (100000 - 1))+1;
+              data2 = {
+                Id: Math.floor(Math.random() * (100000 - 1))+1,
+                Text: $scope.content,
+                Mark: 1,
+                AnswerId: correct,
+                Answer: [
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d1,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d2,
+                  },
+                  {
+                    Id: correct,
+                    text: $scope.d3,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d4,
+                  },
+                ]
+              };
+              break;
+
+            case 4: 
+              correct = Math.floor(Math.random() * (100000 - 1))+1;
+              data2 = {
+                Id: Math.floor(Math.random() * (100000 - 1))+1,
+                Text: $scope.content,
+                Mark: 1,
+                AnswerId: correct,
+                Answer: [
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d1,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d2,
+                  },
+                  {
+                    Id: Math.floor(Math.random() * (100000 - 1))+1,
+                    text: $scope.d3,
+                  },
+                  {
+                    Id: correct,
+                    text: $scope.d4,
+                  },
+                ]
+              };
+              break;
+          }
+          $http
+            .post('http://localhost:3000/'+subject, JSON.stringify(data2))
+            .then(
+              function (response) {
+                alert("Thêm câu hỏi thành công !");
+              },
+              function (response) {
+                alert("Lỗi");
+              }
+            );
+        };
       });
     </script>
   </body>
