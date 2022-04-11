@@ -1,127 +1,306 @@
 <!DOCTYPE html>
-<html lang="en" ng-app ="myApp" >
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Danh sách môn thi</title>
-    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
     <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="../../asset/css/respone.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../asset/css/respone.css" />
     <script src="../../../node_modules/angular/angular.js"></script>
-   <style>
-     img{
-       width: 200px;
-     }
-   </style>
-</head>
-<body ng-controller="myController">
+    <style>
+      img {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body ng-controller="myController">
     <div class="container-fluid">
-        <nav class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5" ng-include="'../../layout/navbar.html'">
-           
-          </nav>
-          <!--end navbar-->
-        
-         
-        <div class="row">
-            <div class=" aside_pc bg-dark col-md-2 col-lg-2 mt-5" ng-include="'../../layout/aside.html'">
-                <!--include aside-->
-            </div>
-            <div class="col-12 col-md-10 col-lg-10 article_box">
-              <!--article-->
-                <article class="article">
-                    <h2 class="text-primary">Thêm câu hỏi</h2>
-                    <from>
-                        <select class="form-select mb-3" aria-label="Default select example" ng-model="id_subject">
-                            <option selected>Chọn môn thi</option>
-                            <option value="{{subject.id}}" ng-repeat="subject in list_subjects">{{subject.Name}}</option>
-                          </select>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Nội dung câu hỏi</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập nội dung câu hỏi" ng-model="content">
-                        </div>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Đáp án 1 (đáp án đúng)</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập nội đáp án 1 (đáp án đúng)" ng-model="d1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Đáp án 2</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập nội đáp án 2" ng-model="d2">
-                        </div>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Đáp án 3</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập nội đáp án 3" ng-model="d3">
-                        </div>
-                        <div class="mb-3">
-                            <label for="formGroupExampleInput" class="form-label">Đáp án 4</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nhập nội đáp án 4" ng-model="d4">
-                        </div>
-                        
-                        <div class="mb-3">
-                        <button class="btn btn-primary" ng-click="add_quest()">Thêm câu hỏi</button>
-                        </div>
-                   </from>
-                    
+      <nav
+        class="navbar navbar-mobi navbar-light bg-light fixed-top mb-5"
+        ng-include="'../../layout/navbar.html'"
+      ></nav>
+      <!--end navbar-->
 
-
-                </article>
-                <!--end article-->
-            </div>
+      <div class="row">
+        <div
+          class="aside_pc bg-dark col-md-2 col-lg-2 mt-5"
+          ng-include="'../../layout/aside.html'"
+        >
+          <!--include aside-->
         </div>
+        <div class="col-12 col-md-10 col-lg-10 article_box">
+          <!--article-->
+          <article class="article">
+            <h2 class="text-primary">Thêm câu hỏi</h2>
+            <from>
+              <select
+                class="form-select mb-3"
+                aria-label="Default select example"
+                ng-model="id_subject"
+              >
+                <option selected>Chọn môn thi</option>
+                <option
+                  value="{{subject.id}}"
+                  ng-repeat="subject in list_subjects"
+                >
+                  {{subject.Name}}
+                </option>
+              </select>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Nội dung câu hỏi</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Nhập nội dung câu hỏi"
+                  ng-model="content"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Đáp án 1 (đáp án đúng)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Nhập nội đáp án 1 (đáp án đúng)"
+                  ng-model="d1"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Đáp án 2</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Nhập nội đáp án 2"
+                  ng-model="d2"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Đáp án 3</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Nhập nội đáp án 3"
+                  ng-model="d3"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label"
+                  >Đáp án 4</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Nhập nội đáp án 4"
+                  ng-model="d4"
+                />
+              </div>
+
+              <div class="mb-3">
+                <button class="btn btn-primary" ng-click="add_quest()">
+                  Thêm câu hỏi
+                </button>
+              </div>
+            </from>
+          </article>
+          <!--end article-->
+        </div>
+      </div>
     </div>
-    
+
     <script>
-          var app  = angular.module('myApp',[]);
-          app.controller('myController',function($scope, $http){
-            $http.get('http://localhost:3000/Subjects').then(function(response){
-                $scope.list_subjects = response.data;
-            }, function(response){
-                alert('Lỗi load select danh sách môn học');
-            });
+      var app = angular.module("myApp", []);
+      app.controller("myController", function ($scope, $http) {
+        $http.get("http://localhost:3000/Subjects").then(
+          function (response) {
+            $scope.list_subjects = response.data;
+          },
+          function (response) {
+            alert("Lỗi load select danh sách môn học");
+          }
+        );
 
-            $scope.add_quest = function () {
-                var id_subject = $scope.id_subject;
-                var data1 = {
-                    id_subject:[]
-                };
-                $http.post('http://localhost:3000/', JSON.stringify(data1))
-                
-                var correct = Math.floor(Math.random() * (100000 - 1))+1;
-                
-                var data2 = {
-                    Text: $scope.content,
-                    Mark: 1,
-                    AnswerId: correct,
-                    Answer: [
-                        {
-                            Id: correct,
-                            text: $scope.d1
-                        },
-                        {
-                            Id: Math.floor(Math.random() * (100000 - 1))+1,
-                            text: $scope.d2
-                        },
-                        {
-                            Id: Math.floor(Math.random() * (100000 - 1))+1,
-                            text: $scope.d3
-                        },
-                        {
-                            Id: Math.floor(Math.random() * (100000 - 1))+1,
-                            text: $scope.d4
-                        }
-                    ]
-                };
+        // $scope.add_quest = function () {
+        //     var id_subject = $scope.id_subject;
+        //     var data1 = {
+        //       id_subject: [],
+        //     };
+        //   var correct;
+        //   var id2;
+        //   var id3;
+        //   var id4;
+        //   var data2 = {};
+        //   $http
+        //     .get("http://localhost:3000/" + id_subject)
+        //     .then(function (response) {
+        //       if (response.data.length === 0) {
+        //         var random = Math.floor(Math.random() * (4 - 1)) + 1;
+        //         switch (random) {
+        //           case 1:
+        //             correct = parseInt($scope.d1);
+        //             id2 = parseInt($scope.d2);
+        //             id3 = parseInt($scope.d3);
+        //             id4 = parseInt($scope.d4);
+        //             data2 = {
+        //               Text: $scope.content,
+        //               Mark: 1,
+        //               AnswerId: correct,
+        //               Answer: [
+        //                 {
+        //                   Id: correct,
+        //                   text: $scope.d1,
+        //                 },
+        //                 {
+        //                   Id: id2,
+        //                   text: $scope.d2,
+        //                 },
+        //                 {
+        //                   Id: id3,
+        //                   text: $scope.d3,
+        //                 },
+        //                 {
+        //                   Id: id4,
+        //                   text: $scope.d4,
+        //                 },
+        //               ],
+        //             };
+        //             break;
 
-                $http.post('http://localhost:3000/'+id_subject, JSON.stringify(data2))
-                    .then(function(response){
-                        alert('Thêm câu hỏi thành công !');
-                    }, function(response){
-                        alert('Lỗi');
-                    })
-            }
-          })
+        //           case 2:
+        //             var d1 = parseInt($scope.d1);
+        //             var correct = parseInt($scope.d2);
+        //             var id3 = parseInt($scope.d3);
+        //             var id4 = parseInt($scope.d4);
+        //             var data2 = {
+        //               Text: $scope.content,
+        //               Mark: 1,
+        //               AnswerId: correct,
+        //               Answer: [
+        //                 {
+        //                   Id: d1,
+        //                   text: $scope.d1,
+        //                 },
+        //                 {
+        //                   Id: correct,
+        //                   text: $scope.d2,
+        //                 },
+        //                 {
+        //                   Id: id3,
+        //                   text: $scope.d3,
+        //                 },
+        //                 {
+        //                   Id: id4,
+        //                   text: $scope.d4,
+        //                 },
+        //               ],
+        //             };
+        //             break;
+
+        //           case 3:
+        //             var d1 = parseInt($scope.d1);
+        //             var correct = parseInt($scope.d2);
+        //             var id3 = parseInt($scope.d3);
+        //             var id4 = parseInt($scope.d4);
+        //             var data2 = {
+        //               Text: $scope.content,
+        //               Mark: 1,
+        //               AnswerId: correct,
+        //               Answer: [
+        //                 {
+        //                   Id: d1,
+        //                   text: $scope.d1,
+        //                 },
+        //                 {
+        //                   Id: id2,
+        //                   text: $scope.d2,
+        //                 },
+        //                 {
+        //                   Id: correct,
+        //                   text: $scope.d3,
+        //                 },
+        //                 {
+        //                   Id: id4,
+        //                   text: $scope.d4,
+        //                 },
+        //               ],
+        //             };
+        //             break;
+
+        //           case 4: {
+        //             var d1 = parseInt($scope.d1);
+        //             var correct = parseInt($scope.d2);
+        //             var id3 = parseInt($scope.d3);
+        //             var id4 = parseInt($scope.d4);
+        //             var data2 = {
+        //               Text: $scope.content,
+        //               Mark: 1,
+        //               AnswerId: correct,
+        //               Answer: [
+        //                 {
+        //                   Id: d1,
+        //                   text: $scope.d1,
+        //                 },
+        //                 {
+        //                   Id: id2,
+        //                   text: $scope.d2,
+        //                 },
+        //                 {
+        //                   Id: correct,
+        //                   text: $scope.d3,
+        //                 },
+        //                 {
+        //                   Id: correct,
+        //                   text: $scope.d4,
+        //                 },
+        //               ],
+        //             };
+        //             break;
+        //           }
+        //         }
+
+        //         $http
+        //           .post(
+        //             "http://localhost:3000/" + id_subject,
+        //             JSON.stringify(data2)
+        //           )
+        //           .then(
+        //             function (response) {
+        //               alert("Thêm câu hỏi thành công !");
+        //             },
+        //             function (response) {
+        //               alert("Lỗi");
+        //             }
+        //           );
+        //       } else {
+                
+        //       }
+        //     });
+        // };
+      });
     </script>
-</body>
+  </body>
 </html>

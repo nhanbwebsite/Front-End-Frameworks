@@ -114,11 +114,11 @@
             form_them_mon_thi.hinh.value.lastIndexOf("\\") + 1
           ),
           };
+          var data2 = $scope.ten_mon
           console.log(JSON.stringify(data));
-
+          $http.post('http://localhost:3000', )
           $http.post('http://localhost:3000/Subjects', JSON.stringify(data)).then(
             function (response) {
-              console.log();
               alert("Thêm thành công !");
             },
             function (response) {
