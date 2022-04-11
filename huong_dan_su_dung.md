@@ -5,6 +5,6 @@
 # Trần Minh Đạt - PC02133
 
 
-# chạy lệnh:  npm start  để khơi động json-server  
+# chạy lệnh:  npm start  để khởi động json-server  
 # mở file index để dùng các chức năng: đăng nhập để làm bài thi, có thể quản lý thông tin tài khoản khi người dùng đăng nhập
 # có thể thêm câu hỏi mới vào môn học, quản lý người dùng bằng trong admin, thêm, xóa, cập nhật 
