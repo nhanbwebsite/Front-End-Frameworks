@@ -167,7 +167,8 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout,$window) {
             scope.nextQuestion = function(){
                 scope.id++;
                 if(scope.id >=10){
-                    scope.id = 0;
+                    // scope.id = 0;
+                    scope.end()
                     // document.querySelector('#chuyen').disabled = true;
                 }
                 scope.getQuestion();
