@@ -89,7 +89,7 @@ app.directive('quizPoly', function (quizFactory,$routeParams,$timeout) {
                   
                     scope.showDiem = true;
                     scope.quizOver = true;
-                },10000)
+                },500000)
            }
             scope.reset = function(){
                 scope.inProgess=false;
